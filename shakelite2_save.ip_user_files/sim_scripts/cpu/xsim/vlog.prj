@@ -1,0 +1,15 @@
+verilog xil_defaultlib --include "../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/ec67/hdl" --include "../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/2d50/hdl" --include "../../../../shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_processing_system7_0_0" \
+"../../../bd/cpu/ip/cpu_processing_system7_0_0/sim/cpu_processing_system7_0_0.v" \
+"../../../bd/cpu/ipshared/43a3/src/keccak_round.v" \
+"../../../bd/cpu/ipshared/43a3/src/keccak_round_constants_gen.v" \
+"../../../bd/cpu/ipshared/43a3/src/keccak_top.v" \
+"../../../bd/cpu/ipshared/43a3/hdl/sha3_1003_tIP1_v1_0_S0_AXI.v" \
+"../../../bd/cpu/ipshared/43a3/src/shake_top.v" \
+"../../../bd/cpu/ipshared/43a3/hdl/sha3_1003_tIP1_v1_0.v" \
+"../../../bd/cpu/ip/cpu_sha3_1003_tIP1_0_0/sim/cpu_sha3_1003_tIP1_0_0.v" \
+"../../../bd/cpu/ip/cpu_auto_pc_0/sim/cpu_auto_pc_0.v" \
+"../../../bd/cpu/sim/cpu.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

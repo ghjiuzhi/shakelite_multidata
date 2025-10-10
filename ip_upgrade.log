@@ -1,0 +1,16 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Oct 10 14:12:16 2025
+| Host         : DESKTOP-HPA0FNB running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cpu_sha3_1003_tIP1_v1_0_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of cpu_sha3_1003_tIP1_v1_0_0_0 (xilinx.com:module_ref:sha3_1003_tIP1_v1_0_S0_AXI:1.0 (Rev. 1)) to Vivado generation flows.
+

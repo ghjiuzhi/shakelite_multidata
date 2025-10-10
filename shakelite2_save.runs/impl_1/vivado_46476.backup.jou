@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Oct 10 14:36:46 2025
+# Process ID: 46476
+# Current directory: D:/fpga/shakelite2_save/shakelite2_save.runs/impl_1
+# Command line: vivado.exe -log sha3_1003_tIP1_v1_0.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sha3_1003_tIP1_v1_0.tcl -notrace
+# Log file: D:/fpga/shakelite2_save/shakelite2_save.runs/impl_1/sha3_1003_tIP1_v1_0.vdi
+# Journal file: D:/fpga/shakelite2_save/shakelite2_save.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source sha3_1003_tIP1_v1_0.tcl -notrace
