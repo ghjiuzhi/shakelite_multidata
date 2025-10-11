@@ -4,7 +4,7 @@
       "boundary_crc": "0xCC6CFA5306BD3ECB",
       "device": "xc7z020clg400-2",
       "name": "cpu",
-      "synth_flow_mode": "None",
+      "synth_flow_mode": "Hierarchical",
       "tool_version": "2019.2",
       "validated": "true"
     },

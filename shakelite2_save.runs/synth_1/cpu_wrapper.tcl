@@ -18,7 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 4
-set_msg_config -id {HDL-1065} -limit 10000
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z020clg400-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -39,6 +39,7 @@ add_files D:/fpga/shakelite2_save/shakelite2_save.srcs/sources_1/bd/cpu/cpu.bd
 set_property used_in_implementation false [get_files -all d:/fpga/shakelite2_save/shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_processing_system7_0_0/cpu_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all d:/fpga/shakelite2_save/shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_rst_ps7_0_50M_0/cpu_rst_ps7_0_50M_0_board.xdc]
 set_property used_in_implementation false [get_files -all d:/fpga/shakelite2_save/shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_rst_ps7_0_50M_0/cpu_rst_ps7_0_50M_0.xdc]
+set_property used_in_implementation false [get_files -all d:/fpga/shakelite2_save/shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_rst_ps7_0_50M_0/cpu_rst_ps7_0_50M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/fpga/shakelite2_save/shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_auto_pc_0/cpu_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all D:/fpga/shakelite2_save/shakelite2_save.srcs/sources_1/bd/cpu/cpu_ooc.xdc]
 

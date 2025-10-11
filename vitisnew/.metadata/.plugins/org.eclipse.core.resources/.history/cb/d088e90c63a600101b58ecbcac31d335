@@ -1,0 +1,200 @@
+/***************************** Include Files *******************************/
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xstatus.h"
+#include "xil_cache.h"
+#include "xil_io.h"
+#include "sha3_1003_tIP1.h"
+
+/************************** Constant Definitions ***************************/
+#define IP_CORE_BASEADDR XPAR_SHA3_1003_TIP1_0_S0_AXI_BASEADDR
+
+#define REG_CONTROL_OFFSET      0x00
+#define REG_DIN_LOW_OFFSET      0x04
+#define REG_DIN_HIGH_OFFSET     0x08
+#define REG_CONTROL2_OFFSET     0x0C
+#define REG_STATUS_OFFSET       0x10
+#define REG_RESULT_START_OFFSET 0x14
+
+#define CONTROL_START_BIT       (1 << 3)
+#define CONTROL2_LAST_DIN_BIT   (1 << 0)
+#define CONTROL2_DIN_VALID_BIT  (1 << 5)
+#define CONTROL2_DOUT_READY_BIT (1 << 6)
+
+#define STATUS_RESULT_READY_BIT (1 << 5)
+
+#define RESULT_REG_COUNT 42
+
+/************************** Function Prototypes ****************************/
+void init_platform();
+void cleanup_platform();
+int final_diagnostic_test(u32 base_addr);
+
+/*****************************************************************************/
+/**
+* @brief 主函数
+******************************************************************************/
+int main()
+{
+    int status;
+    init_platform();
+
+    xil_printf("\r\n--- SHA3 IP Core - 终极诊断测试 ---\r\n");
+
+    status = final_diagnostic_test(IP_CORE_BASEADDR);
+
+    if (status == XST_SUCCESS) {
+        xil_printf("\r\n[成功] 诊断测试完成!\r\n");
+    } else {
+        xil_printf("\r\n[失败] 诊断测试过程中发生错误!\r\n");
+    }
+
+    cleanup_platform();
+    return status;
+}
+
+/*****************************************************************************/
+/**
+* @brief    最终诊断测试：使用最明确的数据和正确的时序
+*
+* @param    base_addr 是IP核的基地址。
+*
+* @return   - XST_SUCCESS: 成功 / - XST_FAILURE: 失败
+******************************************************************************/
+//int final_diagnostic_test(u32 base_addr)
+//{
+//    // --- 步骤 1: 【关键】使用一个独一无二、无法被忽略的测试数据 ---
+//    u32 high_32 = 0xAAAAAAAA;
+//    u32 low_32  = 0xBBBBBBBB;
+//
+//    u32 status_reg;
+//    u32 result_buffer[RESULT_REG_COUNT];
+//    int i;
+//    int timeout = 1000000;
+//
+//    xil_printf("\r\n--- 终极诊断, 输入: 0xAAAAAAAA_BBBBBBBB ---\r\n");
+//    xil_printf("步骤 1: 写入高位 0x%08X, 低位 0x%08X\r\n", high_32, low_32);
+//    SHA3_1003_TIP1_mWriteReg(base_addr, REG_DIN_HIGH_OFFSET, high_32);
+//    SHA3_1003_TIP1_mWriteReg(base_addr, REG_DIN_LOW_OFFSET, low_32);
+//
+//    // --- 步骤 2: 设置静态控制信号 ---
+//    // 假设输入64位=8字节
+//    u32 control2_val = CONTROL2_LAST_DIN_BIT | (8 << 1) | CONTROL2_DOUT_READY_BIT;
+//    xil_printf("步骤 2: 设置 slv_reg3 (值为 0x%08X)\r\n", control2_val);
+//
+//    // --- 步骤 3: 采用最终确认的正确时序 ---
+//    u32 control_val = 1; // 模式1: Shake-256
+//    xil_printf("步骤 3: 设置模式为 Shake-256 并启动\r\n", control_val);
+//
+//    // 3.1: 将所有控制信号复位到稳定状态，设置好模式
+//    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val);
+//    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val);
+//
+//    // 3.2: 拉高 start，让硬件进入 ABSORB 状态
+//    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val | CONTROL_START_BIT);
+//    xil_printf("  - 已发送 Start 信号。\r\n");
+//
+//    // 3.3: 拉高 din_valid。
+//    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val | CONTROL2_DIN_VALID_BIT);
+//    xil_printf("  - 已发送 din_valid 信号。\r\n");
+//
+//    // 3.4: 拉低 start 和 din_valid，完成握手
+//    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val);
+//    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val);
+//    xil_printf("  - 信号发送完毕，握手完成。\r\n");
+//
+//    // --- 步骤 4: 等待计算完成 ---
+//    xil_printf("步骤 4: 等待计算完成...\r\n");
+//    do {
+//        status_reg = SHA3_1003_TIP1_mReadReg(base_addr, REG_STATUS_OFFSET);
+//        timeout--;
+//    } while (((status_reg & STATUS_RESULT_READY_BIT) == 0) && (timeout > 0));
+//
+//    if (timeout <= 0) {
+//        xil_printf("  - [错误] 等待超时! 最终状态寄存器(slv_reg4): 0x%08X\r\n", status_reg);
+//        return XST_FAILURE;
+//    }
+//    xil_printf("  - 计算完成! 状态寄存器: 0x%08X\r\n", status_reg);
+//
+//    // --- 步骤 5: 读取并打印结果 ---
+//    xil_printf("步骤 5: 读取哈希结果\r\n");
+//    xil_printf("  --- 哈希结果 ---\r\n");
+//    for (i = 0; i < RESULT_REG_COUNT; i++) {
+//        result_buffer[i] = SHA3_1003_TIP1_mReadReg(base_addr, REG_RESULT_START_OFFSET + i * 4);
+//        xil_printf("    reg[%2d]: 0x%08X\r\n", i, result_buffer[i]);
+//    }
+//
+//    return XST_SUCCESS;
+//}
+
+int test_abc_final(u32 base_addr)
+{
+    // --- 【最终正确版本】输入 "abc" ---
+    u32 high_32 = 0x00636261;
+    u32 low_32  = 0x00000000;
+
+    u32 status_reg;
+    u32 result_buffer[RESULT_REG_COUNT];
+    int i;
+    int timeout = 1000000;
+
+    xil_printf("\r\n--- 最终测试, 输入: \"abc\" ---\r\n");
+    xil_printf("步骤 1: 写入高位 0x%08X, 低位 0x%08X\r\n", high_32, low_32);
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_DIN_HIGH_OFFSET, high_32);
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_DIN_LOW_OFFSET, low_32);
+
+    // --- 步骤 2: 设置静态控制信号, 有效字节数为3 ---
+    u32 control2_val = CONTROL2_LAST_DIN_BIT | (3 << 1) | CONTROL2_DOUT_READY_BIT;
+    xil_printf("步骤 2: 设置 slv_reg3 (值为 0x%08X)\r\n", control2_val);
+
+    // --- 步骤 3: 采用最终确认的正确时序 ---
+    u32 control_val = 1; // 模式1: Shake-256
+    xil_printf("步骤 3: 设置模式为 Shake-256 并启动\r\n", control_val);
+
+    // (以下时序逻辑保持不变)
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val);
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val);
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val | CONTROL_START_BIT);
+    xil_printf("  - 已发送 Start 信号。\r\n");
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val | CONTROL2_DIN_VALID_BIT);
+    xil_printf("  - 已发送 din_valid 信号。\r\n");
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val);
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val);
+    xil_printf("  - 信号发送完毕，握手完成。\r\n");
+
+    // --- 步骤 4: 等待计算完成 ---
+    xil_printf("步骤 4: 等待计算完成...\r\n");
+    do {
+        status_reg = SHA3_1003_TIP1_mReadReg(base_addr, REG_STATUS_OFFSET);
+        timeout--;
+    } while (((status_reg & STATUS_RESULT_READY_BIT) == 0) && (timeout > 0));
+
+    if (timeout <= 0) {
+        xil_printf("  - [错误] 等待超时! 最终状态寄存器(slv_reg4): 0x%08X\r\n", status_reg);
+        return XST_FAILURE;
+    }
+    xil_printf("  - 计算完成! 状态寄存器: 0x%08X\r\n", status_reg);
+
+    // --- 步骤 5: 读取并打印结果 ---
+    xil_printf("步骤 5: 读取哈希结果\r\n");
+    xil_printf("  --- 哈希结果 ---\r\n");
+    for (i = 0; i < RESULT_REG_COUNT; i++) {
+        result_buffer[i] = SHA3_1003_TIP1_mReadReg(base_addr, REG_RESULT_START_OFFSET + i * 4);
+        xil_printf("    reg[%2d]: 0x%08X\r\n", i, result_buffer[i]);
+    }
+
+    return XST_SUCCESS;
+}
+/*****************************************************************************/
+void init_platform()
+{
+    Xil_ICacheEnable();
+    Xil_DCacheEnable();
+}
+
+/*****************************************************************************/
+void cleanup_platform()
+{
+    Xil_DCacheDisable();
+    Xil_ICacheDisable();
+}

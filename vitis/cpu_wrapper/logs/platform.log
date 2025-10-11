@@ -1361,3 +1361,1762 @@ TRACE::2025-10-10.15:18:04::SCWWriter::formatted JSON is {
 		}]
 }
 KEYINFO::2025-10-10.15:18:04::SCWPlatform::updated the xpfm file.
+LOG::2025-10-11.09:16:54::SCWPlatform::Started generating the artifacts platform cpu_wrapper
+TRACE::2025-10-11.09:16:54::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-10-11.09:16:54::SCWPlatform::Started generating the artifacts for system configuration cpu_wrapper
+LOG::2025-10-11.09:16:54::SCWSystem::Checking the domain zynq_fsbl
+LOG::2025-10-11.09:16:54::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2025-10-11.09:16:54::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-10-11.09:16:54::SCWDomain::Building the domain as part of full build :  zynq_fsbl
+TRACE::2025-10-11.09:16:54::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:16:54::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:16:54::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:16:54::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.09:16:54::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:16:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.09:16:54::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.09:16:54::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.09:16:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.09:16:54::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.09:16:54::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.09:16:54::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.09:16:54::SCWBDomain::Completed writing the mss file at D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2025-10-11.09:16:54::SCWBDomain::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-10-11.09:16:54::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-10-11.09:16:54::SCWBDomain::System Command Ran  D:&  cd  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl & make 
+TRACE::2025-10-11.09:16:56::SCWBDomain::make -C zynq_fsbl_bsp
+
+TRACE::2025-10-11.09:16:56::SCWBDomain::make[1]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2025-10-11.09:16:56::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2025-10-11.09:16:56::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2025-10-11.09:16:56::SCWBDomain::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2025-10-11.09:16:56::SCWBDomain::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:16:56::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/coresightp
+TRACE::2025-10-11.09:16:56::SCWBDomain::s_dcc_v1_6/src'
+
+TRACE::2025-10-11.09:16:57::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/coresightps
+TRACE::2025-10-11.09:16:57::SCWBDomain::_dcc_v1_6/src'
+
+TRACE::2025-10-11.09:16:57::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2025-10-11.09:16:57::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2025-10-11.09:16:57::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2025-10-11.09:16:57::SCWBDomain:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:16:57::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_cortex
+TRACE::2025-10-11.09:16:57::SCWBDomain::a9_v2_8/src'
+
+TRACE::2025-10-11.09:16:57::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_cortexa
+TRACE::2025-10-11.09:16:57::SCWBDomain::9_v2_8/src'
+
+TRACE::2025-10-11.09:16:57::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2025-10-11.09:16:57::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-11.09:16:57::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-11.09:16:57::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_0
+TRACE::2025-10-11.09:16:58::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_0/
+TRACE::2025-10-11.09:16:58::SCWBDomain::src'
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.09:16:58::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.09:16:58::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcfg_v3_
+TRACE::2025-10-11.09:16:58::SCWBDomain::5/src'
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcfg_v3_5
+TRACE::2025-10-11.09:16:58::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-11.09:16:58::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-11.09:16:58::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_5
+TRACE::2025-10-11.09:16:58::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_5/
+TRACE::2025-10-11.09:16:58::SCWBDomain::src'
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.09:16:58::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.09:16:58::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugic_v4_
+TRACE::2025-10-11.09:16:58::SCWBDomain::1/src'
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugic_v4_1
+TRACE::2025-10-11.09:16:58::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2025-10-11.09:16:58::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2025-10-11.09:16:58::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2025-10-11.09:16:58::SCWBDomain::startfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:16:59::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scutimer_v
+TRACE::2025-10-11.09:16:59::SCWBDomain::2_1/src'
+
+TRACE::2025-10-11.09:16:59::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scutimer_v2
+TRACE::2025-10-11.09:16:59::SCWBDomain::_1/src'
+
+TRACE::2025-10-11.09:16:59::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2025-10-11.09:16:59::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.09:16:59::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.09:16:59::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:16:59::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2_
+TRACE::2025-10-11.09:16:59::SCWBDomain::1/src'
+
+TRACE::2025-10-11.09:16:59::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2_1
+TRACE::2025-10-11.09:16:59::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:16:59::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src"
+
+TRACE::2025-10-11.09:16:59::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2025-10-11.09:16:59::SCWBDomain::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2025-10-11.09:16:59::SCWBDomain::rd -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:16:59::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sha3_1003_
+TRACE::2025-10-11.09:16:59::SCWBDomain::tIP1_v1_0/src'
+
+TRACE::2025-10-11.09:16:59::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sha3_1003_t
+TRACE::2025-10-11.09:16:59::SCWBDomain::IP1_v1_0/src'
+
+TRACE::2025-10-11.09:16:59::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2025-10-11.09:16:59::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2025-10-11.09:16:59::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2025-10-11.09:16:59::SCWBDomain::nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:16:59::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone
+TRACE::2025-10-11.09:16:59::SCWBDomain::_v7_1/src'
+
+TRACE::2025-10-11.09:17:01::SCWBDomain::make[3]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone
+TRACE::2025-10-11.09:17:01::SCWBDomain::_v7_1/src/profile'
+
+TRACE::2025-10-11.09:17:01::SCWBDomain::make[3]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_
+TRACE::2025-10-11.09:17:01::SCWBDomain::v7_1/src/profile'
+
+TRACE::2025-10-11.09:17:01::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_
+TRACE::2025-10-11.09:17:01::SCWBDomain::v7_1/src'
+
+TRACE::2025-10-11.09:17:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2025-10-11.09:17:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.09:17:01::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.09:17:01::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:01::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_
+TRACE::2025-10-11.09:17:01::SCWBDomain::8/src'
+
+TRACE::2025-10-11.09:17:01::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_8
+TRACE::2025-10-11.09:17:01::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:17:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2025-10-11.09:17:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.09:17:01::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.09:17:01::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:01::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_
+TRACE::2025-10-11.09:17:01::SCWBDomain::3/src'
+
+TRACE::2025-10-11.09:17:01::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_3
+TRACE::2025-10-11.09:17:01::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:17:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_2/src"
+
+TRACE::2025-10-11.09:17:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.09:17:01::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.09:17:01::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:01::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_
+TRACE::2025-10-11.09:17:01::SCWBDomain::2/src'
+
+TRACE::2025-10-11.09:17:02::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_2
+TRACE::2025-10-11.09:17:02::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:17:02::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src"
+
+TRACE::2025-10-11.09:17:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.09:17:02::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.09:17:02::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:02::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrsa_v1_
+TRACE::2025-10-11.09:17:02::SCWBDomain::5/src'
+
+TRACE::2025-10-11.09:17:02::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrsa_v1_5
+TRACE::2025-10-11.09:17:02::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:17:02::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2025-10-11.09:17:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2025-10-11.09:17:02::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2025-10-11.09:17:02::SCWBDomain:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:02::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/coresightp
+TRACE::2025-10-11.09:17:02::SCWBDomain::s_dcc_v1_6/src'
+
+TRACE::2025-10-11.09:17:02::SCWBDomain::"Compiling coresightps_dcc"
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/coresightps
+TRACE::2025-10-11.09:17:35::SCWBDomain::_dcc_v1_6/src'
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2025-10-11.09:17:35::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2025-10-11.09:17:35::SCWBDomain::ostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_cortex
+TRACE::2025-10-11.09:17:35::SCWBDomain::a9_v2_8/src'
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::"Compiling cpu_cortexa9"
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_cortexa
+TRACE::2025-10-11.09:17:35::SCWBDomain::9_v2_8/src'
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2025-10-11.09:17:35::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2025-10-11.09:17:35::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_0
+TRACE::2025-10-11.09:17:35::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::"Compiling ddrps"
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_0/
+TRACE::2025-10-11.09:17:35::SCWBDomain::src'
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.09:17:35::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.09:17:35::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcfg_v3_
+TRACE::2025-10-11.09:17:35::SCWBDomain::5/src'
+
+TRACE::2025-10-11.09:17:35::SCWBDomain::"Compiling devcfg"
+
+TRACE::2025-10-11.09:17:37::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcfg_v3_5
+TRACE::2025-10-11.09:17:37::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:17:37::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2025-10-11.09:17:37::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2025-10-11.09:17:37::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2025-10-11.09:17:37::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:37::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_5
+TRACE::2025-10-11.09:17:37::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:17:37::SCWBDomain::"Compiling dmaps"
+
+TRACE::2025-10-11.09:17:38::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_5/
+TRACE::2025-10-11.09:17:38::SCWBDomain::src'
+
+TRACE::2025-10-11.09:17:38::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2025-10-11.09:17:38::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.09:17:38::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.09:17:38::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:38::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugic_v4_
+TRACE::2025-10-11.09:17:38::SCWBDomain::1/src'
+
+TRACE::2025-10-11.09:17:38::SCWBDomain::"Compiling scugic"
+
+TRACE::2025-10-11.09:17:40::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugic_v4_1
+TRACE::2025-10-11.09:17:40::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:17:40::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2025-10-11.09:17:40::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-11.09:17:40::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-11.09:17:40::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:40::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scutimer_v
+TRACE::2025-10-11.09:17:40::SCWBDomain::2_1/src'
+
+TRACE::2025-10-11.09:17:40::SCWBDomain::"Compiling scutimer"
+
+TRACE::2025-10-11.09:17:41::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scutimer_v2
+TRACE::2025-10-11.09:17:41::SCWBDomain::_1/src'
+
+TRACE::2025-10-11.09:17:41::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2025-10-11.09:17:41::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.09:17:41::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.09:17:41::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:41::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2_
+TRACE::2025-10-11.09:17:41::SCWBDomain::1/src'
+
+TRACE::2025-10-11.09:17:41::SCWBDomain::"Compiling scuwdt"
+
+TRACE::2025-10-11.09:17:42::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2_1
+TRACE::2025-10-11.09:17:42::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:17:42::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src"
+
+TRACE::2025-10-11.09:17:42::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2025-10-11.09:17:42::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2025-10-11.09:17:42::SCWBDomain::-nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:42::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sha3_1003_
+TRACE::2025-10-11.09:17:42::SCWBDomain::tIP1_v1_0/src'
+
+TRACE::2025-10-11.09:17:42::SCWBDomain::"Compiling sha3_1003_tIP1..."
+
+TRACE::2025-10-11.09:17:42::SCWBDomain::make[3]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sha3_1003_
+TRACE::2025-10-11.09:17:42::SCWBDomain::tIP1_v1_0/src'
+
+TRACE::2025-10-11.09:17:42::SCWBDomain::make[3]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sha3_1003_t
+TRACE::2025-10-11.09:17:42::SCWBDomain::IP1_v1_0/src'
+
+TRACE::2025-10-11.09:17:42::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sha3_1003_t
+TRACE::2025-10-11.09:17:42::SCWBDomain::IP1_v1_0/src'
+
+TRACE::2025-10-11.09:17:43::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2025-10-11.09:17:43::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2025-10-11.09:17:43::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2025-10-11.09:17:43::SCWBDomain::tartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:43::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone
+TRACE::2025-10-11.09:17:43::SCWBDomain::_v7_1/src'
+
+TRACE::2025-10-11.09:17:43::SCWBDomain::"Compiling standalone"
+
+TRACE::2025-10-11.09:17:50::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_
+TRACE::2025-10-11.09:17:50::SCWBDomain::v7_1/src'
+
+TRACE::2025-10-11.09:17:50::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2025-10-11.09:17:50::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.09:17:50::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.09:17:50::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:50::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_
+TRACE::2025-10-11.09:17:50::SCWBDomain::8/src'
+
+TRACE::2025-10-11.09:17:50::SCWBDomain::"Compiling uartps"
+
+TRACE::2025-10-11.09:17:51::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_8
+TRACE::2025-10-11.09:17:51::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:17:52::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2025-10-11.09:17:52::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.09:17:52::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.09:17:52::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:52::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_
+TRACE::2025-10-11.09:17:52::SCWBDomain::3/src'
+
+TRACE::2025-10-11.09:17:52::SCWBDomain::"Compiling xadcps"
+
+TRACE::2025-10-11.09:17:53::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_3
+TRACE::2025-10-11.09:17:53::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:17:53::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_2/src"
+
+TRACE::2025-10-11.09:17:53::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.09:17:53::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.09:17:53::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:53::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_
+TRACE::2025-10-11.09:17:53::SCWBDomain::2/src'
+
+TRACE::2025-10-11.09:17:53::SCWBDomain::"Compiling XilFFs Library"
+
+TRACE::2025-10-11.09:17:54::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_2
+TRACE::2025-10-11.09:17:54::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:17:54::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src"
+
+TRACE::2025-10-11.09:17:54::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.09:17:54::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.09:17:54::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:17:54::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrsa_v1_
+TRACE::2025-10-11.09:17:54::SCWBDomain::5/src'
+
+TRACE::2025-10-11.09:17:54::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrsa_v1_5
+TRACE::2025-10-11.09:17:54::SCWBDomain::/src'
+
+TRACE::2025-10-11.09:17:54::SCWBDomain::'Finished building libraries'
+
+TRACE::2025-10-11.09:17:54::SCWBDomain::make[1]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2025-10-11.09:17:54::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c sd.c -o sd.o -Izynq_fsbl_bsp/ps7_cortexa9_0/
+TRACE::2025-10-11.09:17:54::SCWBDomain::include -I.
+
+TRACE::2025-10-11.09:17:55::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c nand.c -o nand.o -Izynq_fsbl_bsp/ps7_cortexa
+TRACE::2025-10-11.09:17:55::SCWBDomain::9_0/include -I.
+
+TRACE::2025-10-11.09:17:55::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c nor.c -o nor.o -Izynq_fsbl_bsp/ps7_cortexa9_
+TRACE::2025-10-11.09:17:55::SCWBDomain::0/include -I.
+
+TRACE::2025-10-11.09:17:55::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c image_mover.c -o image_mover.o -Izynq_fsbl_b
+TRACE::2025-10-11.09:17:55::SCWBDomain::sp/ps7_cortexa9_0/include -I.
+
+TRACE::2025-10-11.09:17:55::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c md5.c -o md5.o -Izynq_fsbl_bsp/ps7_cortexa9_
+TRACE::2025-10-11.09:17:55::SCWBDomain::0/include -I.
+
+TRACE::2025-10-11.09:17:56::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c fsbl_hooks.c -o fsbl_hooks.o -Izynq_fsbl_bsp
+TRACE::2025-10-11.09:17:56::SCWBDomain::/ps7_cortexa9_0/include -I.
+
+TRACE::2025-10-11.09:17:56::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c main.c -o main.o -Izynq_fsbl_bsp/ps7_cortexa
+TRACE::2025-10-11.09:17:56::SCWBDomain::9_0/include -I.
+
+TRACE::2025-10-11.09:17:56::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c rsa.c -o rsa.o -Izynq_fsbl_bsp/ps7_cortexa9_
+TRACE::2025-10-11.09:17:56::SCWBDomain::0/include -I.
+
+TRACE::2025-10-11.09:17:56::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c qspi.c -o qspi.o -Izynq_fsbl_bsp/ps7_cortexa
+TRACE::2025-10-11.09:17:56::SCWBDomain::9_0/include -I.
+
+TRACE::2025-10-11.09:17:56::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c ps7_init.c -o ps7_init.o -Izynq_fsbl_bsp/ps7
+TRACE::2025-10-11.09:17:56::SCWBDomain::_cortexa9_0/include -I.
+
+TRACE::2025-10-11.09:17:57::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c pcap.c -o pcap.o -Izynq_fsbl_bsp/ps7_cortexa
+TRACE::2025-10-11.09:17:57::SCWBDomain::9_0/include -I.
+
+TRACE::2025-10-11.09:17:57::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c fsbl_handoff.S -o fsbl_handoff.o -Izynq_fsbl
+TRACE::2025-10-11.09:17:57::SCWBDomain::_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2025-10-11.09:17:57::SCWBDomain::arm-none-eabi-gcc -o executable.elf  sd.o  nand.o  nor.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  rsa.o  qspi.o  ps7_init.o
+TRACE::2025-10-11.09:17:57::SCWBDomain::  pcap.o  fsbl_handoff.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=
+TRACE::2025-10-11.09:17:57::SCWBDomain::hard -Wl,-build-id=none -specs=Xilinx.spec  -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxi
+TRACE::2025-10-11.09:17:57::SCWBDomain::l,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group                              -Wl,--gc-sections -Lzy
+TRACE::2025-10-11.09:17:57::SCWBDomain::nq_fsbl_bsp/ps7_cortexa9_0/lib -L./ -Tlscript.ld
+
+LOG::2025-10-11.09:18:00::SCWSystem::Checking the domain standalone_domain
+LOG::2025-10-11.09:18:00::SCWSystem::Not a boot domain 
+LOG::2025-10-11.09:18:00::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2025-10-11.09:18:00::SCWDomain::Generating domain artifcats
+TRACE::2025-10-11.09:18:00::SCWMssOS::Generating standalone artifcats
+TRACE::2025-10-11.09:18:00::SCWMssOS::Copying the qemu file from  D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/fpga/shakelite2_save/vitis/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/qemu/
+TRACE::2025-10-11.09:18:00::SCWMssOS::Copying the qemu file from  D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/fpga/shakelite2_save/vitis/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/qemu/
+TRACE::2025-10-11.09:18:00::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-10-11.09:18:00::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:00::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:00::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:00::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.09:18:00::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.09:18:00::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.09:18:00::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.09:18:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.09:18:00::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.09:18:00::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.09:18:00::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.09:18:00::SCWMssOS::Completed writing the mss file at D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2025-10-11.09:18:00::SCWMssOS::Mss edits present, copying mssfile into export location D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.09:18:00::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-10-11.09:18:00::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-10-11.09:18:00::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2025-10-11.09:18:00::SCWMssOS::doing bsp build ... 
+TRACE::2025-10-11.09:18:00::SCWMssOS::System Command Ran  D: & cd  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2025-10-11.09:18:00::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2025-10-11.09:18:00::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2025-10-11.09:18:00::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2025-10-11.09:18:00::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:00::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2025-10-11.09:18:00::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2025-10-11.09:18:00::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2025-10-11.09:18:00::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:01::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2025-10-11.09:18:01::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-11.09:18:01::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-11.09:18:01::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:01::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2025-10-11.09:18:01::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.09:18:01::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.09:18:01::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:01::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2025-10-11.09:18:01::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-11.09:18:01::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-11.09:18:01::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:01::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2025-10-11.09:18:01::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.09:18:01::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.09:18:01::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:01::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2025-10-11.09:18:01::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2025-10-11.09:18:01::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2025-10-11.09:18:01::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:02::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2025-10-11.09:18:02::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.09:18:02::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.09:18:02::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:02::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src"
+
+TRACE::2025-10-11.09:18:02::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2025-10-11.09:18:02::SCWMssOS::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2025-10-11.09:18:02::SCWMssOS::rd -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:02::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2025-10-11.09:18:02::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2025-10-11.09:18:02::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2025-10-11.09:18:02::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:03::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2025-10-11.09:18:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.09:18:03::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.09:18:03::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:03::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2025-10-11.09:18:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.09:18:03::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.09:18:03::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:03::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2025-10-11.09:18:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2025-10-11.09:18:03::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2025-10-11.09:18:03::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:04::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2025-10-11.09:18:04::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2025-10-11.09:18:04::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2025-10-11.09:18:04::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2025-10-11.09:18:04::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:04::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2025-10-11.09:18:04::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2025-10-11.09:18:04::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2025-10-11.09:18:04::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2025-10-11.09:18:04::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:04::SCWMssOS::"Compiling ddrps"
+
+TRACE::2025-10-11.09:18:04::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2025-10-11.09:18:04::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.09:18:04::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.09:18:04::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:04::SCWMssOS::"Compiling devcfg"
+
+TRACE::2025-10-11.09:18:06::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2025-10-11.09:18:06::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2025-10-11.09:18:06::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2025-10-11.09:18:06::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:06::SCWMssOS::"Compiling dmaps"
+
+TRACE::2025-10-11.09:18:07::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2025-10-11.09:18:07::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.09:18:07::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.09:18:07::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:07::SCWMssOS::"Compiling scugic"
+
+TRACE::2025-10-11.09:18:09::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2025-10-11.09:18:09::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-11.09:18:09::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-11.09:18:09::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:09::SCWMssOS::"Compiling scutimer"
+
+TRACE::2025-10-11.09:18:10::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2025-10-11.09:18:10::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.09:18:10::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.09:18:10::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:10::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2025-10-11.09:18:11::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src"
+
+TRACE::2025-10-11.09:18:11::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2025-10-11.09:18:11::SCWMssOS::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2025-10-11.09:18:11::SCWMssOS::-nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:11::SCWMssOS::"Compiling sha3_1003_tIP1..."
+
+TRACE::2025-10-11.09:18:11::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2025-10-11.09:18:11::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2025-10-11.09:18:11::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2025-10-11.09:18:11::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:11::SCWMssOS::"Compiling standalone"
+
+TRACE::2025-10-11.09:18:18::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2025-10-11.09:18:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.09:18:18::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.09:18:18::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:18::SCWMssOS::"Compiling uartps"
+
+TRACE::2025-10-11.09:18:20::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2025-10-11.09:18:20::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.09:18:20::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.09:18:20::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.09:18:20::SCWMssOS::"Compiling xadcps"
+
+TRACE::2025-10-11.09:18:21::SCWMssOS::'Finished building libraries'
+
+TRACE::2025-10-11.09:18:21::SCWMssOS::Copying to export directory.
+TRACE::2025-10-11.09:18:22::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-10-11.09:18:22::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-10-11.09:18:22::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2025-10-11.09:18:22::SCWSystem::Completed Processing the sysconfig cpu_wrapper
+LOG::2025-10-11.09:18:22::SCWPlatform::Completed generating the artifacts for system configuration cpu_wrapper
+TRACE::2025-10-11.09:18:22::SCWPlatform::Started preparing the platform 
+TRACE::2025-10-11.09:18:22::SCWSystem::Writing the bif file for system config cpu_wrapper
+TRACE::2025-10-11.09:18:22::SCWSystem::dir created 
+TRACE::2025-10-11.09:18:22::SCWSystem::Writing the bif 
+TRACE::2025-10-11.09:18:22::SCWPlatform::Started writing the spfm file 
+TRACE::2025-10-11.09:18:22::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-10-11.09:18:22::SCWPlatform::Completed generating the platform
+TRACE::2025-10-11.09:18:22::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.09:18:22::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.09:18:22::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.09:18:22::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.09:18:22::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.09:18:22::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.09:18:22::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.09:18:22::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.09:18:22::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.09:18:22::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.09:18:22::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.09:18:22::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.09:18:22::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.09:18:22::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.09:18:22::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.09:18:22::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.09:18:22::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.09:18:22::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.09:18:22::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.09:18:22::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.09:18:22::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.09:18:22::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.09:18:22::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.09:18:22::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.09:18:22::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.09:18:22::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.09:18:22::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.09:18:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.09:18:22::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.09:18:22::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.09:18:22::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.09:18:22::SCWWriter::formatted JSON is {
+	"platformName":	"cpu_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"cpu_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/cpu_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"cpu_wrapper",
+	"systems":	[{
+			"systemName":	"cpu_wrapper",
+			"systemDesc":	"cpu_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"cpu_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"0cd0dcbb544b05849087effb0430dc63",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"bcd9bbf085b2dc69b0732fb7a2f2c432",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-10-11.09:18:22::SCWPlatform::updated the xpfm file.
+TRACE::2025-10-11.09:18:23::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:23::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:23::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:23::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.09:18:23::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.09:18:23::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.09:18:23::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.09:18:23::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.09:18:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.09:18:23::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.09:18:23::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.09:18:23::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.11:20:10::SCWBDomain::System Command Ran  D:&  cd  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl & make clean
+TRACE::2025-10-11.11:20:10::SCWBDomain::rm -rf  sd.o  nand.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  nor.o  qspi.o  rsa.o  ps7_init.o  pcap.o  fsbl_handoff.o zynq
+TRACE::2025-10-11.11:20:10::SCWBDomain::_fsbl_bsp/ps7_cortexa9_0/lib/libxil.a executable.elf *.o
+
+TRACE::2025-10-11.11:20:10::SCWBDomain::System Command Ran  D:&  cd  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp & make clean
+TRACE::2025-10-11.11:20:10::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s clean 
+
+TRACE::2025-10-11.11:20:11::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s clean 
+
+TRACE::2025-10-11.11:20:11::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+
+TRACE::2025-10-11.11:20:12::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+
+TRACE::2025-10-11.11:20:12::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s clean 
+
+TRACE::2025-10-11.11:20:12::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s clean 
+
+TRACE::2025-10-11.11:20:12::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+
+TRACE::2025-10-11.11:20:12::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+
+TRACE::2025-10-11.11:20:12::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src -s clean 
+
+TRACE::2025-10-11.11:20:12::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s clean 
+
+TRACE::2025-10-11.11:20:12::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s clean 
+
+TRACE::2025-10-11.11:20:12::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s clean 
+
+TRACE::2025-10-11.11:20:12::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_2/src -s clean 
+
+TRACE::2025-10-11.11:20:12::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s clean 
+
+TRACE::2025-10-11.11:20:12::SCWBDomain::rm -f ps7_cortexa9_0/lib/libxil.a
+
+TRACE::2025-10-11.11:20:12::SCWMssOS::cleaning the bsp 
+TRACE::2025-10-11.11:20:12::SCWMssOS::System Command Ran  D: & cd  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp & make clean 
+TRACE::2025-10-11.11:20:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s clean 
+
+TRACE::2025-10-11.11:20:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s clean 
+
+TRACE::2025-10-11.11:20:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+
+TRACE::2025-10-11.11:20:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+
+TRACE::2025-10-11.11:20:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s clean 
+
+TRACE::2025-10-11.11:20:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s clean 
+
+TRACE::2025-10-11.11:20:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+
+TRACE::2025-10-11.11:20:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+
+TRACE::2025-10-11.11:20:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src -s clean 
+
+TRACE::2025-10-11.11:20:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s clean 
+
+TRACE::2025-10-11.11:20:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s clean 
+
+TRACE::2025-10-11.11:20:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s clean 
+
+TRACE::2025-10-11.11:20:13::SCWMssOS::rm -f ps7_cortexa9_0/lib/libxil.a
+
+LOG::2025-10-11.11:20:16::SCWPlatform::Started generating the artifacts platform cpu_wrapper
+TRACE::2025-10-11.11:20:16::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-10-11.11:20:16::SCWPlatform::Started generating the artifacts for system configuration cpu_wrapper
+LOG::2025-10-11.11:20:16::SCWSystem::Checking the domain zynq_fsbl
+LOG::2025-10-11.11:20:16::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2025-10-11.11:20:16::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-10-11.11:20:16::SCWDomain::Building the domain as part of full build :  zynq_fsbl
+TRACE::2025-10-11.11:20:16::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:20:16::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:20:16::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:20:16::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.11:20:16::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:20:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.11:20:16::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.11:20:16::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.11:20:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.11:20:16::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.11:20:16::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.11:20:16::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.11:20:16::SCWBDomain::Completed writing the mss file at D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2025-10-11.11:20:16::SCWBDomain::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-10-11.11:20:16::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-10-11.11:20:16::SCWBDomain::System Command Ran  D:&  cd  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl & make 
+TRACE::2025-10-11.11:20:16::SCWBDomain::make -C zynq_fsbl_bsp
+
+TRACE::2025-10-11.11:20:16::SCWBDomain::make[1]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2025-10-11.11:20:16::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2025-10-11.11:20:16::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2025-10-11.11:20:16::SCWBDomain::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2025-10-11.11:20:16::SCWBDomain::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:16::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/coresightp
+TRACE::2025-10-11.11:20:16::SCWBDomain::s_dcc_v1_6/src'
+
+TRACE::2025-10-11.11:20:17::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/coresightps
+TRACE::2025-10-11.11:20:17::SCWBDomain::_dcc_v1_6/src'
+
+TRACE::2025-10-11.11:20:17::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2025-10-11.11:20:17::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2025-10-11.11:20:17::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2025-10-11.11:20:17::SCWBDomain:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:17::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_cortex
+TRACE::2025-10-11.11:20:17::SCWBDomain::a9_v2_8/src'
+
+TRACE::2025-10-11.11:20:17::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_cortexa
+TRACE::2025-10-11.11:20:17::SCWBDomain::9_v2_8/src'
+
+TRACE::2025-10-11.11:20:17::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2025-10-11.11:20:17::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-11.11:20:17::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-11.11:20:17::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:17::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_0
+TRACE::2025-10-11.11:20:17::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_0/
+TRACE::2025-10-11.11:20:18::SCWBDomain::src'
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.11:20:18::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.11:20:18::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcfg_v3_
+TRACE::2025-10-11.11:20:18::SCWBDomain::5/src'
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcfg_v3_5
+TRACE::2025-10-11.11:20:18::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-11.11:20:18::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-11.11:20:18::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_5
+TRACE::2025-10-11.11:20:18::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_5/
+TRACE::2025-10-11.11:20:18::SCWBDomain::src'
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.11:20:18::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.11:20:18::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugic_v4_
+TRACE::2025-10-11.11:20:18::SCWBDomain::1/src'
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugic_v4_1
+TRACE::2025-10-11.11:20:18::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2025-10-11.11:20:18::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2025-10-11.11:20:18::SCWBDomain::startfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:18::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scutimer_v
+TRACE::2025-10-11.11:20:18::SCWBDomain::2_1/src'
+
+TRACE::2025-10-11.11:20:19::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scutimer_v2
+TRACE::2025-10-11.11:20:19::SCWBDomain::_1/src'
+
+TRACE::2025-10-11.11:20:19::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2025-10-11.11:20:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.11:20:19::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.11:20:19::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:19::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2_
+TRACE::2025-10-11.11:20:19::SCWBDomain::1/src'
+
+TRACE::2025-10-11.11:20:19::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2_1
+TRACE::2025-10-11.11:20:19::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:20:19::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src"
+
+TRACE::2025-10-11.11:20:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2025-10-11.11:20:19::SCWBDomain::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2025-10-11.11:20:19::SCWBDomain::rd -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:19::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sha3_1003_
+TRACE::2025-10-11.11:20:19::SCWBDomain::tIP1_v1_0/src'
+
+TRACE::2025-10-11.11:20:19::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sha3_1003_t
+TRACE::2025-10-11.11:20:19::SCWBDomain::IP1_v1_0/src'
+
+TRACE::2025-10-11.11:20:19::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2025-10-11.11:20:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2025-10-11.11:20:19::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2025-10-11.11:20:19::SCWBDomain::nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:19::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone
+TRACE::2025-10-11.11:20:19::SCWBDomain::_v7_1/src'
+
+TRACE::2025-10-11.11:20:21::SCWBDomain::make[3]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone
+TRACE::2025-10-11.11:20:21::SCWBDomain::_v7_1/src/profile'
+
+TRACE::2025-10-11.11:20:21::SCWBDomain::make[3]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_
+TRACE::2025-10-11.11:20:21::SCWBDomain::v7_1/src/profile'
+
+TRACE::2025-10-11.11:20:21::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_
+TRACE::2025-10-11.11:20:21::SCWBDomain::v7_1/src'
+
+TRACE::2025-10-11.11:20:21::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2025-10-11.11:20:21::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.11:20:21::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.11:20:21::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:21::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_
+TRACE::2025-10-11.11:20:21::SCWBDomain::8/src'
+
+TRACE::2025-10-11.11:20:21::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_8
+TRACE::2025-10-11.11:20:21::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:20:21::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2025-10-11.11:20:21::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.11:20:21::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.11:20:21::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:21::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_
+TRACE::2025-10-11.11:20:21::SCWBDomain::3/src'
+
+TRACE::2025-10-11.11:20:21::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_3
+TRACE::2025-10-11.11:20:21::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:20:21::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_2/src"
+
+TRACE::2025-10-11.11:20:21::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.11:20:21::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.11:20:21::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:22::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_
+TRACE::2025-10-11.11:20:22::SCWBDomain::2/src'
+
+TRACE::2025-10-11.11:20:22::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_2
+TRACE::2025-10-11.11:20:22::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:20:22::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src"
+
+TRACE::2025-10-11.11:20:22::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.11:20:22::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.11:20:22::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:22::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrsa_v1_
+TRACE::2025-10-11.11:20:22::SCWBDomain::5/src'
+
+TRACE::2025-10-11.11:20:22::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrsa_v1_5
+TRACE::2025-10-11.11:20:22::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:20:22::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2025-10-11.11:20:22::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2025-10-11.11:20:22::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2025-10-11.11:20:22::SCWBDomain:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:22::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/coresightp
+TRACE::2025-10-11.11:20:22::SCWBDomain::s_dcc_v1_6/src'
+
+TRACE::2025-10-11.11:20:22::SCWBDomain::"Compiling coresightps_dcc"
+
+TRACE::2025-10-11.11:20:47::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/coresightps
+TRACE::2025-10-11.11:20:47::SCWBDomain::_dcc_v1_6/src'
+
+TRACE::2025-10-11.11:20:47::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2025-10-11.11:20:47::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2025-10-11.11:20:47::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2025-10-11.11:20:47::SCWBDomain::ostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:47::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_cortex
+TRACE::2025-10-11.11:20:47::SCWBDomain::a9_v2_8/src'
+
+TRACE::2025-10-11.11:20:47::SCWBDomain::"Compiling cpu_cortexa9"
+
+TRACE::2025-10-11.11:20:47::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/cpu_cortexa
+TRACE::2025-10-11.11:20:47::SCWBDomain::9_v2_8/src'
+
+TRACE::2025-10-11.11:20:47::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2025-10-11.11:20:47::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2025-10-11.11:20:47::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2025-10-11.11:20:47::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:47::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_0
+TRACE::2025-10-11.11:20:47::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:20:47::SCWBDomain::"Compiling ddrps"
+
+TRACE::2025-10-11.11:20:47::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_0/
+TRACE::2025-10-11.11:20:47::SCWBDomain::src'
+
+TRACE::2025-10-11.11:20:48::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2025-10-11.11:20:48::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.11:20:48::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.11:20:48::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:48::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcfg_v3_
+TRACE::2025-10-11.11:20:48::SCWBDomain::5/src'
+
+TRACE::2025-10-11.11:20:48::SCWBDomain::"Compiling devcfg"
+
+TRACE::2025-10-11.11:20:49::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/devcfg_v3_5
+TRACE::2025-10-11.11:20:49::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:20:49::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2025-10-11.11:20:49::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2025-10-11.11:20:49::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2025-10-11.11:20:49::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:49::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_5
+TRACE::2025-10-11.11:20:49::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:20:49::SCWBDomain::"Compiling dmaps"
+
+TRACE::2025-10-11.11:20:50::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_5/
+TRACE::2025-10-11.11:20:50::SCWBDomain::src'
+
+TRACE::2025-10-11.11:20:51::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2025-10-11.11:20:51::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.11:20:51::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.11:20:51::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:51::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugic_v4_
+TRACE::2025-10-11.11:20:51::SCWBDomain::1/src'
+
+TRACE::2025-10-11.11:20:51::SCWBDomain::"Compiling scugic"
+
+TRACE::2025-10-11.11:20:52::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scugic_v4_1
+TRACE::2025-10-11.11:20:52::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:20:52::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2025-10-11.11:20:52::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-11.11:20:52::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-11.11:20:52::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:52::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scutimer_v
+TRACE::2025-10-11.11:20:52::SCWBDomain::2_1/src'
+
+TRACE::2025-10-11.11:20:52::SCWBDomain::"Compiling scutimer"
+
+TRACE::2025-10-11.11:20:53::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scutimer_v2
+TRACE::2025-10-11.11:20:53::SCWBDomain::_1/src'
+
+TRACE::2025-10-11.11:20:53::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2025-10-11.11:20:53::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.11:20:53::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.11:20:53::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:53::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2_
+TRACE::2025-10-11.11:20:53::SCWBDomain::1/src'
+
+TRACE::2025-10-11.11:20:53::SCWBDomain::"Compiling scuwdt"
+
+TRACE::2025-10-11.11:20:54::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2_1
+TRACE::2025-10-11.11:20:54::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:20:54::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src"
+
+TRACE::2025-10-11.11:20:54::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2025-10-11.11:20:54::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2025-10-11.11:20:54::SCWBDomain::-nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:54::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sha3_1003_
+TRACE::2025-10-11.11:20:54::SCWBDomain::tIP1_v1_0/src'
+
+TRACE::2025-10-11.11:20:54::SCWBDomain::"Compiling sha3_1003_tIP1..."
+
+TRACE::2025-10-11.11:20:55::SCWBDomain::make[3]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sha3_1003_
+TRACE::2025-10-11.11:20:55::SCWBDomain::tIP1_v1_0/src'
+
+TRACE::2025-10-11.11:20:55::SCWBDomain::make[3]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sha3_1003_t
+TRACE::2025-10-11.11:20:55::SCWBDomain::IP1_v1_0/src'
+
+TRACE::2025-10-11.11:20:55::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/sha3_1003_t
+TRACE::2025-10-11.11:20:55::SCWBDomain::IP1_v1_0/src'
+
+TRACE::2025-10-11.11:20:55::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2025-10-11.11:20:55::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2025-10-11.11:20:55::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2025-10-11.11:20:55::SCWBDomain::tartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:20:55::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone
+TRACE::2025-10-11.11:20:55::SCWBDomain::_v7_1/src'
+
+TRACE::2025-10-11.11:20:55::SCWBDomain::"Compiling standalone"
+
+TRACE::2025-10-11.11:21:03::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_
+TRACE::2025-10-11.11:21:03::SCWBDomain::v7_1/src'
+
+TRACE::2025-10-11.11:21:03::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2025-10-11.11:21:03::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.11:21:03::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.11:21:03::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:03::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_
+TRACE::2025-10-11.11:21:03::SCWBDomain::8/src'
+
+TRACE::2025-10-11.11:21:03::SCWBDomain::"Compiling uartps"
+
+TRACE::2025-10-11.11:21:05::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_8
+TRACE::2025-10-11.11:21:05::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:21:05::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2025-10-11.11:21:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.11:21:05::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.11:21:05::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:05::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_
+TRACE::2025-10-11.11:21:05::SCWBDomain::3/src'
+
+TRACE::2025-10-11.11:21:05::SCWBDomain::"Compiling xadcps"
+
+TRACE::2025-10-11.11:21:06::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_3
+TRACE::2025-10-11.11:21:06::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:21:06::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_2/src"
+
+TRACE::2025-10-11.11:21:06::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.11:21:06::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.11:21:06::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:07::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_
+TRACE::2025-10-11.11:21:07::SCWBDomain::2/src'
+
+TRACE::2025-10-11.11:21:07::SCWBDomain::"Compiling XilFFs Library"
+
+TRACE::2025-10-11.11:21:07::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_2
+TRACE::2025-10-11.11:21:07::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:21:07::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src"
+
+TRACE::2025-10-11.11:21:07::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.11:21:07::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.11:21:07::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:07::SCWBDomain::make[2]: Entering directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrsa_v1_
+TRACE::2025-10-11.11:21:07::SCWBDomain::5/src'
+
+TRACE::2025-10-11.11:21:07::SCWBDomain::make[2]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilrsa_v1_5
+TRACE::2025-10-11.11:21:07::SCWBDomain::/src'
+
+TRACE::2025-10-11.11:21:07::SCWBDomain::'Finished building libraries'
+
+TRACE::2025-10-11.11:21:07::SCWBDomain::make[1]: Leaving directory 'D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2025-10-11.11:21:07::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c sd.c -o sd.o -Izynq_fsbl_bsp/ps7_cortexa9_0/
+TRACE::2025-10-11.11:21:07::SCWBDomain::include -I.
+
+TRACE::2025-10-11.11:21:08::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c nand.c -o nand.o -Izynq_fsbl_bsp/ps7_cortexa
+TRACE::2025-10-11.11:21:08::SCWBDomain::9_0/include -I.
+
+TRACE::2025-10-11.11:21:08::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c image_mover.c -o image_mover.o -Izynq_fsbl_b
+TRACE::2025-10-11.11:21:08::SCWBDomain::sp/ps7_cortexa9_0/include -I.
+
+TRACE::2025-10-11.11:21:08::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c md5.c -o md5.o -Izynq_fsbl_bsp/ps7_cortexa9_
+TRACE::2025-10-11.11:21:08::SCWBDomain::0/include -I.
+
+TRACE::2025-10-11.11:21:08::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c fsbl_hooks.c -o fsbl_hooks.o -Izynq_fsbl_bsp
+TRACE::2025-10-11.11:21:08::SCWBDomain::/ps7_cortexa9_0/include -I.
+
+TRACE::2025-10-11.11:21:09::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c main.c -o main.o -Izynq_fsbl_bsp/ps7_cortexa
+TRACE::2025-10-11.11:21:09::SCWBDomain::9_0/include -I.
+
+TRACE::2025-10-11.11:21:09::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c rsa.c -o rsa.o -Izynq_fsbl_bsp/ps7_cortexa9_
+TRACE::2025-10-11.11:21:09::SCWBDomain::0/include -I.
+
+TRACE::2025-10-11.11:21:09::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c nor.c -o nor.o -Izynq_fsbl_bsp/ps7_cortexa9_
+TRACE::2025-10-11.11:21:09::SCWBDomain::0/include -I.
+
+TRACE::2025-10-11.11:21:09::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c qspi.c -o qspi.o -Izynq_fsbl_bsp/ps7_cortexa
+TRACE::2025-10-11.11:21:09::SCWBDomain::9_0/include -I.
+
+TRACE::2025-10-11.11:21:09::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c ps7_init.c -o ps7_init.o -Izynq_fsbl_bsp/ps7
+TRACE::2025-10-11.11:21:09::SCWBDomain::_cortexa9_0/include -I.
+
+TRACE::2025-10-11.11:21:10::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c pcap.c -o pcap.o -Izynq_fsbl_bsp/ps7_cortexa
+TRACE::2025-10-11.11:21:10::SCWBDomain::9_0/include -I.
+
+TRACE::2025-10-11.11:21:10::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c fsbl_handoff.S -o fsbl_handoff.o -Izynq_fsbl
+TRACE::2025-10-11.11:21:10::SCWBDomain::_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2025-10-11.11:21:10::SCWBDomain::arm-none-eabi-gcc -o executable.elf  sd.o  nand.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  rsa.o  nor.o  qspi.o  ps7_init.o
+TRACE::2025-10-11.11:21:10::SCWBDomain::  pcap.o  fsbl_handoff.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=
+TRACE::2025-10-11.11:21:10::SCWBDomain::hard -Wl,-build-id=none -specs=Xilinx.spec  -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxi
+TRACE::2025-10-11.11:21:10::SCWBDomain::l,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group                              -Wl,--gc-sections -Lzy
+TRACE::2025-10-11.11:21:10::SCWBDomain::nq_fsbl_bsp/ps7_cortexa9_0/lib -L./ -Tlscript.ld
+
+LOG::2025-10-11.11:21:10::SCWSystem::Checking the domain standalone_domain
+LOG::2025-10-11.11:21:10::SCWSystem::Not a boot domain 
+LOG::2025-10-11.11:21:10::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2025-10-11.11:21:10::SCWDomain::Generating domain artifcats
+TRACE::2025-10-11.11:21:10::SCWMssOS::Generating standalone artifcats
+TRACE::2025-10-11.11:21:10::SCWMssOS::Copying the qemu file from  D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/fpga/shakelite2_save/vitis/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/qemu/
+TRACE::2025-10-11.11:21:10::SCWMssOS::Copying the qemu file from  D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/fpga/shakelite2_save/vitis/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/qemu/
+TRACE::2025-10-11.11:21:10::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-10-11.11:21:10::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:10::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:10::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:10::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.11:21:10::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.11:21:10::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.11:21:10::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.11:21:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.11:21:10::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.11:21:10::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.11:21:10::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.11:21:10::SCWMssOS::Completed writing the mss file at D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2025-10-11.11:21:10::SCWMssOS::Mss edits present, copying mssfile into export location D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.11:21:10::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-10-11.11:21:10::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-10-11.11:21:10::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2025-10-11.11:21:10::SCWMssOS::doing bsp build ... 
+TRACE::2025-10-11.11:21:10::SCWMssOS::System Command Ran  D: & cd  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2025-10-11.11:21:10::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2025-10-11.11:21:10::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2025-10-11.11:21:10::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2025-10-11.11:21:10::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:10::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2025-10-11.11:21:10::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2025-10-11.11:21:10::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2025-10-11.11:21:10::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:10::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2025-10-11.11:21:10::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-11.11:21:10::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-11.11:21:10::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:11::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2025-10-11.11:21:11::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.11:21:11::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.11:21:11::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:11::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2025-10-11.11:21:11::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-11.11:21:11::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-11.11:21:11::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:11::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2025-10-11.11:21:11::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.11:21:11::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.11:21:11::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:11::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2025-10-11.11:21:11::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2025-10-11.11:21:11::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2025-10-11.11:21:11::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:11::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2025-10-11.11:21:11::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.11:21:11::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.11:21:11::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:12::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src"
+
+TRACE::2025-10-11.11:21:12::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2025-10-11.11:21:12::SCWMssOS::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2025-10-11.11:21:12::SCWMssOS::rd -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:12::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2025-10-11.11:21:12::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2025-10-11.11:21:12::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2025-10-11.11:21:12::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:13::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2025-10-11.11:21:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.11:21:13::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.11:21:13::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:13::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2025-10-11.11:21:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-11.11:21:13::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-11.11:21:13::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:13::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2025-10-11.11:21:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2025-10-11.11:21:13::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2025-10-11.11:21:13::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:14::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2025-10-11.11:21:14::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2025-10-11.11:21:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2025-10-11.11:21:14::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2025-10-11.11:21:14::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:14::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2025-10-11.11:21:14::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2025-10-11.11:21:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2025-10-11.11:21:14::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2025-10-11.11:21:14::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:14::SCWMssOS::"Compiling ddrps"
+
+TRACE::2025-10-11.11:21:14::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2025-10-11.11:21:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.11:21:14::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.11:21:14::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:14::SCWMssOS::"Compiling devcfg"
+
+TRACE::2025-10-11.11:21:16::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2025-10-11.11:21:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2025-10-11.11:21:16::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2025-10-11.11:21:16::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:16::SCWMssOS::"Compiling dmaps"
+
+TRACE::2025-10-11.11:21:17::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2025-10-11.11:21:17::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.11:21:17::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.11:21:17::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:17::SCWMssOS::"Compiling scugic"
+
+TRACE::2025-10-11.11:21:18::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2025-10-11.11:21:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-11.11:21:18::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-11.11:21:18::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:18::SCWMssOS::"Compiling scutimer"
+
+TRACE::2025-10-11.11:21:19::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2025-10-11.11:21:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.11:21:19::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.11:21:19::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:19::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2025-10-11.11:21:20::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src"
+
+TRACE::2025-10-11.11:21:20::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2025-10-11.11:21:20::SCWMssOS::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2025-10-11.11:21:20::SCWMssOS::-nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:20::SCWMssOS::"Compiling sha3_1003_tIP1..."
+
+TRACE::2025-10-11.11:21:21::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2025-10-11.11:21:21::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2025-10-11.11:21:21::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2025-10-11.11:21:21::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:21::SCWMssOS::"Compiling standalone"
+
+TRACE::2025-10-11.11:21:28::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2025-10-11.11:21:28::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.11:21:28::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.11:21:28::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:28::SCWMssOS::"Compiling uartps"
+
+TRACE::2025-10-11.11:21:29::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2025-10-11.11:21:29::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-11.11:21:29::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-11.11:21:29::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-11.11:21:29::SCWMssOS::"Compiling xadcps"
+
+TRACE::2025-10-11.11:21:31::SCWMssOS::'Finished building libraries'
+
+TRACE::2025-10-11.11:21:31::SCWMssOS::Copying to export directory.
+TRACE::2025-10-11.11:21:31::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-10-11.11:21:31::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-10-11.11:21:31::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2025-10-11.11:21:31::SCWSystem::Completed Processing the sysconfig cpu_wrapper
+LOG::2025-10-11.11:21:31::SCWPlatform::Completed generating the artifacts for system configuration cpu_wrapper
+TRACE::2025-10-11.11:21:31::SCWPlatform::Started preparing the platform 
+TRACE::2025-10-11.11:21:31::SCWSystem::Writing the bif file for system config cpu_wrapper
+TRACE::2025-10-11.11:21:31::SCWSystem::dir created 
+TRACE::2025-10-11.11:21:31::SCWSystem::Writing the bif 
+TRACE::2025-10-11.11:21:31::SCWPlatform::Started writing the spfm file 
+TRACE::2025-10-11.11:21:31::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-10-11.11:21:31::SCWPlatform::Completed generating the platform
+TRACE::2025-10-11.11:21:31::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.11:21:31::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.11:21:31::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.11:21:31::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.11:21:31::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.11:21:31::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.11:21:31::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.11:21:31::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.11:21:31::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.11:21:31::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.11:21:31::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.11:21:31::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.11:21:31::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.11:21:31::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.11:21:31::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-11.11:21:31::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.11:21:31::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.11:21:31::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.11:21:31::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.11:21:31::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.11:21:31::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.11:21:31::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.11:21:31::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.11:21:31::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.11:21:31::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.11:21:31::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.11:21:31::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.11:21:31::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.11:21:31::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.11:21:31::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.11:21:31::SCWWriter::formatted JSON is {
+	"platformName":	"cpu_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"cpu_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/cpu_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"cpu_wrapper",
+	"systems":	[{
+			"systemName":	"cpu_wrapper",
+			"systemDesc":	"cpu_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"cpu_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"0cd0dcbb544b05849087effb0430dc63",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"bcd9bbf085b2dc69b0732fb7a2f2c432",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-10-11.11:21:31::SCWPlatform::updated the xpfm file.
+TRACE::2025-10-11.11:21:31::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw
+TRACE::2025-10-11.11:21:31::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitis/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-11.11:21:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-11.11:21:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-11.11:21:31::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-11.11:21:31::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitis/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-11.11:21:31::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitis/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss

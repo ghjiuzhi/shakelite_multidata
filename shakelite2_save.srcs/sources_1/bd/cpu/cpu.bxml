@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root MajorVersion="0" MinorVersion="39">
-  <CompositeFile CompositeFileTopName="cpu" CanBeSetAsTop="true" CanDisplayChildGraph="true">
+  <CompositeFile CompositeFileTopName="cpu" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1760079841"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1760079841"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1760079841"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1760079841"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1760154617"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1760154617"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1760154617"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1760154617"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\cpu_processing_system7_0_0\cpu_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>

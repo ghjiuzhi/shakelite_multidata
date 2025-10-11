@@ -1,0 +1,21 @@
+19:20:43 **** Incremental Build of configuration Debug for project new ****
+make all 
+D:/ruanjian/Vivado/Vitis/2019.2/gnuwin/bin/make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+D:/ruanjian/Vivado/Vitis/2019.2/gnuwin/bin/make --no-print-directory main-build
+Building file: ../src/test/benchmark.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test/benchmark.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/test/benchmark.d" -MT"src/test/benchmark.o" -o "src/test/benchmark.o" "../src/test/benchmark.c"
+In file included from ../src/test/../context.h:6,
+                 from ../src/test/../thash.h:4,
+                 from ../src/test/benchmark.c:7:
+../src/test/../params.h:4:37: fatal error: params/params-PARAMS.h: No such file or directory
+ #include xstr(params/params-PARAMS.h)
+                                     ^
+compilation terminated.
+make[1]: *** [src/test/subdir.mk:32: src/test/benchmark.o] Error 1
+make: *** [makefile:35: all] Error 2
+
+19:20:44 Build Finished (took 1s.177ms)
+
