@@ -6,29 +6,24 @@
 #include "xil_cache.h"
 #include "xtime_l.h"
 
-// Include all necessary SPHINCS+ headers
+// 包含所有必需的 SPHINCS+ 头文件
 #include "api.h"
 #include "params.h"
-#include "wots.h"
-#include "fors.h"
-#include "utils.h"
 
-// COMPILE-TIME SANITY CHECK:
-// If the SPHINCS+ parameters were not loaded correctly from params.h,
-// CRYPTO_BYTES will not be defined. This will cause a compile error.
+// 编译时健全性检查
 #if !defined(CRYPTO_BYTES)
     #error "SPHINCS+ parameters not loaded correctly. Please check params.h and your build settings."
 #endif
 
 #define MESSAGE_LEN 32
 
-/************************** Function Prototypes ***************************/
+/************************** 函数原型 ***************************/
 void print_hex(const char *label, const unsigned char *data, size_t len);
 int run_sphincs_test_forensic();
 void init_platform();
 void cleanup_platform();
 
-/* This declares the external hardware driver function so main.c knows about it */
+/* 声明外部硬件驱动函数 */
 extern void shake256_hw(uint8_t *out, size_t outlen, const uint8_t *in, const size_t inlen);
 
 
@@ -38,17 +33,17 @@ int main()
     int status;
     init_platform();
 
-    xil_printf("\r\n\n--- SPHINCS+ FORENSIC DEBUGGING TEST ---\r\n");
-    xil_printf("This test will print detailed steps to locate the failure point.\r\n");
-    xil_printf("SPHINCS+ Parameter Set: %s\r\n", xstr(PARAMS));
-    xil_printf("Expected Signature Bytes (CRYPTO_BYTES): %d\r\n\n", CRYPTO_BYTES);
+    xil_printf("\r\n\n--- SPHINCS+ 最终版法证调试测试 ---\r\n");
+    xil_printf("本测试将打印并比较真实的32位整数长度值，消除显示错误。\r\n");
+    xil_printf("SPHINCS+ 参数集: %s\r\n", xstr(PARAMS));
+    xil_printf("期望签名长度 (CRYPTO_BYTES): %d\r\n\n", CRYPTO_BYTES);
 
     status = run_sphincs_test_forensic();
 
     if (status == XST_SUCCESS) {
-        xil_printf("\r\n[TRUE SUCCESS] All steps completed and verified successfully!\r\n");
+        xil_printf("\r\n[测试通过] 所有步骤均已成功完成和验证！硬件加速功能正确！\r\n");
     } else {
-        xil_printf("\r\n[EXECUTION FAILED] The test failed at one of the steps above.\r\n");
+        xil_printf("\r\n[执行失败] 测试在上述某个步骤中失败。\r\n");
     }
 
     cleanup_platform();
@@ -64,75 +59,79 @@ int run_sphincs_test_forensic()
     static unsigned char sm[CRYPTO_BYTES + MESSAGE_LEN];
     static unsigned char mout[CRYPTO_BYTES + MESSAGE_LEN];
 
-    unsigned long long smlen;
+    unsigned long long smlen; // API要求使用 unsigned long long, 我们保留它
     unsigned long long mlen_out;
     int ret_val;
     XTime t_start, t_end;
 
-    xil_printf("--- Step 1: Preparing a %d-byte message ---\r\n", MESSAGE_LEN);
+    xil_printf("--- 步骤 1: 准备一个 %d 字节的消息 ---\r\n", MESSAGE_LEN);
     for (int i = 0; i < MESSAGE_LEN; i++) { m[i] = (unsigned char)i; }
-    print_hex("  Original Message", m, MESSAGE_LEN);
+    print_hex("  原始消息 (m)", m, MESSAGE_LEN);
 
-    xil_printf("\r\n--- Step 2: Generating keypair (PK: %d bytes, SK: %d bytes) ---\r\n", CRYPTO_PUBLICKEYBYTES, CRYPTO_SECRETKEYBYTES);
-    XTime_GetTime(&t_start);
+    xil_printf("\r\n--- 步骤 2: 生成密钥对 ---\r\n");
     if (crypto_sign_keypair(pk, sk) != 0) {
-        xil_printf("  [ERROR] Keypair generation failed!\r\n");
+        xil_printf("  [错误] 密钥对生成失败！\r\n");
         return XST_FAILURE;
     }
-    XTime_GetTime(&t_end);
-    xil_printf("  Keypair generated successfully in %llu clock cycles.\r\n", (unsigned long long)(t_end - t_start));
-    print_hex("  Public Key (first 32 bytes)", pk, 32);
+    xil_printf("  密钥对生成成功。\r\n");
+    print_hex("  公钥 (pk) (前 32 字节)", pk, 32);
 
-    xil_printf("\r\n--- Step 3: Signing the message ---\r\n");
-    xil_printf("  The signing process involves many hash calls. We will trace the main steps.\r\n");
-    XTime_GetTime(&t_start);
-    if (crypto_sign(sm, &smlen, m, MESSAGE_LEN, sk) != 0) {
-        xil_printf("  [ERROR] crypto_sign function returned an error!\r\n");
-        return XST_FAILURE;
-    }
-    XTime_GetTime(&t_end);
-    xil_printf("  crypto_sign function completed in %llu clock cycles.\r\n", (unsigned long long)(t_end - t_start));
-    xil_printf("  Reported total signed message length: %llu bytes.\r\n", smlen);
-
-    // --- BULLETPROOF SIGNATURE LENGTH CHECK ---
-    const unsigned long long expected_smlen = CRYPTO_BYTES + MESSAGE_LEN;
-    xil_printf("  Performing signature length check...\r\n");
-    if (smlen != expected_smlen) {
-        xil_printf("\r\n  [CRITICAL FAILURE] Signature length is INCORRECT!\r\n");
-        xil_printf("    Expected total length: %llu bytes\r\n", expected_smlen);
-        xil_printf("    Actual total length:   %llu bytes\r\n", smlen);
-        xil_printf("    This is definitive proof that the hardware accelerator is producing an incorrect hash value.\r\n");
-        xil_printf("    Halting test.\r\n");
-        return XST_FAILURE;
-    }
-    xil_printf("  Signature length is CORRECT.\r\n");
-    print_hex("  Signature part (first 32 bytes)", sm, 32);
-
-
-    xil_printf("\r\n--- Step 4: Verifying the signature ---\r\n");
-    XTime_GetTime(&t_start);
-    ret_val = crypto_sign_open(mout, &mlen_out, sm, smlen, pk);
-    XTime_GetTime(&t_end);
+    xil_printf("\r\n--- 步骤 3: 对消息进行签名 ---\r\n");
+    ret_val = crypto_sign(sm, &smlen, m, MESSAGE_LEN, sk);
 
     if (ret_val != 0) {
-        xil_printf("  [ERROR] Verification function returned code %d! Signature is INVALID.\r\n", ret_val);
+        xil_printf("  [错误] crypto_sign 函数返回了一个错误码: %d！\r\n", ret_val);
         return XST_FAILURE;
     }
-    xil_printf("  Signature verified successfully in %llu clock cycles.\r\n", (unsigned long long)(t_end - t_start));
+    xil_printf("  crypto_sign 函数执行完毕。\r\n");
 
-    xil_printf("\r\n--- Step 5: Final Check ---\r\n");
-    if (mlen_out != MESSAGE_LEN || memcmp(m, mout, MESSAGE_LEN) != 0) {
-        xil_printf("  [ERROR] Message content mismatch! Original and recovered messages are different.\r\n");
+    // **关键修改**：使用(int)进行打印，以获取真实值
+    xil_printf("  报告的总签名消息长度 (smlen): %d 字节。\r\n", (int)smlen);
+
+    // --- 决定性的签名长度检查 (使用int强制转换) ---
+    const int expected_smlen = CRYPTO_BYTES + MESSAGE_LEN;
+    const int actual_smlen = (int)smlen;
+
+    xil_printf("\r\n--- 步骤 3.1: 签名长度法证检查 (使用32位整数比较) ---\r\n");
+    xil_printf("  即将对以下【真实】数值进行比较:\r\n");
+    xil_printf("    - 期望签名长度 (expected_smlen): %d\r\n", expected_smlen);
+    xil_printf("    - 实际签名长度 (actual_smlen)  : %d\r\n", actual_smlen);
+
+    if (actual_smlen != expected_smlen) {
+        xil_printf("\r\n  [!!! 关键失败 !!!] 签名长度不正确！\r\n");
+        xil_printf("    -> 判断语句 if (%d != %d) 的结果为真。\r\n", actual_smlen, expected_smlen);
+        return XST_FAILURE;
+    } else {
+        xil_printf("\r\n  [判断通过] 签名长度正确。\r\n");
+        xil_printf("    -> 判断语句 if (%d != %d) 的结果为假。\r\n", actual_smlen, expected_smlen);
+    }
+    print_hex("  签名消息 (sm) (前 32 字节)", sm, 32);
+
+    xil_printf("\r\n--- 步骤 4: 验证签名 ---\r\n");
+    ret_val = crypto_sign_open(mout, &mlen_out, sm, smlen, pk);
+
+    if (ret_val != 0) {
+        xil_printf("  [错误] 验证函数返回错误码 %d！签名无效。\r\n", ret_val);
         return XST_FAILURE;
     }
-    xil_printf("  Original and recovered messages match perfectly.\r\n");
+    xil_printf("  签名验证函数成功返回 (返回码: %d)。\r\n", ret_val);
+    xil_printf("  恢复出的消息长度 (mlen_out): %d 字节。\r\n", (int)mlen_out);
+
+    // **新增的显式证据**
+    print_hex("  恢复的消息 (mout)", mout, (int)mlen_out);
+
+    xil_printf("\r\n--- 步骤 5: 最终内容检查 ---\r\n");
+    xil_printf("  比对内容: 原始消息 (m) vs 恢复的消息 (mout)\r\n");
+    if ((int)mlen_out != MESSAGE_LEN || memcmp(m, mout, MESSAGE_LEN) != 0) {
+        xil_printf("  [错误] 消息内容不匹配！\r\n");
+        return XST_FAILURE;
+    }
+    xil_printf("  原始消息和恢复的消息完全匹配。\r\n");
 
     return XST_SUCCESS;
 }
 
-
-/************************** Helper Functions ***************************/
-
+/************************** 辅助函数 ***************************/
 void print_hex(const char *label, const unsigned char *data, size_t len) {
     xil_printf("%s: ", label);
     for (size_t i = 0; i < len; i++) {

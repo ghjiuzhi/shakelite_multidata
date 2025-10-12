@@ -1,4 +1,4 @@
-11:56:48 **** Incremental Build of configuration Debug for project new ****
+13:32:32 **** Incremental Build of configuration Debug for project new ****
 make all 
 D:/ruanjian/Vivado/Vitis/2019.2/gnuwin/bin/make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -11,6 +11,13 @@ In file included from ../src/main.c:7:
 D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
  #pragma message ("For the sleep routines, Global timer is being used")
          ^~~~~~~
+../src/main.c: In function 'run_sphincs_test_forensic':
+../src/main.c:65:20: warning: unused variable 't_end' [-Wunused-variable]
+     XTime t_start, t_end;
+                    ^~~~~
+../src/main.c:65:11: warning: unused variable 't_start' [-Wunused-variable]
+     XTime t_start, t_end;
+           ^~~~~~~
 Finished building: ../src/main.c
  
 Building target: new.elf
@@ -21,9 +28,9 @@ Finished building target: new.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size new.elf  |tee "new.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  67556	   1544	  57656	 126756	  1ef24	new.elf
+  67268	   1544	  57656	 126468	  1ee04	new.elf
 Finished building: new.elf.size
  
 
-11:56:49 Build Finished (took 1s.474ms)
+13:32:34 Build Finished (took 1s.384ms)
 

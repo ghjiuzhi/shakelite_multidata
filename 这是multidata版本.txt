@@ -1,0 +1,2 @@
+vitisnew文件夹里面的source，main.c.bak ，main.c.bak，main.c.bak都是在main_testshakeabc_success.c.bak成功之前测试shake256的备份版本。
+main.c.succuss.bak是加上sphincs后的第一次验证成功的测试版本

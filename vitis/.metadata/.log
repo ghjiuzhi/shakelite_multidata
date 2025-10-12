@@ -8451,3 +8451,15 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-18: Launc
 
 !ENTRY com.xilinx.sdk.utils 1 0 2025-10-12 11:16:56.427
 !MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-12 12:32:38.958
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-184
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-12 12:32:38.974
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-184
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-12 12:32:39.180
+!MESSAGE Executing command: cmd /C D:\ruanjian\Vivado\Vitis\2019.2\bin\wbtcv.bat -mode batch -source vitis_webtalk.tcl
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-12 12:32:39.260
+!MESSAGE Executed Webtalk command
