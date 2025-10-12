@@ -618,3 +618,36 @@ void shake256(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen)
     // 直接调用我们的硬件驱动函数
     shake256_hw(out, outlen, in, inlen);
 }
+
+/*************************************************
+* Name:        shake256_sw_ref (Software Reference)
+*
+* Description: Original software implementation of SHAKE256 XOF.
+* This is the "golden standard" for our comparison test.
+*
+* Arguments:   - uint8_t *output: pointer to output
+* - size_t outlen: requested output length in bytes
+* - const uint8_t *input: pointer to input
+* - size_t inlen: length of input in bytes
+**************************************************/
+void shake256_sw_ref(uint8_t *output, size_t outlen,
+                     const uint8_t *input, size_t inlen)
+{
+    // 这是您提供的原始软件实现代码
+    size_t nblocks = outlen / SHAKE256_RATE;
+    uint8_t t[SHAKE256_RATE];
+    uint64_t s[25];
+
+    shake256_absorb(s, input, inlen);
+    shake256_squeezeblocks(output, nblocks, s);
+
+    output += nblocks * SHAKE256_RATE;
+    outlen -= nblocks * SHAKE256_RATE;
+
+    if (outlen) {
+        shake256_squeezeblocks(t, 1, s);
+        for (size_t i = 0; i < outlen; ++i) {
+            output[i] = t[i];
+        }
+    }
+}

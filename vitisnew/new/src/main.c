@@ -6,19 +6,16 @@
 #include "xil_cache.h"
 #include "xtime_l.h"
 
-// 包含所有必需的 SPHINCS+ 头文件
+// 包含所有必需的 SPHINCS+ 和 SHAKE 头文件
 #include "api.h"
 #include "params.h"
-
-// 编译时健全性检查
-#if !defined(CRYPTO_BYTES)
-    #error "SPHINCS+ parameters not loaded correctly. Please check params.h and your build settings."
-#endif
+#include "fips202.h" // <-- 包含纯软件 SHAKE 实现的头文件
 
 #define MESSAGE_LEN 32
 
 /************************** 函数原型 ***************************/
 void print_hex(const char *label, const unsigned char *data, size_t len);
+int run_shake256_comparison_test(); // <-- 对比测试函数
 int run_sphincs_test_forensic();
 void init_platform();
 void cleanup_platform();
@@ -33,17 +30,25 @@ int main()
     int status;
     init_platform();
 
-    xil_printf("\r\n\n--- SPHINCS+ 最终版法证调试测试 ---\r\n");
-    xil_printf("本测试将打印并比较真实的32位整数长度值，消除显示错误。\r\n");
-    xil_printf("SPHINCS+ 参数集: %s\r\n", xstr(PARAMS));
-    xil_printf("期望签名长度 (CRYPTO_BYTES): %d\r\n\n", CRYPTO_BYTES);
+    // --- 终极验证：直接对比软硬件哈希函数 ---
+    xil_printf("\r\n\n--- SHAKE256 软硬件实现对比测试 (增强版) ---\r\n");
+    status = run_shake256_comparison_test();
+    if (status != XST_SUCCESS) {
+        xil_printf("\r\n[对比失败] 硬件 SHAKE256 实现与软件不一致！测试终止。\r\n");
+        cleanup_platform();
+        return XST_FAILURE;
+    }
+    xil_printf("\r\n[对比成功] 您的硬件 SHAKE256 实现与纯软件参考版本完全一致！\r\n");
 
+
+    // --- 完整的 SPHINCS+ 应用测试 ---
+    xil_printf("\r\n\n--- SPHINCS+ 最终版法证调试测试 ---\r\n");
     status = run_sphincs_test_forensic();
 
     if (status == XST_SUCCESS) {
         xil_printf("\r\n[测试通过] 所有步骤均已成功完成和验证！硬件加速功能正确！\r\n");
     } else {
-        xil_printf("\r\n[执行失败] 测试在上述某个步骤中失败。\r\n");
+        xil_printf("\r\n[执行失败] SPHINCS+ 测试在上述某个步骤中失败。\r\n");
     }
 
     cleanup_platform();
@@ -51,18 +56,122 @@ int main()
 }
 
 /*****************************************************************************/
+/**
+* @brief 对比硬件和软件 SHAKE256 实现的输出，作为“黄金标准”测试。
+*/
+int run_shake256_comparison_test()
+{
+    // 准备几组不同的测试输入
+    unsigned char input1[3] = "abc";
+    unsigned char input2[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    unsigned char input3[64];
+    for(int i=0; i<64; i++) { input3[i] = i; }
+
+    // --- 新增的测试用例 ---
+    // 将64位整数看作一个8字节的数组
+    uint64_t val4 = 0x0123456789abcdefULL;
+    uint64_t val5 = 0xfedcba9876543210ULL;
+    // 注意：大端序排列，最高有效字节在前
+    unsigned char input4[8] = {0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef};
+    unsigned char input5[8] = {0xfe, 0xdc, 0xba, 0x98, 0x76, 0x54, 0x32, 0x10};
+
+
+    unsigned char hw_output[64];
+    unsigned char sw_output[64];
+    int status = XST_SUCCESS;
+
+    // --- 测试用例 1: "abc" ---
+    xil_printf("\r\n--- 测试用例 1: 输入 'abc' (3字节) ---\r\n");
+    shake256_hw(hw_output, 32, input1, 3); // 硬件计算
+    shake256_sw_ref(sw_output, 32, input1, 3);    // 软件计算
+
+    print_hex("  硬件输出", hw_output, 32);
+    print_hex("  软件参考", sw_output, 32);
+
+    if (memcmp(hw_output, sw_output, 32) != 0) {
+        xil_printf("  [错误] 测试用例 1 输出不匹配！\r\n");
+        status = XST_FAILURE;
+    } else {
+        xil_printf("  [成功] 测试用例 1 输出匹配。\r\n");
+    }
+
+    // --- 测试用例 2: 10字节的二进制数据 ---
+    xil_printf("\r\n--- 测试用例 2: 输入 10字节 二进制数据 ---\r\n");
+    shake256_hw(hw_output, 32, input2, 10);
+    shake256_sw_ref(sw_output, 32, input2, 10);
+
+    print_hex("  硬件输出", hw_output, 32);
+    print_hex("  软件参考", sw_output, 32);
+
+    if (memcmp(hw_output, sw_output, 32) != 0) {
+        xil_printf("  [错误] 测试用例 2 输出不匹配！\r\n");
+        status = XST_FAILURE;
+    } else {
+        xil_printf("  [成功] 测试用例 2 输出匹配。\r\n");
+    }
+
+    // --- 测试用例 3: 64字节的二进制数据 ---
+    xil_printf("\r\n--- 测试用例 3: 输入 64字节 二进制数据 ---\r\n");
+    shake256_hw(hw_output, 64, input3, 64);
+    shake256_sw_ref(sw_output, 64, input3, 64);
+
+    print_hex("  硬件输出 (前32字节)", hw_output, 32);
+    print_hex("  软件参考 (前32字节)", sw_output, 32);
+
+    if (memcmp(hw_output, sw_output, 64) != 0) {
+        xil_printf("  [错误] 测试用例 3 输出不匹配！\r\n");
+        status = XST_FAILURE;
+    } else {
+        xil_printf("  [成功] 测试用例 3 输出匹配。\r\n");
+    }
+
+    // --- 新增测试用例 4 ---
+    xil_printf("\r\n--- 测试用例 4: 输入 0x0123456789abcdef (8字节) ---\r\n");
+    shake256_hw(hw_output, 32, input4, 8);
+    shake256_sw_ref(sw_output, 32, input4, 8);
+
+    print_hex("  硬件输出", hw_output, 32);
+    print_hex("  软件参考", sw_output, 32);
+
+    if (memcmp(hw_output, sw_output, 32) != 0) {
+        xil_printf("  [错误] 测试用例 4 输出不匹配！\r\n");
+        status = XST_FAILURE;
+    } else {
+        xil_printf("  [成功] 测试用例 4 输出匹配。\r\n");
+    }
+
+    // --- 新增测试用例 5 ---
+    xil_printf("\r\n--- 测试用例 5: 输入 0xfedcba9876543210 (8字节) ---\r\n");
+    shake256_hw(hw_output, 32, input5, 8);
+    shake256_sw_ref(sw_output, 32, input5, 8);
+
+    print_hex("  硬件输出", hw_output, 32);
+    print_hex("  软件参考", sw_output, 32);
+
+    if (memcmp(hw_output, sw_output, 32) != 0) {
+        xil_printf("  [错误] 测试用例 5 输出不匹配！\r\n");
+        status = XST_FAILURE;
+    } else {
+        xil_printf("  [成功] 测试用例 5 输出匹配。\r\n");
+    }
+
+    return status;
+}
+
+
+/*****************************************************************************/
 int run_sphincs_test_forensic()
 {
+    // ... (这个函数保持不变) ...
     static unsigned char pk[CRYPTO_PUBLICKEYBYTES];
     static unsigned char sk[CRYPTO_SECRETKEYBYTES];
     static unsigned char m[MESSAGE_LEN];
     static unsigned char sm[CRYPTO_BYTES + MESSAGE_LEN];
     static unsigned char mout[CRYPTO_BYTES + MESSAGE_LEN];
 
-    unsigned long long smlen; // API要求使用 unsigned long long, 我们保留它
+    unsigned long long smlen;
     unsigned long long mlen_out;
     int ret_val;
-    XTime t_start, t_end;
 
     xil_printf("--- 步骤 1: 准备一个 %d 字节的消息 ---\r\n", MESSAGE_LEN);
     for (int i = 0; i < MESSAGE_LEN; i++) { m[i] = (unsigned char)i; }
@@ -84,26 +193,17 @@ int run_sphincs_test_forensic()
         return XST_FAILURE;
     }
     xil_printf("  crypto_sign 函数执行完毕。\r\n");
-
-    // **关键修改**：使用(int)进行打印，以获取真实值
     xil_printf("  报告的总签名消息长度 (smlen): %d 字节。\r\n", (int)smlen);
 
-    // --- 决定性的签名长度检查 (使用int强制转换) ---
     const int expected_smlen = CRYPTO_BYTES + MESSAGE_LEN;
     const int actual_smlen = (int)smlen;
 
     xil_printf("\r\n--- 步骤 3.1: 签名长度法证检查 (使用32位整数比较) ---\r\n");
-    xil_printf("  即将对以下【真实】数值进行比较:\r\n");
-    xil_printf("    - 期望签名长度 (expected_smlen): %d\r\n", expected_smlen);
-    xil_printf("    - 实际签名长度 (actual_smlen)  : %d\r\n", actual_smlen);
-
     if (actual_smlen != expected_smlen) {
         xil_printf("\r\n  [!!! 关键失败 !!!] 签名长度不正确！\r\n");
-        xil_printf("    -> 判断语句 if (%d != %d) 的结果为真。\r\n", actual_smlen, expected_smlen);
         return XST_FAILURE;
     } else {
-        xil_printf("\r\n  [判断通过] 签名长度正确。\r\n");
-        xil_printf("    -> 判断语句 if (%d != %d) 的结果为假。\r\n", actual_smlen, expected_smlen);
+        xil_printf("  [判断通过] 签名长度正确。\r\n");
     }
     print_hex("  签名消息 (sm) (前 32 字节)", sm, 32);
 
@@ -116,12 +216,9 @@ int run_sphincs_test_forensic()
     }
     xil_printf("  签名验证函数成功返回 (返回码: %d)。\r\n", ret_val);
     xil_printf("  恢复出的消息长度 (mlen_out): %d 字节。\r\n", (int)mlen_out);
-
-    // **新增的显式证据**
     print_hex("  恢复的消息 (mout)", mout, (int)mlen_out);
 
     xil_printf("\r\n--- 步骤 5: 最终内容检查 ---\r\n");
-    xil_printf("  比对内容: 原始消息 (m) vs 恢复的消息 (mout)\r\n");
     if ((int)mlen_out != MESSAGE_LEN || memcmp(m, mout, MESSAGE_LEN) != 0) {
         xil_printf("  [错误] 消息内容不匹配！\r\n");
         return XST_FAILURE;
@@ -131,7 +228,9 @@ int run_sphincs_test_forensic()
     return XST_SUCCESS;
 }
 
+
 /************************** 辅助函数 ***************************/
+
 void print_hex(const char *label, const unsigned char *data, size_t len) {
     xil_printf("%s: ", label);
     for (size_t i = 0; i < len; i++) {
@@ -141,7 +240,6 @@ void print_hex(const char *label, const unsigned char *data, size_t len) {
 }
 
 void init_platform() {
-    Xil_DCacheDisable();
     Xil_ICacheEnable();
     Xil_DCacheEnable();
 }

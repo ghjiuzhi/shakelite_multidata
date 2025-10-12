@@ -2,9 +2,9 @@
 #include "xparameters.h"
 #include "xil_io.h"
 #include <string.h>
-#include "sha3_1003_tIP1.h" // Includes low-level macros
+#include "sha3_1003_tIP1.h" // 包含底層宏定義
 
-/* Definitions from your verified test code */
+/* 從您已驗證的測試代碼中引用的定義 */
 #define IP_CORE_BASEADDR        XPAR_SHA3_1003_TIP1_0_S0_AXI_BASEADDR
 #define REG_CONTROL_OFFSET      0x00
 #define REG_DIN_LOW_OFFSET      0x04
@@ -12,20 +12,24 @@
 #define REG_CONTROL2_OFFSET     0x0C
 #define REG_STATUS_OFFSET       0x10
 #define REG_RESULT_START_OFFSET 0x14
+
+/* 從您已驗證的測試代碼中引用的控制位定義 */
 #define CONTROL_START_BIT       (1 << 3)
 #define CONTROL2_LAST_DIN_BIT   (1 << 0)
 #define CONTROL2_DIN_VALID_BIT  (1 << 5)
 #define CONTROL2_DOUT_READY_BIT (1 << 6)
 #define STATUS_RESULT_READY_BIT (1 << 5)
+
 #define RESULT_REG_COUNT 42
+#define MODE_SHAKE_256   1 // SHAKE-256 模式
 
 /**
- * @brief Reorders registers from back-to-front and handles endianness.
+ * @brief 將硬件寄存器的輸出從後向前重新排序，並處理字節序。
  */
-static void reorder_hardware_output(unsigned char* dest, const u32* src_regs, size_t bytes_to_copy) {
-    size_t num_regs_to_process = (bytes_to_copy + 3) / 4;
+static void reorder_and_swap_bytes(unsigned char* dest, const u32* src, size_t num_bytes_to_reorder) {
+    size_t num_regs_to_process = (num_bytes_to_reorder + 3) / 4;
     for (size_t i = 0; i < num_regs_to_process; i++) {
-        u32 current_reg_val = src_regs[RESULT_REG_COUNT - 1 - i];
+        u32 current_reg_val = src[RESULT_REG_COUNT - 1 - i];
         dest[i * 4 + 0] = (current_reg_val >> 24) & 0xFF;
         dest[i * 4 + 1] = (current_reg_val >> 16) & 0xFF;
         dest[i * 4 + 2] = (current_reg_val >> 8)  & 0xFF;
@@ -34,7 +38,7 @@ static void reorder_hardware_output(unsigned char* dest, const u32* src_regs, si
 }
 
 /**
- * @brief Drives the SHAKE256 hardware IP. (Final Integration Version)
+ * @brief 驅動 SHAKE256 硬件 IP (最終修正版 - 嚴格遵循已驗證邏輯)
  */
 void shake256_hw(uint8_t *out, size_t outlen, const uint8_t *in, const size_t inlen)
 {
@@ -43,53 +47,70 @@ void shake256_hw(uint8_t *out, size_t outlen, const uint8_t *in, const size_t in
     const uint8_t *data_ptr = in;
     int timeout;
 
-    u32 control_val = 1; // Mode 1: Shake-256
-    Xil_Out32(base_addr + REG_CONTROL_OFFSET, control_val);
-    u32 control2_base = CONTROL2_DOUT_READY_BIT;
-    Xil_Out32(base_addr + REG_CONTROL2_OFFSET, control2_base);
+    /* --- 步驟 1 & 2: 設置模式並發送啟動脈沖 (完全仿照您的代碼) --- */
+    u32 control_val = (MODE_SHAKE_256 & 0x7);
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val);
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val | CONTROL_START_BIT);
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val);
 
-    Xil_Out32(base_addr + REG_CONTROL_OFFSET, control_val | CONTROL_START_BIT);
-    Xil_Out32(base_addr + REG_CONTROL_OFFSET, control_val);
-
-    while (remaining_len >= 8) {
+    /* --- 步驟 3: 循環發送數據塊 --- */
+    while (remaining_len > 0) {
         u64 chunk = 0;
-        for(int i=0; i<8; i++) {
+        size_t bytes_to_process = (remaining_len >= 8) ? 8 : remaining_len;
+
+        // **正確的大端序加載** (基於您部分成功的代碼)
+        for (size_t i = 0; i < bytes_to_process; i++) {
             chunk |= (u64)data_ptr[i] << (56 - (i * 8));
         }
-        Xil_Out32(base_addr + REG_DIN_HIGH_OFFSET, (u32)(chunk >> 32));
-        Xil_Out32(base_addr + REG_DIN_LOW_OFFSET,  (u32)(chunk & 0xFFFFFFFF));
-        Xil_Out32(base_addr + REG_CONTROL2_OFFSET, control2_base | CONTROL2_DIN_VALID_BIT);
-        Xil_Out32(base_addr + REG_CONTROL2_OFFSET, control2_base);
-        data_ptr += 8;
-        remaining_len -= 8;
-    }
 
-    u64 last_chunk = 0;
-    if (remaining_len > 0) {
-        for (size_t i = 0; i < remaining_len; i++) {
-            last_chunk |= (u64)data_ptr[i] << (56 - (i * 8));
+        SHA3_1003_TIP1_mWriteReg(base_addr, REG_DIN_HIGH_OFFSET, (u32)(chunk >> 32));
+        SHA3_1003_TIP1_mWriteReg(base_addr, REG_DIN_LOW_OFFSET,  (u32)(chunk & 0xFFFFFFFF));
+
+        // **正確的控制流** (基於您成功運行的測試代碼)
+        if (remaining_len <= 8) {
+            // 這是最後一塊數據
+            u32 control2_final = CONTROL2_LAST_DIN_BIT | ((u32)bytes_to_process << 1);
+            SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_final | CONTROL2_DIN_VALID_BIT);
+            SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, CONTROL2_DOUT_READY_BIT); // 立即發送結束信號
+        } else {
+            // 這不是最後一塊數據
+            u32 control2_val = (8 << 1); //長度為8
+            SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val | CONTROL2_DIN_VALID_BIT);
+            SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val);
         }
-    }
-    Xil_Out32(base_addr + REG_DIN_HIGH_OFFSET, (u32)(last_chunk >> 32));
-    Xil_Out32(base_addr + REG_DIN_LOW_OFFSET,  (u32)(last_chunk & 0xFFFFFFFF));
-    u32 control2_final = control2_base | CONTROL2_LAST_DIN_BIT | ((u32)remaining_len << 1);
-    Xil_Out32(base_addr + REG_CONTROL2_OFFSET, control2_final);
-    Xil_Out32(base_addr + REG_CONTROL2_OFFSET, control2_final | CONTROL2_DIN_VALID_BIT);
-    Xil_Out32(base_addr + REG_CONTROL2_OFFSET, control2_final);
 
+        data_ptr += bytes_to_process;
+        remaining_len -= bytes_to_process;
+    }
+
+    // **處理輸入為0的特殊情況**
+    if (inlen == 0) {
+        SHA3_1003_TIP1_mWriteReg(base_addr, REG_DIN_HIGH_OFFSET, 0);
+        SHA3_1003_TIP1_mWriteReg(base_addr, REG_DIN_LOW_OFFSET,  0);
+        u32 control2_final = CONTROL2_LAST_DIN_BIT | (0 << 1); // 長度為0
+        SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_final | CONTROL2_DIN_VALID_BIT);
+        SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, CONTROL2_DOUT_READY_BIT);
+    }
+
+    /* --- 步驟 4: 等待硬件計算完成 --- */
     timeout = 1000000;
-    while (((Xil_In32(base_addr + REG_STATUS_OFFSET) & STATUS_RESULT_READY_BIT) == 0) && (timeout > 0)) {
+    while (((SHA3_1003_TIP1_mReadReg(base_addr, REG_STATUS_OFFSET) & STATUS_RESULT_READY_BIT) == 0) && (timeout > 0)) {
         timeout--;
     }
-    if (timeout <= 0) { return; }
+    if (timeout <= 0) {
+        xil_printf("[ERROR] Timeout waiting for hardware result in shake256_hw!\r\n");
+        memset(out, 0xEE, outlen);
+        return;
+    }
 
+    /* --- 步驟 5: 讀取並重排結果 --- */
     u32 result_regs[RESULT_REG_COUNT];
     for (int i = 0; i < RESULT_REG_COUNT; i++) {
-        result_regs[i] = Xil_In32(base_addr + REG_RESULT_START_OFFSET + i * 4);
+        result_regs[i] = SHA3_1003_TIP1_mReadReg(base_addr, REG_RESULT_START_OFFSET + i * 4);
     }
 
     unsigned char reordered_buffer[sizeof(result_regs)];
-    reorder_hardware_output(reordered_buffer, result_regs, sizeof(reordered_buffer));
+    reorder_and_swap_bytes(reordered_buffer, result_regs, sizeof(reordered_buffer));
 
     memcpy(out, reordered_buffer, outlen);
 }

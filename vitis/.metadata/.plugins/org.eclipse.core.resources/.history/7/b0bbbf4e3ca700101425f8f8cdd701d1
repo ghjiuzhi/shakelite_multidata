@@ -1,0 +1,162 @@
+#include "xil_printf.h"
+#include "xil_types.h"
+#include "xstatus.h"
+#include "xil_cache.h"
+#include "xil_io.h"
+#include <string.h>
+
+/* Include the low-level driver definitions */
+#include "sha3_1003_tIP1.h"
+
+/************************** Constant Definitions ***************************/
+#define IP_CORE_BASEADDR        XPAR_SHA3_1003_TIP1_0_S0_AXI_BASEADDR
+
+/* Register address offsets */
+#define REG_CONTROL_OFFSET      0x00
+#define REG_DIN_LOW_OFFSET      0x04
+#define REG_DIN_HIGH_OFFSET     0x08
+#define REG_CONTROL2_OFFSET     0x0C
+#define REG_STATUS_OFFSET       0x10
+#define REG_RESULT_START_OFFSET 0x14
+
+/* Control bit definitions */
+#define CONTROL_START_BIT       (1 << 3)
+#define CONTROL2_LAST_DIN_BIT   (1 << 0)
+#define CONTROL2_DIN_VALID_BIT  (1 << 5)
+#define CONTROL2_DOUT_READY_BIT (1 << 6)
+#define STATUS_RESULT_READY_BIT (1 << 5)
+
+#define RESULT_REG_COUNT 42
+#define MODE_SHAKE_256   1 // Mode changed to SHAKE-256
+
+/************************** Function Prototypes ****************************/
+void init_platform();
+void cleanup_platform();
+int final_hardware_test(u32 base_addr);
+void print_hex_inline(const char *label, const unsigned char *data, size_t len);
+void reorder_and_swap_bytes(unsigned char* dest, const u32* src, size_t num_bytes_to_reorder);
+
+/*****************************************************************************/
+int main()
+{
+    init_platform();
+    xil_printf("\r\n--- Final Hardware SHAKE256 16-Byte Test ---\r\n");
+    xil_printf("--- Logic and Input from first example, Mode set to SHAKE256 ---\r\n\n");
+
+    int status = final_hardware_test(IP_CORE_BASEADDR);
+
+    cleanup_platform();
+    return status;
+}
+
+/*****************************************************************************/
+/**
+ * @brief Tests the SHAKE256 hardware core using the 16-byte input and
+ * sequential logic.
+ * @param base_addr The base address of the IP core.
+ * @return XST_SUCCESS on match, XST_FAILURE on mismatch.
+ */
+int final_hardware_test(u32 base_addr)
+{
+    u32 result_regs[RESULT_REG_COUNT];
+    unsigned char reordered_hardware_output[32]; // SHAKE256 output requested is 32 bytes
+
+    /* The correct SHAKE256 hash (first 32 bytes) for the 16-byte input:
+       0123456789abcdeffedcba9876543210 */
+    const unsigned char golden_output[32] = {
+        0x5D, 0x9E, 0x61, 0xB1, 0x83, 0x65, 0x4B, 0x0D, 0x73, 0xF9, 0x85, 0x9F,
+        0x48, 0x51, 0x21, 0x41, 0x52, 0x54, 0x12, 0x49, 0x6A, 0x77, 0xDA, 0x4E,
+        0x41, 0xCB, 0x2C, 0x27, 0x59, 0x19, 0x31, 0x5D
+    };
+
+    xil_printf("DEBUG: Starting SHAKE256 calculation for 16-byte input\r\n");
+
+    /* --- Step 1: Set mode (SHAKE-256) without starting --- */
+    u32 control_val = (MODE_SHAKE_256 & 0x7);
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val);
+    xil_printf("DEBUG: Mode set. Control reg = 0x%08X\r\n", control_val);
+
+    /* --- Step 2: Send a start pulse --- */
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val | CONTROL_START_BIT);
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val); // Clear start bit
+    xil_printf("DEBUG: Start pulse sent.\r\n");
+
+    /* --- Step 3: Send the first 8-byte data chunk --- */
+    u64 first_data = 0x0123456789abcdefULL;
+    u32 first_low = (u32)(first_data & 0xFFFFFFFF);
+    u32 first_high = (u32)(first_data >> 32);
+
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_DIN_HIGH_OFFSET, first_high);
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_DIN_LOW_OFFSET, first_low);
+    xil_printf("DEBUG: Wrote first data - Low32=0x%08X, High32=0x%08X\r\n", first_low, first_high);
+
+    // Create din_valid pulse for the first chunk (last_din=0, last_din_byte=8)
+    u32 control2_val = CONTROL2_DIN_VALID_BIT | (8 << 1);
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val);
+    control2_val &= ~CONTROL2_DIN_VALID_BIT; // Clear din_valid
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val);
+
+
+    /* --- Step 4: Send the second (and last) 8-byte data chunk --- */
+    u64 second_data = 0xfedcba9876543210ULL;
+    u32 second_low = (u32)(second_data & 0xFFFFFFFF);
+    u32 second_high = (u32)(second_data >> 32);
+
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_DIN_HIGH_OFFSET, second_high);
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_DIN_LOW_OFFSET, second_low);
+    xil_printf("DEBUG: Wrote second data - Low32=0x%08X, High32=0x%08X\r\n", second_low, second_high);
+
+    // Set din_valid=1, last_din=1, last_din_byte=8
+    control2_val = CONTROL2_DIN_VALID_BIT | (8 << 1) | CONTROL2_LAST_DIN_BIT;
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val);
+    xil_printf("DEBUG: Send last data valid. Control2 reg = 0x%08X\r\n", control2_val);
+
+    /* --- Step 5: Clear din_valid and set dout_ready to signal input is complete --- */
+    control2_val = CONTROL2_DOUT_READY_BIT; // dout_ready=1, clear all other bits
+    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val);
+    xil_printf("DEBUG: Input complete, set dout_ready. Control2 reg = 0x%08X\r\n", control2_val);
+
+    /* --- Step 6: Read all raw result registers --- */
+    for (int i = 0; i < RESULT_REG_COUNT; i++) {
+        result_regs[i] = SHA3_1003_TIP1_mReadReg(base_addr, REG_RESULT_START_OFFSET + i * 4);
+    }
+
+    /* --- Step 7: Reorder data for comparison --- */
+    reorder_and_swap_bytes(reordered_hardware_output, result_regs, 32);
+
+    /* --- Step 8: Final Verdict --- */
+    xil_printf("\r\n--- Final Verdict ---\r\n");
+    print_hex_inline("  Expected Output (Golden Vector) ", golden_output, 32);
+    print_hex_inline("  Actual Reordered Output (Hardware)", reordered_hardware_output, 32);
+
+    if (memcmp(reordered_hardware_output, golden_output, 32) == 0) {
+        xil_printf("\r\n[HARDWARE IP PASSED!] The hardware output matches the golden vector.\r\n");
+        return XST_SUCCESS;
+    } else {
+        xil_printf("\r\n[HARDWARE IP FAILED!] The hardware result does not match.\r\n");
+        return XST_FAILURE;
+    }
+}
+
+/**
+ * @brief Reorders registers from back-to-front and handles endianness.
+ */
+void reorder_and_swap_bytes(unsigned char* dest, const u32* src, size_t num_bytes_to_reorder) {
+    size_t num_regs_to_process = (num_bytes_to_reorder + 3) / 4;
+    for (size_t i = 0; i < num_regs_to_process; i++) {
+        u32 current_reg_val = src[RESULT_REG_COUNT - 1 - i];
+        dest[i * 4 + 0] = (current_reg_val >> 24) & 0xFF;
+        dest[i * 4 + 1] = (current_reg_val >> 16) & 0xFF;
+        dest[i * 4 + 2] = (current_reg_val >> 8)  & 0xFF;
+        dest[i * 4 + 3] = (current_reg_val >> 0)  & 0xFF;
+    }
+}
+
+/************************** Helper Functions ***************************/
+void print_hex_inline(const char *label, const unsigned char *data, size_t len) {
+    xil_printf("%s: ", label);
+    for (size_t i = 0; i < len; i++) { xil_printf("%02x", data[i]); }
+    xil_printf("\r\n");
+}
+void init_platform() { Xil_ICacheEnable(); Xil_DCacheEnable(); }
+void cleanup_platform() { Xil_DCacheDisable(); Xil_ICacheDisable(); }

@@ -44,4 +44,7 @@ void sha3_512_inc_finalize(uint8_t *output, uint64_t *s_inc);
 
 void sha3_512(uint8_t *output, const uint8_t *input, size_t inlen);
 
+// Declaration for the software reference implementation for testing purposes
+void shake256_sw_ref(uint8_t *output, size_t outlen, const uint8_t *input, size_t inlen);
+
 #endif

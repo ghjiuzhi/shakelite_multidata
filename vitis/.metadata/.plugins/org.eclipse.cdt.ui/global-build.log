@@ -1,24 +1,24 @@
 Nothing to build in platform 'cpu_wrapper'
 
-11:16:41 **** Incremental Build of configuration Debug for project shakelite2 ****
+15:47:23 **** Incremental Build of configuration Debug for project shakelite2 ****
 make all 
 D:/ruanjian/Vivado/Vitis/2019.2/gnuwin/bin/make --no-print-directory pre-build
 a9-linaro-pre-build-step
  
 D:/ruanjian/Vivado/Vitis/2019.2/gnuwin/bin/make --no-print-directory main-build
-Building file: ../src/main.c
+Building file: ../src/main1.c
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/fpga/shakelite2_save/vitis/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/fpga/shakelite2_save/vitis/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main1.d" -MT"src/main1.o" -o "src/main1.o" "../src/main1.c"
+Finished building: ../src/main1.c
  
 Building target: shakelite2.elf
 Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/fpga/shakelite2_save/vitis/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bsplib/lib -o "shakelite2.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/fpga/shakelite2_save/vitis/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bsplib/lib -o "shakelite2.elf"  ./src/main1.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: shakelite2.elf
  
 Invoking: ARM v7 Print Size
 arm-none-eabi-size shakelite2.elf  |tee "shakelite2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  34300	   1544	  23256	  59100	   e6dc	shakelite2.elf
+  34344	   1544	  23256	  59144	   e708	shakelite2.elf
 Finished building: shakelite2.elf.size
  

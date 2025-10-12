@@ -1,0 +1,164 @@
+/**
+ * @file sha3_16byte_test.c
+ * @brief 简化的SHA3测试函数 - 处理16字节输入，分两次8字节输入（去除所有延时逻辑）
+ */
+
+#include "xparameters.h"
+#include "stdio.h"
+
+#include "sha3_1003_tIP1.h"
+#include "xil_io.h"
+
+// 寄存器偏移定义
+#define REG_CONTROL      SHA3_1003_TIP1_S0_AXI_SLV_REG0_OFFSET   // 控制寄存器: mode[2:0], start, hold
+#define REG_INPUT_LOW    SHA3_1003_TIP1_S0_AXI_SLV_REG1_OFFSET   // 输入数据低32位
+#define REG_INPUT_HIGH   SHA3_1003_TIP1_S0_AXI_SLV_REG2_OFFSET   // 输入数据高32位
+#define REG_CONTROL2     SHA3_1003_TIP1_S0_AXI_SLV_REG3_OFFSET   // 控制寄存器2: last_din, din_valid, dout_ready, last_din_byte[3:0]
+#define REG_STATUS       SHA3_1003_TIP1_S0_AXI_SLV_REG4_OFFSET   // 状态寄存器: state[2:0], busy, ready
+#define REG_RESULT_BASE  SHA3_1003_TIP1_S0_AXI_SLV_REG5_OFFSET   // 结果寄存器起始地址
+
+// 状态位定义
+#define STATUS_RESULT_READY 0x20   // 结果准备就绪标志 (bit 5)
+
+// 模式定义
+#define MODE_SHA3_256       2      // SHA3-256模式
+
+/**
+ * 简单的SHA3测试函数 - 处理16字节输入，分两次发送
+ * @param base_address AXI基地址
+ * @param result 结果存储数组（至少42个u32）
+ * @return 0 如果成功，-1 如果失败
+ */
+int simple_sha3_16byte_test(u32 base_address, u32 *result) {
+    xil_printf("DEBUG: Starting SHA3 calculation for 16-byte input\r\n");
+    xil_printf("DEBUG: BaseAddr=0x%08X, Mode=%d\r\n", base_address, MODE_SHA3_256);
+
+    // 1. 设置模式（不启动）
+    u32 control_value = (MODE_SHA3_256 & 0x7);
+    xil_printf("DEBUG: Set mode, Control reg = 0x%08X\r\n", control_value);
+    SHA3_1003_TIP1_mWriteReg(base_address, REG_CONTROL, control_value);
+
+    // 2. 启动脉冲
+    control_value |= (1 << 3);
+    xil_printf("DEBUG: Send start pulse, Control reg = 0x%08X\r\n", control_value);
+    SHA3_1003_TIP1_mWriteReg(base_address, REG_CONTROL, control_value);
+    control_value &= ~(1 << 3);
+    xil_printf("DEBUG: Clear start bit, Control reg = 0x%08X\r\n", control_value);
+    SHA3_1003_TIP1_mWriteReg(base_address, REG_CONTROL, control_value);
+
+    // 3. 发送第一个8字节数据
+    u64 first_data = 0x0123456789abcdefULL;
+    u32 first_low = (u32)(first_data & 0xFFFFFFFF);
+    u32 first_high = (u32)(first_data >> 32);
+    xil_printf("DEBUG: Write first data - Low32=0x%08X, High32=0x%08X\r\n", first_low, first_high);
+    SHA3_1003_TIP1_mWriteReg(base_address, REG_INPUT_LOW, first_low);
+    SHA3_1003_TIP1_mWriteReg(base_address, REG_INPUT_HIGH, first_high);
+
+    // din_valid=1, last_din=0, last_din_byte=8
+    u32 control2_value = (1 << 5) | (8 << 1);
+//  xil_printf("DEBUG: Send first data valid, Control2 reg = 0x%08X\r\n", control2_value);
+    SHA3_1003_TIP1_mWriteReg(base_address, REG_CONTROL2, control2_value);
+
+//    u32 read_low = SHA3_1003_TIP1_mReadReg(base_address, REG_INPUT_LOW);
+//    u32 read_high = SHA3_1003_TIP1_mReadReg(base_address, REG_INPUT_HIGH);
+//        if (read_low != first_low || read_high != first_high) {
+//            xil_printf("ERROR: Din write verification failed! Read Low=0x%08X, High=0x%08X\r\n", read_low, read_high);
+//            return -1;
+//        }
+//        xil_printf("DEBUG: Din write verified OK\r\n");
+
+    // 清除din_valid
+    control2_value &= ~(1 << 5);
+    SHA3_1003_TIP1_mWriteReg(base_address, REG_CONTROL2, control2_value);
+
+//
+//
+//    first_data = 0x0123456789ABCDEFULL;
+//    first_low = (u32)(first_data & 0xFFFFFFFF);
+//    first_high = (u32)(first_data >> 32);
+//    xil_printf("DEBUG: Write first data - Low32=0x%08X, High32=0x%08X\r\n", first_low, first_high);
+//    SHA3_1003_TIP1_mWriteReg(base_address, REG_INPUT_LOW, first_low);
+//    SHA3_1003_TIP1_mWriteReg(base_address, REG_INPUT_HIGH, first_high);
+//
+//    // din_valid=1, last_din=0, last_din_byte=8
+//    control2_value = (1 << 5) | (8 << 1);
+////  xil_printf("DEBUG: Send first data valid, Control2 reg = 0x%08X\r\n", control2_value);
+//    SHA3_1003_TIP1_mWriteReg(base_address, REG_CONTROL2, control2_value);
+//
+//    // 清除din_valid
+//     control2_value &= ~(1 << 5);
+//     SHA3_1003_TIP1_mWriteReg(base_address, REG_CONTROL2, control2_value);
+//
+//
+
+    // 4. 发送第二个8字节数据 (last_din=1)
+    u64 second_data = 0xfedcba9876543210ULL;
+    u32 second_low = (u32)(second_data & 0xFFFFFFFF);
+    u32 second_high = (u32)(second_data >> 32);
+    xil_printf("DEBUG: Write second data - Low32=0x%08X, High32=0x%08X\r\n", second_low, second_high);
+    SHA3_1003_TIP1_mWriteReg(base_address, REG_INPUT_LOW, second_low);
+    SHA3_1003_TIP1_mWriteReg(base_address, REG_INPUT_HIGH, second_high);
+
+    // 设置din_valid=1, last_din=1, last_din_byte=8, dout_ready=0
+    control2_value = (1 << 5) | (8 << 1) | (1 << 0);  // din_valid=1, last_din_byte=8, last_din=1
+    xil_printf("DEBUG: Send last data valid, Control2 reg = 0x%08X\r\n", control2_value);
+    SHA3_1003_TIP1_mWriteReg(base_address, REG_CONTROL2, control2_value);
+
+//    read_low = SHA3_1003_TIP1_mReadReg(base_address, REG_INPUT_LOW);
+//    read_high = SHA3_1003_TIP1_mReadReg(base_address, REG_INPUT_HIGH);
+//        if (read_low != second_low || read_high != second_high) {
+//            xil_printf("ERROR: Din write verification failed! Read Low=0x%08X, High=0x%08X\r\n", read_low, read_high);
+//            return -1;
+//        }
+
+//    // 输入完成，设置dout_ready=1
+//    control2_value = (1 << 6);
+//    xil_printf("DEBUG: Input complete, set dout_ready, Control2 reg = 0x%08X\r\n", control2_value);
+//    SHA3_1003_TIP1_mWriteReg(base_address, REG_CONTROL2, control2_value);
+
+    // 清除din_valid，形成脉冲，并设置dout_ready=1 (输入完成标识)
+    control2_value = (1 << 6) | (0 << 5) | (0 << 1) | (0 << 0);  // dout_ready=1, 清零其他输入信号
+    xil_printf("DEBUG: Input complete, set dout_ready, Control2 reg = 0x%08X\r\n", control2_value);
+    SHA3_1003_TIP1_mWriteReg(base_address, REG_CONTROL2, control2_value);
+
+    // 5. 直接读取结果（不等待延时）
+    u32 status = SHA3_1003_TIP1_mReadReg(base_address, REG_STATUS);
+    xil_printf("DEBUG: Status reg = 0x%08X\r\n", status);
+
+    if ((status & STATUS_RESULT_READY) == 0) {
+        xil_printf("WARNING: Result may not be ready yet\r\n");
+    }
+
+    xil_printf("DEBUG: Reading SHA3 output...\r\n");
+    for (int i = 0; i < 42; i++) {
+        result[i] = SHA3_1003_TIP1_mReadReg(base_address, REG_RESULT_BASE + i * 4);
+    }
+
+    xil_printf("DEBUG: Complete 1344-bit result:\r\n");
+    for (int i = 0; i < 42; i++) {
+        if (i % 8 == 0) xil_printf("\r\n[%02d-%02d]: ", i, (i+7 < 42) ? i+7 : 41);
+        xil_printf("0x%08X ", result[i]);
+    }
+    xil_printf("\r\n");
+
+    return 0;
+}
+
+/**
+ * 主函数
+ */
+int main() {
+    u32 base_addr = XPAR_SHA3_1003_TIP1_V1_0_0_BASEADDR;
+    u32 result_buffer[42];
+
+    xil_printf("\n========================================\n\r");
+    xil_printf("       SHA3 16-Byte Input Test\n\r");
+    xil_printf("========================================\n\r");
+    xil_printf("Base Address: 0x%08X\n\r", base_addr);
+    xil_printf("Input: 0123456789abcdeffedcba9876543210\n\r");
+
+    int status = simple_sha3_16byte_test(base_addr, result_buffer);
+    xil_printf("\nTest %s\n\r", (status == 0) ? "+ Passed" : "X Failed");
+
+    return 0;
+}

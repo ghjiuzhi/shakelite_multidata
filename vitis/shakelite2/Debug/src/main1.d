@@ -1,4 +1,4 @@
-src/main.o src/main.o: ../src/main.c \
+src/main1.o src/main1.o: ../src/main1.c \
  D:/fpga/shakelite2_save/vitis/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include/xil_printf.h \
  D:/fpga/shakelite2_save/vitis/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include/xil_types.h \
  D:/fpga/shakelite2_save/vitis/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include/xparameters.h \
