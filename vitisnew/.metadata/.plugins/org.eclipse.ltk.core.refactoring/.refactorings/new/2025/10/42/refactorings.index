@@ -5,3 +5,5 @@
 1760252574107	Rename resource 'main.c.bakwwww'
 1760269907842	Rename resource 'main.c'
 1760271422161	Rename resource 'fips202.c'
+1760280151064	Rename resource 'randombytes.c'
+1760282384098	Rename resource 'main.c(增加签名前版本，调试打印较多版本）'
