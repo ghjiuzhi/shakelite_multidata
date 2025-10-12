@@ -1,235 +1,189 @@
+/*
+ * main.c (最终版 V3.2 - 增加详细验证日志)
+ */
 #include <stdio.h>
 #include <string.h>
 #include "xil_printf.h"
-#include "xil_types.h"
 #include "xstatus.h"
-#include "xil_cache.h"
 #include "xtime_l.h"
+#include "xparameters.h"
+#include "xil_cache.h"
 
-// 包含所有必需的 SPHINCS+ 和 SHAKE 头文件
 #include "api.h"
-#include "params.h"
-#include "fips202.h" // <-- 包含纯软件 SHAKE 实现的头文件
+#include "fips202.h"
+#include "randombytes.h"
 
-#define MESSAGE_LEN 32
+#define MLEN 32
 
-/************************** 函数原型 ***************************/
+// 函数原型
 void print_hex(const char *label, const unsigned char *data, size_t len);
-int run_shake256_comparison_test(); // <-- 对比测试函数
-int run_sphincs_test_forensic();
 void init_platform();
 void cleanup_platform();
+void print_llu(const char *label, unsigned long long val);
 
-/* 声明外部硬件驱动函数 */
-extern void shake256_hw(uint8_t *out, size_t outlen, const uint8_t *in, const size_t inlen);
-
-
-/*****************************************************************************/
 int main()
 {
-    int status;
     init_platform();
+    xil_printf("\r\n--- SPHINCS+ SW/HW Full-Flow Verification & Benchmarking ---\r\n");
 
-    // --- 终极验证：直接对比软硬件哈希函数 ---
-    xil_printf("\r\n\n--- SHAKE256 软硬件实现对比测试 (增强版) ---\r\n");
-    status = run_shake256_comparison_test();
-    if (status != XST_SUCCESS) {
-        xil_printf("\r\n[对比失败] 硬件 SHAKE256 实现与软件不一致！测试终止。\r\n");
-        cleanup_platform();
-        return XST_FAILURE;
-    }
-    xil_printf("\r\n[对比成功] 您的硬件 SHAKE256 实现与纯软件参考版本完全一致！\r\n");
+    int final_status = XST_SUCCESS;
+    XTime t_start, t_end;
+    u64 sw_sign_ticks = 0, sw_verify_ticks = 0, hw_sign_ticks = 0, hw_verify_ticks = 0;
 
+    static unsigned char pk_sw[CRYPTO_PUBLICKEYBYTES];
+    static unsigned char sk_sw[CRYPTO_SECRETKEYBYTES];
+    static unsigned char m[MLEN];
+    static unsigned char sm_sw[CRYPTO_BYTES + MLEN];
+    static unsigned char mout_hw[CRYPTO_BYTES + MLEN];
 
-    // --- 完整的 SPHINCS+ 应用测试 ---
-    xil_printf("\r\n\n--- SPHINCS+ 最终版法证调试测试 ---\r\n");
-    status = run_sphincs_test_forensic();
+    static unsigned char pk_hw[CRYPTO_PUBLICKEYBYTES];
+    static unsigned char sk_hw[CRYPTO_SECRETKEYBYTES];
+    static unsigned char sm_hw[CRYPTO_BYTES + MLEN];
+    static unsigned char mout_sw[CRYPTO_BYTES + MLEN];
 
-    if (status == XST_SUCCESS) {
-        xil_printf("\r\n[测试通过] 所有步骤均已成功完成和验证！硬件加速功能正确！\r\n");
+    unsigned long long smlen, mlen_out;
+
+    randombytes(m, MLEN);
+    xil_printf("A %d-byte random message has been generated for all tests.\r\n", MLEN);
+    print_hex("  Original Message (m)", m, MLEN);
+
+    // ===================================================================
+    //  Flow 1: Pure Software Baseline (SW -> SW)
+    // ===================================================================
+    xil_printf("\r\n--- Flow 1: Pure Software Signing and Verification (Baseline) ---\r\n");
+    use_sw_shake_for_sphincs();
+
+    XTime_GetTime(&t_start);
+    crypto_sign_keypair(pk_sw, sk_sw);
+    crypto_sign(sm_sw, &smlen, m, MLEN, sk_sw);
+    XTime_GetTime(&t_end);
+    sw_sign_ticks = t_end - t_start;
+
+    XTime_GetTime(&t_start);
+    int sw_verify_result = crypto_sign_open(mout_sw, &mlen_out, sm_sw, smlen, pk_sw);
+    XTime_GetTime(&t_end);
+    sw_verify_ticks = t_end - t_start;
+
+    if (sw_verify_result != 0) {
+        xil_printf("  [FAIL] SW verification function returned error code: %d\r\n", sw_verify_result);
+        final_status = XST_FAILURE;
     } else {
-        xil_printf("\r\n[执行失败] SPHINCS+ 测试在上述某个步骤中失败。\r\n");
+        xil_printf("  [INFO] SW verification function returned 0 (SUCCESS).\r\n");
+        print_hex("    -> Recovered Message (mout_sw)", mout_sw, mlen_out);
+        if (mlen_out != MLEN || memcmp(m, mout_sw, MLEN) != 0) {
+            xil_printf("  [FAIL] SW recovered message does not match original!\r\n");
+            final_status = XST_FAILURE;
+        } else {
+            xil_printf("  [SUCCESS] memcmp confirms messages match. SW is internally consistent.\r\n");
+        }
+    }
+
+    // ===================================================================
+    //  Flow 2: Pure Hardware Accelerated Test (HW -> HW)
+    // ===================================================================
+    xil_printf("\r\n--- Flow 2: Pure Hardware-Accelerated Signing and Verification ---\r\n");
+    use_hw_shake_for_sphincs();
+
+    XTime_GetTime(&t_start);
+    crypto_sign_keypair(pk_hw, sk_hw);
+    crypto_sign(sm_hw, &smlen, m, MLEN, sk_hw);
+    XTime_GetTime(&t_end);
+    hw_sign_ticks = t_end - t_start;
+
+    XTime_GetTime(&t_start);
+    int hw_verify_result = crypto_sign_open(mout_hw, &mlen_out, sm_hw, smlen, pk_hw);
+    XTime_GetTime(&t_end);
+    hw_verify_ticks = t_end - t_start;
+
+    if (hw_verify_result != 0) {
+        xil_printf("  [FAIL] HW verification function returned error code: %d\r\n", hw_verify_result);
+        final_status = XST_FAILURE;
+    } else {
+        xil_printf("  [INFO] HW verification function returned 0 (SUCCESS).\r\n");
+        print_hex("    -> Recovered Message (mout_hw)", mout_hw, mlen_out);
+        if (mlen_out != MLEN || memcmp(m, mout_hw, MLEN) != 0) {
+            xil_printf("  [FAIL] HW recovered message does not match original!\r\n");
+            final_status = XST_FAILURE;
+        } else {
+            xil_printf("  [SUCCESS] memcmp confirms messages match. HW is internally consistent.\r\n");
+        }
+    }
+
+    // ===================================================================
+    //  Flow 3 & 4: Cross-Verification
+    // ===================================================================
+    xil_printf("\r\n--- Flow 3 & 4: Cross-Verification for Compatibility ---\r\n");
+    // SW Sign -> HW Verify
+    use_hw_shake_for_sphincs();
+    if (crypto_sign_open(mout_hw, &mlen_out, sm_sw, CRYPTO_BYTES + MLEN, pk_sw) != 0) {
+        xil_printf("  [FAIL] Cross-Verification (SW Sign -> HW Verify) FAILED!\r\n");
+        final_status = XST_FAILURE;
+    } else {
+        xil_printf("  [SUCCESS] Cross-Verification (SW Sign -> HW Verify) PASSED.\r\n");
+    }
+    // HW Sign -> SW Verify
+    use_sw_shake_for_sphincs();
+    if (crypto_sign_open(mout_sw, &mlen_out, sm_hw, CRYPTO_BYTES + MLEN, pk_hw) != 0) {
+        xil_printf("  [FAIL] Cross-Verification (HW Sign -> SW Verify) FAILED!\r\n");
+        final_status = XST_FAILURE;
+    } else {
+        xil_printf("  [SUCCESS] Cross-Verification (HW Sign -> SW Verify) PASSED.\r\n");
+    }
+
+    // ===================================================================
+    //  Final Performance Report
+    // ===================================================================
+    xil_printf("\r\n\n--- Final Performance Report ---\r\n");
+    print_llu(" - SW Signing:    ", sw_sign_ticks);
+    print_llu(" - HW Signing:    ", hw_sign_ticks);
+    print_llu(" - SW Verification:", sw_verify_ticks);
+    print_llu(" - HW Verification:", hw_verify_ticks);
+
+    if (hw_sign_ticks > 0) {
+        printf("  => Signing Performance Speed-up: %.2f X\r\n", (float)sw_sign_ticks / hw_sign_ticks);
+    }
+    if (hw_verify_ticks > 0) {
+        printf("  => Verification Performance Speed-up: %.2f X\r\n", (float)sw_verify_ticks / hw_verify_ticks);
+    }
+
+    #if defined(XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ)
+        const double CPU_FREQ_MHZ = (double)XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 1000000.0;
+        xil_printf("\r\n--- Time in Milliseconds (assuming %.0f MHz CPU clock) ---\r\n", CPU_FREQ_MHZ);
+        printf(" - SW Signing:     %.3f ms\r\n", (double)sw_sign_ticks / (CPU_FREQ_MHZ * 1000.0));
+        printf(" - HW Signing:     %.3f ms\r\n", (double)hw_sign_ticks / (CPU_FREQ_MHZ * 1000.0));
+        printf(" - SW Verification:  %.3f ms\r\n", (double)sw_verify_ticks / (CPU_FREQ_MHZ * 1000.0));
+        printf(" - HW Verification:  %.3f ms\r\n", (double)hw_verify_ticks / (CPU_FREQ_MHZ * 1000.0));
+    #endif
+
+    if (final_status == XST_SUCCESS) {
+        xil_printf("\r\n[FINAL CONCLUSION: ALL PASSED] Functionality is correct and performance data has been collected.\r\n");
+    } else {
+        xil_printf("\r\n[FINAL CONCLUSION: FAILED] A functional verification step failed.\r\n");
     }
 
     cleanup_platform();
-    return status;
+    return final_status;
 }
 
-/*****************************************************************************/
-/**
-* @brief 对比硬件和软件 SHAKE256 实现的输出，作为“黄金标准”测试。
-*/
-int run_shake256_comparison_test()
-{
-    // 准备几组不同的测试输入
-    unsigned char input1[3] = "abc";
-    unsigned char input2[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-    unsigned char input3[64];
-    for(int i=0; i<64; i++) { input3[i] = i; }
-
-    // --- 新增的测试用例 ---
-    // 将64位整数看作一个8字节的数组
-    uint64_t val4 = 0x0123456789abcdefULL;
-    uint64_t val5 = 0xfedcba9876543210ULL;
-    // 注意：大端序排列，最高有效字节在前
-    unsigned char input4[8] = {0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef};
-    unsigned char input5[8] = {0xfe, 0xdc, 0xba, 0x98, 0x76, 0x54, 0x32, 0x10};
-
-
-    unsigned char hw_output[64];
-    unsigned char sw_output[64];
-    int status = XST_SUCCESS;
-
-    // --- 测试用例 1: "abc" ---
-    xil_printf("\r\n--- 测试用例 1: 输入 'abc' (3字节) ---\r\n");
-    shake256_hw(hw_output, 32, input1, 3); // 硬件计算
-    shake256_sw_ref(sw_output, 32, input1, 3);    // 软件计算
-
-    print_hex("  硬件输出", hw_output, 32);
-    print_hex("  软件参考", sw_output, 32);
-
-    if (memcmp(hw_output, sw_output, 32) != 0) {
-        xil_printf("  [错误] 测试用例 1 输出不匹配！\r\n");
-        status = XST_FAILURE;
+/******************************************************************************
+* 辅助函数实现
+******************************************************************************/
+void print_llu(const char *label, unsigned long long val) {
+    char buffer[21];
+    int i = sizeof(buffer) - 1;
+    buffer[i] = '\0';
+    if (val == 0) {
+        i--;
+        buffer[i] = '0';
     } else {
-        xil_printf("  [成功] 测试用例 1 输出匹配。\r\n");
+        while (val > 0 && i > 0) {
+            i--;
+            buffer[i] = (val % 10) + '0';
+            val /= 10;
+        }
     }
-
-    // --- 测试用例 2: 10字节的二进制数据 ---
-    xil_printf("\r\n--- 测试用例 2: 输入 10字节 二进制数据 ---\r\n");
-    shake256_hw(hw_output, 32, input2, 10);
-    shake256_sw_ref(sw_output, 32, input2, 10);
-
-    print_hex("  硬件输出", hw_output, 32);
-    print_hex("  软件参考", sw_output, 32);
-
-    if (memcmp(hw_output, sw_output, 32) != 0) {
-        xil_printf("  [错误] 测试用例 2 输出不匹配！\r\n");
-        status = XST_FAILURE;
-    } else {
-        xil_printf("  [成功] 测试用例 2 输出匹配。\r\n");
-    }
-
-    // --- 测试用例 3: 64字节的二进制数据 ---
-    xil_printf("\r\n--- 测试用例 3: 输入 64字节 二进制数据 ---\r\n");
-    shake256_hw(hw_output, 64, input3, 64);
-    shake256_sw_ref(sw_output, 64, input3, 64);
-
-    print_hex("  硬件输出 (前32字节)", hw_output, 32);
-    print_hex("  软件参考 (前32字节)", sw_output, 32);
-
-    if (memcmp(hw_output, sw_output, 64) != 0) {
-        xil_printf("  [错误] 测试用例 3 输出不匹配！\r\n");
-        status = XST_FAILURE;
-    } else {
-        xil_printf("  [成功] 测试用例 3 输出匹配。\r\n");
-    }
-
-    // --- 新增测试用例 4 ---
-    xil_printf("\r\n--- 测试用例 4: 输入 0x0123456789abcdef (8字节) ---\r\n");
-    shake256_hw(hw_output, 32, input4, 8);
-    shake256_sw_ref(sw_output, 32, input4, 8);
-
-    print_hex("  硬件输出", hw_output, 32);
-    print_hex("  软件参考", sw_output, 32);
-
-    if (memcmp(hw_output, sw_output, 32) != 0) {
-        xil_printf("  [错误] 测试用例 4 输出不匹配！\r\n");
-        status = XST_FAILURE;
-    } else {
-        xil_printf("  [成功] 测试用例 4 输出匹配。\r\n");
-    }
-
-    // --- 新增测试用例 5 ---
-    xil_printf("\r\n--- 测试用例 5: 输入 0xfedcba9876543210 (8字节) ---\r\n");
-    shake256_hw(hw_output, 32, input5, 8);
-    shake256_sw_ref(sw_output, 32, input5, 8);
-
-    print_hex("  硬件输出", hw_output, 32);
-    print_hex("  软件参考", sw_output, 32);
-
-    if (memcmp(hw_output, sw_output, 32) != 0) {
-        xil_printf("  [错误] 测试用例 5 输出不匹配！\r\n");
-        status = XST_FAILURE;
-    } else {
-        xil_printf("  [成功] 测试用例 5 输出匹配。\r\n");
-    }
-
-    return status;
+    xil_printf("%s%s cycles\r\n", label, &buffer[i]);
 }
-
-
-/*****************************************************************************/
-int run_sphincs_test_forensic()
-{
-    // ... (这个函数保持不变) ...
-    static unsigned char pk[CRYPTO_PUBLICKEYBYTES];
-    static unsigned char sk[CRYPTO_SECRETKEYBYTES];
-    static unsigned char m[MESSAGE_LEN];
-    static unsigned char sm[CRYPTO_BYTES + MESSAGE_LEN];
-    static unsigned char mout[CRYPTO_BYTES + MESSAGE_LEN];
-
-    unsigned long long smlen;
-    unsigned long long mlen_out;
-    int ret_val;
-
-    xil_printf("--- 步骤 1: 准备一个 %d 字节的消息 ---\r\n", MESSAGE_LEN);
-    for (int i = 0; i < MESSAGE_LEN; i++) { m[i] = (unsigned char)i; }
-    print_hex("  原始消息 (m)", m, MESSAGE_LEN);
-
-    xil_printf("\r\n--- 步骤 2: 生成密钥对 ---\r\n");
-    if (crypto_sign_keypair(pk, sk) != 0) {
-        xil_printf("  [错误] 密钥对生成失败！\r\n");
-        return XST_FAILURE;
-    }
-    xil_printf("  密钥对生成成功。\r\n");
-    print_hex("  公钥 (pk) (前 32 字节)", pk, 32);
-
-    xil_printf("\r\n--- 步骤 3: 对消息进行签名 ---\r\n");
-    ret_val = crypto_sign(sm, &smlen, m, MESSAGE_LEN, sk);
-
-    if (ret_val != 0) {
-        xil_printf("  [错误] crypto_sign 函数返回了一个错误码: %d！\r\n", ret_val);
-        return XST_FAILURE;
-    }
-    xil_printf("  crypto_sign 函数执行完毕。\r\n");
-    xil_printf("  报告的总签名消息长度 (smlen): %d 字节。\r\n", (int)smlen);
-
-    const int expected_smlen = CRYPTO_BYTES + MESSAGE_LEN;
-    const int actual_smlen = (int)smlen;
-
-    xil_printf("\r\n--- 步骤 3.1: 签名长度法证检查 (使用32位整数比较) ---\r\n");
-    if (actual_smlen != expected_smlen) {
-        xil_printf("\r\n  [!!! 关键失败 !!!] 签名长度不正确！\r\n");
-        return XST_FAILURE;
-    } else {
-        xil_printf("  [判断通过] 签名长度正确。\r\n");
-    }
-    print_hex("  签名消息 (sm) (前 32 字节)", sm, 32);
-
-    xil_printf("\r\n--- 步骤 4: 验证签名 ---\r\n");
-    ret_val = crypto_sign_open(mout, &mlen_out, sm, smlen, pk);
-
-    if (ret_val != 0) {
-        xil_printf("  [错误] 验证函数返回错误码 %d！签名无效。\r\n", ret_val);
-        return XST_FAILURE;
-    }
-    xil_printf("  签名验证函数成功返回 (返回码: %d)。\r\n", ret_val);
-    xil_printf("  恢复出的消息长度 (mlen_out): %d 字节。\r\n", (int)mlen_out);
-    print_hex("  恢复的消息 (mout)", mout, (int)mlen_out);
-
-    xil_printf("\r\n--- 步骤 5: 最终内容检查 ---\r\n");
-    if ((int)mlen_out != MESSAGE_LEN || memcmp(m, mout, MESSAGE_LEN) != 0) {
-        xil_printf("  [错误] 消息内容不匹配！\r\n");
-        return XST_FAILURE;
-    }
-    xil_printf("  原始消息和恢复的消息完全匹配。\r\n");
-
-    return XST_SUCCESS;
-}
-
-
-/************************** 辅助函数 ***************************/
 
 void print_hex(const char *label, const unsigned char *data, size_t len) {
     xil_printf("%s: ", label);
@@ -242,9 +196,11 @@ void print_hex(const char *label, const unsigned char *data, size_t len) {
 void init_platform() {
     Xil_ICacheEnable();
     Xil_DCacheEnable();
+    xil_printf("Platform initialized (Caches Enabled)\r\n");
 }
 
 void cleanup_platform() {
     Xil_DCacheDisable();
     Xil_ICacheDisable();
+    xil_printf("Platform cleaned up (Caches Disabled)\r\n");
 }

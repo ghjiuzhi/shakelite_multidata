@@ -601,51 +601,60 @@ void shake256(uint8_t *output, size_t outlen,
  **************************************************/
 
 
-/*************************************************
-* Name:        shake256
-*
-* Description: SHAKE256 stream cipher based on Keccak.
-* This function has been REPLACED to call the
-* FPGA hardware accelerator.
-*
-* Arguments:   - uint8_t *out:      pointer to output stream
-* - size_t outlen:     length of output stream
-* - const uint8_t *in: pointer to input stream
-* - size_t inlen:      length of input stream
-**************************************************/
-void shake256(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen)
-{
-    // 直接调用我们的硬件驱动函数
-    shake256_hw(out, outlen, in, inlen);
+// ===============================================================
+// ===               核心切换逻辑                            ===
+// ===============================================================
+
+// 1. 定义一个全局函数指针。它将指向当前要使用的 SHAKE256 实现。
+//    我们让它默认指向您的硬件函数。
+void (*sphincs_shake256_impl)(uint8_t*, size_t, const uint8_t*, size_t) = shake256_hw;
+
+// 2. 创建两个 "开关" 函数，用于在 main.c 中调用
+void use_sw_shake_for_sphincs(void) {
+    // 让指针指向您已有的、作为参考的软件函数
+    sphincs_shake256_impl = shake256_sw_ref;
+    xil_printf("--> SPHINCS+ 底层已切换到 [纯软件 SHAKE256] 实现。\r\n");
 }
 
-/*************************************************
-* Name:        shake256_sw_ref (Software Reference)
-*
-* Description: Original software implementation of SHAKE256 XOF.
-* This is the "golden standard" for our comparison test.
-*
-* Arguments:   - uint8_t *output: pointer to output
-* - size_t outlen: requested output length in bytes
-* - const uint8_t *input: pointer to input
-* - size_t inlen: length of input in bytes
-**************************************************/
+void use_hw_shake_for_sphincs(void) {
+    // 让指针指向您的硬件驱动函数
+    sphincs_shake256_impl = shake256_hw;
+    xil_printf("--> SPHINCS+ 底层已切换到 [硬件加速 SHAKE256] 实现。\r\n");
+}
+
+// 3. 唯一的、公开的 shake256 函数
+// 所有 SPHINCS+ 的其他文件 (thash.c, hash.c 等) 都会调用这个函数。
+void shake256(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen)
+{
+    // 这个函数现在只是一个调度器，它不做具体工作，只负责调用指针指向的函数。
+    sphincs_shake256_impl(out, outlen, in, inlen);
+}
+
+
+// ===============================================================
+// ===        您原来的函数保持不变，无需任何修改             ===
+// ===============================================================
+
+// 您的软件参考函数，现在被指针直接使用。
+// 这个函数保持原样，完全没有改动。
 void shake256_sw_ref(uint8_t *output, size_t outlen,
                      const uint8_t *input, size_t inlen)
 {
-    // 这是您提供的原始软件实现代码
     size_t nblocks = outlen / SHAKE256_RATE;
     uint8_t t[SHAKE256_RATE];
     uint64_t s[25];
 
-    shake256_absorb(s, input, inlen);
-    shake256_squeezeblocks(output, nblocks, s);
+    // shake256_absorb 是 fips202.c 内部的静态函数
+    keccak_absorb(s, SHAKE256_RATE, input, inlen, 0x1F);
+
+    // 调用内部的 keccak_squeezeblocks
+    keccak_squeezeblocks(output, nblocks, s, SHAKE256_RATE); // <-- 修正点 1: 补上缺失的参数
 
     output += nblocks * SHAKE256_RATE;
     outlen -= nblocks * SHAKE256_RATE;
 
     if (outlen) {
-        shake256_squeezeblocks(t, 1, s);
+        keccak_squeezeblocks(t, 1, s, SHAKE256_RATE); // <-- 修正点 2: 补上缺失的参数
         for (size_t i = 0; i < outlen; ++i) {
             output[i] = t[i];
         }

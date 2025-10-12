@@ -1,15 +1,26 @@
 Nothing to build in platform 'cpu_wrapper'
 
-16:37:14 **** Incremental Build of configuration Debug for project new ****
+21:14:49 **** Incremental Build of configuration Debug for project new ****
 make all 
 D:/ruanjian/Vivado/Vitis/2019.2/gnuwin/bin/make --no-print-directory pre-build
 a9-linaro-pre-build-step
  
 D:/ruanjian/Vivado/Vitis/2019.2/gnuwin/bin/make --no-print-directory main-build
-Building file: ../src/fpga_sha_driver.c
+Building file: ../src/main.c
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -DPARAMS="sphincs-shake-128f" -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/fpga_sha_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/fpga_sha_driver.d" -MT"src/fpga_sha_driver.o" -o "src/fpga_sha_driver.o" "../src/fpga_sha_driver.c"
-Finished building: ../src/fpga_sha_driver.c
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-128f" -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:8:
+D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:54:5: warning: implicit declaration of function 'use_sw_shake_for_sphincs' [-Wimplicit-function-declaration]
+     use_sw_shake_for_sphincs();
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:85:5: warning: implicit declaration of function 'use_hw_shake_for_sphincs' [-Wimplicit-function-declaration]
+     use_hw_shake_for_sphincs();
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
  
 Building target: new.elf
 Invoking: ARM v7 gcc linker
@@ -19,6 +30,6 @@ Finished building target: new.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size new.elf  |tee "new.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  68976	   1544	  57656	 128176	  1f4b0	new.elf
+  96864	   2584	  92048	 191496	  2ec08	new.elf
 Finished building: new.elf.size
  
