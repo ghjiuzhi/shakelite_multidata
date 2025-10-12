@@ -10,6 +10,8 @@
 
 #include "fips202.h"
 
+#include "fpga_sha_driver.h" // <--- 在这里添加你的头文件
+
 #define NROUNDS 24
 #define ROL(a, offset) (((a) << (offset)) ^ ((a) >> (64 - (offset))))
 
@@ -568,7 +570,7 @@ void shake256_squeezeblocks(uint8_t *output, size_t nblocks, uint64_t *s) {
 }
 
 /*************************************************
- * Name:        shake256
+ * Name:        shake256 原本的函数
  *
  * Description: SHAKE256 XOF with non-incremental API
  *
@@ -576,7 +578,7 @@ void shake256_squeezeblocks(uint8_t *output, size_t nblocks, uint64_t *s) {
  *              - size_t outlen: requested output length in bytes
  *              - const uint8_t *input: pointer to input
  *              - size_t inlen: length of input in bytes
- **************************************************/
+
 void shake256(uint8_t *output, size_t outlen,
               const uint8_t *input, size_t inlen) {
     size_t nblocks = outlen / SHAKE256_RATE;
@@ -595,4 +597,24 @@ void shake256(uint8_t *output, size_t outlen,
             output[i] = t[i];
         }
     }
+}
+ **************************************************/
+
+
+/*************************************************
+* Name:        shake256
+*
+* Description: SHAKE256 stream cipher based on Keccak.
+* This function has been REPLACED to call the
+* FPGA hardware accelerator.
+*
+* Arguments:   - uint8_t *out:      pointer to output stream
+* - size_t outlen:     length of output stream
+* - const uint8_t *in: pointer to input stream
+* - size_t inlen:      length of input stream
+**************************************************/
+void shake256(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen)
+{
+    // 直接调用我们的硬件驱动函数
+    shake256_hw(out, outlen, in, inlen);
 }

@@ -1,0 +1,190 @@
+/******************************************************************************
+*
+* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software.
+*
+* Use of the Software is limited solely to applications:
+* (a) running on a Xilinx device, or
+* (b) that interact with a Xilinx device through a bus or interconnect.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+* Except as contained in this notice, the name of the Xilinx shall not be used
+* in advertising or otherwise to promote the sale, use or other dealings in
+* this Software without prior written authorization from Xilinx.
+*
+******************************************************************************/
+
+#include <stdio.h>
+#include <string.h>
+
+#include "xil_printf.h"
+#include "xil_types.h"
+#include "xstatus.h"
+#include "xtime_l.h" // 用于测量时间
+
+// 包含 SPHINCS+ 的核心 API
+#include "api.h"
+#include "params.h"
+
+// 定义要签名的消息长度
+#define MESSAGE_LEN 32
+
+// 函数声明
+void print_hex(const char *label, const unsigned char *data, size_t len);
+int run_sphincs_test();
+
+int main()
+{
+    int status;
+
+    init_platform();
+
+    xil_printf("\r\n--- SPHINCS+ Hardware Accelerated Test ---\r\n");
+    xil_printf("PARAMS: %s\r\n\n", xstr(PARAMS));
+
+    status = run_sphincs_test();
+
+    if (status == XST_SUCCESS) {
+        xil_printf("\r\n[SUCCESS] SPHINCS+ signature and verification successful!\r\n");
+    } else {
+        xil_printf("\r\n[FAILURE] SPHINCS+ signature and verification failed.\r\n");
+    }
+
+    cleanup_platform();
+    return status;
+}
+
+/**
+ * @brief 执行完整的SPHINCS+密钥生成、签名和验证流程
+ */
+int run_sphincs_test()
+{
+    // 为密钥、消息和签名分配内存
+    // 使用 static 确保它们被分配在 .bss 段，避免栈溢出
+    static unsigned char pk[CRYPTO_PUBLICKEYBYTES];
+    static unsigned char sk[CRYPTO_SECRETKEYBYTES];
+    static unsigned char m[MESSAGE_LEN];
+    static unsigned char sm[CRYPTO_BYTES + MESSAGE_LEN];
+    static unsigned char mout[CRYPTO_BYTES + MESSAGE_LEN]; // 验证后恢复的消息
+
+    unsigned long long smlen;
+    unsigned long long mlen;
+    int ret_val;
+
+    // 用于计时的变量
+    XTime t_start, t_end;
+    float time_us;
+
+    // --- 1. 创建一个示例消息 ---
+    for (int i = 0; i < MESSAGE_LEN; i++) {
+        m[i] = (unsigned char)i;
+    }
+    print_hex("Original Message", m, MESSAGE_LEN);
+
+    // --- 2. 生成密钥对 ---
+    xil_printf("\r\n1. Generating keypair...\r\n");
+    XTime_GetTime(&t_start);
+    if (crypto_sign_keypair(pk, sk) != 0) {
+        xil_printf("  [ERROR] Keypair generation failed.\r\n");
+        return XST_FAILURE;
+    }
+    XTime_GetTime(&t_end);
+    time_us = 1.0 * (t_end - t_start) / (COUNTS_PER_SECOND / 1000000);
+    xil_printf("  Keypair generated successfully in %.2f us.\r\n", time_us);
+    print_hex("  Public Key (first 32 bytes)", pk, 32);
+
+    // --- 3. 对消息进行签名 ---
+    xil_printf("\r\n2. Signing message...\r\n");
+    XTime_GetTime(&t_start);
+    if (crypto_sign(sm, &smlen, m, MESSAGE_LEN, sk) != 0) {
+        xil_printf("  [ERROR] Signing failed.\r\n");
+        return XST_FAILURE;
+    }
+    XTime_GetTime(&t_end);
+    time_us = 1.0 * (t_end - t_start) / (COUNTS_PER_SECOND / 1000000);
+    xil_printf("  Message signed successfully in %.2f us.\r\n", time_us);
+    xil_printf("  Total signature length: %llu bytes.\r\n", smlen);
+    print_hex("  Signature (first 32 bytes)", sm, 32);
+
+    // --- 4. 验证签名 ---
+    xil_printf("\r\n3. Verifying signature...\r\n");
+    XTime_GetTime(&t_start);
+    ret_val = crypto_sign_open(mout, &mlen, sm, smlen, pk);
+    XTime_GetTime(&t_end);
+
+    if (ret_val != 0) {
+        xil_printf("  [ERROR] Verification failed with code %d!\r\n", ret_val);
+        return XST_FAILURE;
+    }
+    time_us = 1.0 * (t_end - t_start) / (COUNTS_PER_SECOND / 1000000);
+    xil_printf("  Signature verified successfully in %.2f us.\r\n", time_us);
+    print_hex("  Recovered Message", mout, mlen);
+
+    // --- 5. 最终检查 ---
+    xil_printf("\r\n4. Final check: comparing original and recovered messages...\r\n");
+    if (mlen != MESSAGE_LEN) {
+        xil_printf("  [ERROR] Message length mismatch! Original: %d, Recovered: %llu\r\n", MESSAGE_LEN, mlen);
+        return XST_FAILURE;
+    }
+    if (memcmp(m, mout, MESSAGE_LEN) != 0) {
+        xil_printf("  [ERROR] Message content mismatch!\r\n");
+        return XST_FAILURE;
+    }
+    xil_printf("  Messages match!\r\n");
+
+    return XST_SUCCESS;
+}
+
+/**
+ * @brief 打印一个字节数组的十六进制表示
+ */
+void print_hex(const char *label, const unsigned char *data, size_t len)
+{
+    xil_printf("%s: ", label);
+    for (size_t i = 0; i < len; i++) {
+        xil_printf("%02x", data[i]);
+    }
+    xil_printf("\r\n");
+}
+
+/*****************************************************************************/
+/**
+* @brief Initializes the platform, including enabling caches.
+******************************************************************************/
+void init_platform()
+{
+    /*
+     * If you are using the MMU, you need to call Xil_DCacheDisable()
+     * before Xil_ICacheEnable(). Otherwise Xil_ICacheEnable() will not
+     * take effect. All programs running on Cortex-A9 use the MMU.
+     */
+    Xil_DCacheDisable();
+    Xil_ICacheEnable();
+    Xil_DCacheEnable();
+}
+
+/*****************************************************************************/
+/**
+* @brief Cleans up the platform, including disabling caches.
+******************************************************************************/
+void cleanup_platform()
+{
+    Xil_DCacheDisable();
+    Xil_ICacheDisable();
+}

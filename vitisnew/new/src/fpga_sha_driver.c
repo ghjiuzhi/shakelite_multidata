@@ -1,106 +1,114 @@
 #include "fpga_sha_driver.h"
-#include "sha3_1003_tIP1.h" // 包含底层硬件驱动宏
-#include "xil_printf.h"
+#include "xparameters.h"
+#include "xil_io.h"
+#include <string.h>
 
-// send_data_block_to_fpga 是一个内部辅助函数，所以我们不需要在.h中声明它
-// 把它定义为 static 是一个好习惯，表示它只在本文件内使用
-static void send_data_block_to_fpga(u32 base_addr, const unsigned char *data_ptr, u32 len, int is_last_block)
-{
-    if (len == 0 || len > 8) return;
+// 硬件IP核的基地址
+#define IP_CORE_BASEADDR        XPAR_SHA3_1003_TIP1_0_S0_AXI_BASEADDR
 
-    u64 write_data = 0;
-    for (u32 i = 0; i < len; i++) {
-        write_data |= (u64)data_ptr[i] << (56 - (i * 8));
-    }
+// 寄存器地址偏移
+#define REG_CONTROL_OFFSET      0x00
+#define REG_DIN_LOW_OFFSET      0x04
+#define REG_DIN_HIGH_OFFSET     0x08
+#define REG_CONTROL2_OFFSET     0x0C
+#define REG_STATUS_OFFSET       0x10
+#define REG_RESULT_START_OFFSET 0x14
 
-    u32 high_32 = (u32)(write_data >> 32);
-    u32 low_32  = (u32)(write_data & 0xFFFFFFFF);
-    SHA3_1003_TIP1_mWriteReg(base_addr, REG_DIN_HIGH_OFFSET, high_32);
-    SHA3_1003_TIP1_mWriteReg(base_addr, REG_DIN_LOW_OFFSET, low_32);
+// 控制位定义
+#define CONTROL_START_BIT       (1 << 3)
+#define CONTROL2_LAST_DIN_BIT   (1 << 0)
+#define CONTROL2_DIN_VALID_BIT  (1 << 5)
+#define CONTROL2_DOUT_READY_BIT (1 << 6)
+#define STATUS_RESULT_READY_BIT (1 << 5)
 
-    u32 control2_val = (len << 1);
-    if (is_last_block) {
-        control2_val |= CONTROL2_LAST_DIN_BIT;
-    }
+#define RESULT_REG_COUNT 42
 
-    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val | CONTROL2_DIN_VALID_BIT);
-    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val);
-}
-
-// 这里是 thash_shake_fpga 函数的完整实现
-void thash_shake_fpga(unsigned char *out, const unsigned char *in,
-                      unsigned long long inlen, const spx_ctx *ctx,
-                      uint32_t addr[8])
+/**
+ * @brief 使用 FPGA IP 核执行 SHAKE256 哈希运算 (最终无打印版本)
+ */
+void shake256_hw(uint8_t *out, size_t outlen, const uint8_t *in, const size_t inlen)
 {
     u32 base_addr = IP_CORE_BASEADDR;
+    size_t remaining_len = inlen;
+    const uint8_t *data_ptr = in;
+    int timeout;
 
-    xil_printf("--- Executing Hardware Accelerated thash_shake_fpga ---\r\n");
-
+    // --- 1. 设置模式并准备好接收输出 ---
     u32 control_val = 1; // Mode 1: Shake-256
-    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val);
-    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val | CONTROL_START_BIT);
-    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL_OFFSET, control_val);
+    Xil_Out32(base_addr + REG_CONTROL_OFFSET, control_val);
 
-    const unsigned char *pub_seed = ctx->pub_seed;
-    const unsigned char *address = (const unsigned char *)addr;
-    const unsigned char *message = in;
+    u32 control2_base = CONTROL2_DOUT_READY_BIT;
+    Xil_Out32(base_addr + REG_CONTROL2_OFFSET, control2_base);
 
-    unsigned long long total_len = SPX_N + 32 + inlen;
-    unsigned long long bytes_sent = 0;
+    // --- 2. 发送启动脉冲 ---
+    Xil_Out32(base_addr + REG_CONTROL_OFFSET, control_val | CONTROL_START_BIT);
+    Xil_Out32(base_addr + REG_CONTROL_OFFSET, control_val);
 
-    xil_printf("  Total data to send: %llu bytes\r\n", total_len);
+    // --- 3. 以8字节为单位，流式传输大部分输入数据 ---
+    while (remaining_len >= 8) {
+        // **修正字节序的关键步骤**
+        // 逐字节精确构建64位整数，确保大端序 (MSB first)
+        u64 chunk = 0;
+        chunk |= (u64)data_ptr[0] << 56;
+        chunk |= (u64)data_ptr[1] << 48;
+        chunk |= (u64)data_ptr[2] << 40;
+        chunk |= (u64)data_ptr[3] << 32;
+        chunk |= (u64)data_ptr[4] << 24;
+        chunk |= (u64)data_ptr[5] << 16;
+        chunk |= (u64)data_ptr[6] << 8;
+        chunk |= (u64)data_ptr[7] << 0;
 
-    while (bytes_sent < total_len) {
-        unsigned char buffer[8];
-        int is_last = 0;
-        u32 chunk_size = (total_len - bytes_sent > 8) ? 8 : (total_len - bytes_sent);
+        // 写入高32位和低32位
+        Xil_Out32(base_addr + REG_DIN_HIGH_OFFSET, (u32)(chunk >> 32));
+        Xil_Out32(base_addr + REG_DIN_LOW_OFFSET,  (u32)(chunk & 0xFFFFFFFF));
 
-        for (u32 i = 0; i < chunk_size; i++) {
-            unsigned long long current_pos = bytes_sent + i;
-            if (current_pos < SPX_N) {
-                buffer[i] = pub_seed[current_pos];
-            } else if (current_pos < SPX_N + 32) {
-                buffer[i] = address[current_pos - SPX_N];
-            } else {
-                buffer[i] = message[current_pos - SPX_N - 32];
-            }
-        }
+        // 发送din_valid脉冲，通知IP核接收数据
+        Xil_Out32(base_addr + REG_CONTROL2_OFFSET, control2_base | CONTROL2_DIN_VALID_BIT);
+        Xil_Out32(base_addr + REG_CONTROL2_OFFSET, control2_base);
 
-        if (bytes_sent + chunk_size == total_len) {
-            is_last = 1;
-        }
-
-        send_data_block_to_fpga(base_addr, buffer, chunk_size, is_last);
-        bytes_sent += chunk_size;
+        data_ptr += 8;
+        remaining_len -= 8;
     }
 
-    xil_printf("  All data blocks sent to FPGA.\r\n");
+    // --- 4. 发送最后的数据块（可能不足8字节） ---
+    u64 last_chunk = 0;
+    if (remaining_len > 0) {
+        // 同样逐字节构建，保证字节序正确
+        for (size_t i = 0; i < remaining_len; i++) {
+            last_chunk |= (u64)data_ptr[i] << (56 - (i * 8));
+        }
+    }
 
-    SHA3_1003_TIP1_mWriteReg(base_addr, REG_CONTROL2_OFFSET, CONTROL2_DOUT_READY_BIT);
+    Xil_Out32(base_addr + REG_DIN_HIGH_OFFSET, (u32)(last_chunk >> 32));
+    Xil_Out32(base_addr + REG_DIN_LOW_OFFSET,  (u32)(last_chunk & 0xFFFFFFFF));
 
-    u32 status_reg;
-    int timeout = 2000000;
-    xil_printf("  Waiting for FPGA to complete...\r\n");
-    do {
-        status_reg = SHA3_1003_TIP1_mReadReg(base_addr, REG_STATUS_OFFSET);
+    // 准备最后的控制字：包含LAST位和剩余的字节数
+    u32 control2_final = control2_base | CONTROL2_LAST_DIN_BIT | ((u32)remaining_len << 1);
+    Xil_Out32(base_addr + REG_CONTROL2_OFFSET, control2_final);
+
+    // 发送最后的din_valid脉冲
+    Xil_Out32(base_addr + REG_CONTROL2_OFFSET, control2_final | CONTROL2_DIN_VALID_BIT);
+    Xil_Out32(base_addr + REG_CONTROL2_OFFSET, control2_final);
+
+    // --- 5. 等待计算完成 ---
+    timeout = 1000000;
+    while (((Xil_In32(base_addr + REG_STATUS_OFFSET) & STATUS_RESULT_READY_BIT) == 0) && (timeout > 0)) {
         timeout--;
-    } while (((status_reg & STATUS_RESULT_READY_BIT) == 0) && (timeout > 0));
+    }
 
     if (timeout <= 0) {
-        xil_printf("  [FATAL ERROR] Timeout waiting for FPGA result!\r\n");
+        // 如果发生超时，可以在这里加打印来报告错误
+        // xil_printf("[HW DRIVER ERROR] Timeout!\r\n");
         return;
     }
-    xil_printf("  FPGA calculation complete!\r\n");
 
+    // --- 6. 读出结果 ---
     u32 result_buffer[RESULT_REG_COUNT];
     for (int i = 0; i < RESULT_REG_COUNT; i++) {
-        result_buffer[i] = SHA3_1003_TIP1_mReadReg(base_addr, REG_RESULT_START_OFFSET + i * 4);
+        result_buffer[i] = Xil_In32(base_addr + REG_RESULT_START_OFFSET + i * 4);
     }
 
-    for (int i = 0; i < (SPX_N / 4); i++) {
-        out[i*4 + 0] = (unsigned char)(result_buffer[i] >> 24);
-        out[i*4 + 1] = (unsigned char)(result_buffer[i] >> 16);
-        out[i*4 + 2] = (unsigned char)(result_buffer[i] >> 8);
-        out[i*4 + 3] = (unsigned char)(result_buffer[i] >> 0);
-    }
+    // 只复制算法需要的长度
+    size_t copy_len = (outlen > sizeof(result_buffer)) ? sizeof(result_buffer) : outlen;
+    memcpy(out, result_buffer, copy_len);
 }

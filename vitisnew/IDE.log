@@ -197,3 +197,1529 @@ con
 12:19:24 ERROR : Failed to read platform from project 'new_system'.
 Reason: Failed to execute command 'platform read {D:/fpga/shakelite2_save/vitisnew/new_system/platform.spr}'. Click on details for more information.
 12:27:45 INFO  : Disconnected from the channel tcfchan#6.
+12:32:37 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\fpga\shakelite2_save\vitisnew\temp_xsdb_launch_script.tcl
+12:32:44 INFO  : XSCT server has started successfully.
+12:32:44 INFO  : plnx-install-location is set to ''
+12:32:44 INFO  : Successfully done setting XSCT server connection channel  
+12:32:44 INFO  : Successfully done setting workspace for the tool. 
+12:32:51 INFO  : Registering command handlers for Vitis TCF services
+12:32:57 INFO  : Successfully done query RDI_DATADIR 
+12:34:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:34:28 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+12:34:28 INFO  : 'jtag frequency' command is executed.
+12:34:28 INFO  : Context for 'APU' is selected.
+12:34:28 INFO  : System reset is completed.
+12:34:31 INFO  : 'after 3000' command is executed.
+12:34:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+12:34:35 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+12:34:35 INFO  : Context for 'APU' is selected.
+12:34:35 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+12:34:35 INFO  : 'configparams force-mem-access 1' command is executed.
+12:34:35 INFO  : Context for 'APU' is selected.
+12:34:35 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+12:34:36 INFO  : 'ps7_init' command is executed.
+12:34:36 INFO  : 'ps7_post_config' command is executed.
+12:34:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:34:36 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:34:36 INFO  : 'configparams force-mem-access 0' command is executed.
+12:34:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:34:36 INFO  : Memory regions updated for context APU
+12:34:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:34:36 INFO  : 'con' command is executed.
+12:34:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:34:36 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+12:35:11 INFO  : Hardware specification for platform project 'cpu_wrapper' is updated.
+12:36:38 INFO  : Disconnected from the channel tcfchan#1.
+12:36:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:36:40 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+12:36:40 INFO  : 'jtag frequency' command is executed.
+12:36:40 INFO  : Context for 'APU' is selected.
+12:36:40 INFO  : System reset is completed.
+12:36:43 INFO  : 'after 3000' command is executed.
+12:36:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+12:36:46 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+12:36:46 INFO  : Context for 'APU' is selected.
+12:36:48 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+12:36:48 INFO  : 'configparams force-mem-access 1' command is executed.
+12:36:48 INFO  : Context for 'APU' is selected.
+12:36:48 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+12:36:48 INFO  : 'ps7_init' command is executed.
+12:36:48 INFO  : 'ps7_post_config' command is executed.
+12:36:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:36:48 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:36:48 INFO  : 'configparams force-mem-access 0' command is executed.
+12:36:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:36:49 INFO  : Memory regions updated for context APU
+12:36:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:36:49 INFO  : 'con' command is executed.
+12:36:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:36:49 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+12:37:45 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+12:38:02 INFO  : Disconnected from the channel tcfchan#2.
+12:38:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:38:03 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+12:38:03 INFO  : 'jtag frequency' command is executed.
+12:38:03 INFO  : Context for 'APU' is selected.
+12:38:03 INFO  : System reset is completed.
+12:38:06 INFO  : 'after 3000' command is executed.
+12:38:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+12:38:10 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+12:38:10 INFO  : Context for 'APU' is selected.
+12:38:10 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+12:38:10 INFO  : 'configparams force-mem-access 1' command is executed.
+12:38:10 INFO  : Context for 'APU' is selected.
+12:38:10 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+12:38:10 INFO  : 'ps7_init' command is executed.
+12:38:10 INFO  : 'ps7_post_config' command is executed.
+12:38:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:38:11 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:38:11 INFO  : 'configparams force-mem-access 0' command is executed.
+12:38:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:38:11 INFO  : Memory regions updated for context APU
+12:38:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:38:11 INFO  : 'con' command is executed.
+12:38:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:38:11 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+12:40:13 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+12:40:17 INFO  : Disconnected from the channel tcfchan#4.
+12:40:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:40:18 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+12:40:18 INFO  : 'jtag frequency' command is executed.
+12:40:18 INFO  : Context for 'APU' is selected.
+12:40:19 INFO  : System reset is completed.
+12:40:22 INFO  : 'after 3000' command is executed.
+12:40:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+12:40:25 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+12:40:25 INFO  : Context for 'APU' is selected.
+12:40:25 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+12:40:25 INFO  : 'configparams force-mem-access 1' command is executed.
+12:40:25 INFO  : Context for 'APU' is selected.
+12:40:25 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+12:40:26 INFO  : 'ps7_init' command is executed.
+12:40:26 INFO  : 'ps7_post_config' command is executed.
+12:40:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:40:26 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:40:26 INFO  : 'configparams force-mem-access 0' command is executed.
+12:40:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:40:26 INFO  : Memory regions updated for context APU
+12:40:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:40:26 INFO  : 'con' command is executed.
+12:40:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:40:26 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+12:40:55 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+12:40:58 INFO  : Disconnected from the channel tcfchan#5.
+12:40:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:41:00 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+12:41:00 INFO  : 'jtag frequency' command is executed.
+12:41:00 INFO  : Context for 'APU' is selected.
+12:41:00 INFO  : System reset is completed.
+12:41:03 INFO  : 'after 3000' command is executed.
+12:41:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+12:41:06 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+12:41:06 INFO  : Context for 'APU' is selected.
+12:41:06 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+12:41:06 INFO  : 'configparams force-mem-access 1' command is executed.
+12:41:06 INFO  : Context for 'APU' is selected.
+12:41:06 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+12:41:07 INFO  : 'ps7_init' command is executed.
+12:41:07 INFO  : 'ps7_post_config' command is executed.
+12:41:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:41:07 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:41:07 INFO  : 'configparams force-mem-access 0' command is executed.
+12:41:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:41:07 INFO  : Memory regions updated for context APU
+12:41:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:41:07 INFO  : 'con' command is executed.
+12:41:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:41:07 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+12:42:45 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+12:42:49 INFO  : Disconnected from the channel tcfchan#6.
+12:42:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:42:50 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+12:42:50 INFO  : 'jtag frequency' command is executed.
+12:42:50 INFO  : Context for 'APU' is selected.
+12:42:50 INFO  : System reset is completed.
+12:42:53 INFO  : 'after 3000' command is executed.
+12:42:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+12:42:56 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+12:42:56 INFO  : Context for 'APU' is selected.
+12:42:56 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+12:42:56 INFO  : 'configparams force-mem-access 1' command is executed.
+12:42:56 INFO  : Context for 'APU' is selected.
+12:42:56 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+12:42:57 INFO  : 'ps7_init' command is executed.
+12:42:57 INFO  : 'ps7_post_config' command is executed.
+12:42:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:42:57 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:42:57 INFO  : 'configparams force-mem-access 0' command is executed.
+12:42:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:42:57 INFO  : Memory regions updated for context APU
+12:42:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:42:57 INFO  : 'con' command is executed.
+12:42:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:42:57 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:00:09 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:02:43 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:02:46 INFO  : Disconnected from the channel tcfchan#7.
+13:02:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:02:48 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:02:48 INFO  : 'jtag frequency' command is executed.
+13:02:48 INFO  : Context for 'APU' is selected.
+13:02:48 INFO  : System reset is completed.
+13:02:51 INFO  : 'after 3000' command is executed.
+13:02:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:02:54 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:02:54 INFO  : Context for 'APU' is selected.
+13:02:54 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:02:54 INFO  : 'configparams force-mem-access 1' command is executed.
+13:02:54 INFO  : Context for 'APU' is selected.
+13:02:54 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:02:55 INFO  : 'ps7_init' command is executed.
+13:02:55 INFO  : 'ps7_post_config' command is executed.
+13:02:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:02:55 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:02:55 INFO  : 'configparams force-mem-access 0' command is executed.
+13:02:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:02:55 INFO  : Memory regions updated for context APU
+13:02:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:02:55 INFO  : 'con' command is executed.
+13:02:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:02:55 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:04:57 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:05:02 INFO  : Disconnected from the channel tcfchan#8.
+13:05:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:05:03 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:05:03 INFO  : 'jtag frequency' command is executed.
+13:05:03 INFO  : Context for 'APU' is selected.
+13:05:03 INFO  : System reset is completed.
+13:05:06 INFO  : 'after 3000' command is executed.
+13:05:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:05:09 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:05:09 INFO  : Context for 'APU' is selected.
+13:05:09 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:05:09 INFO  : 'configparams force-mem-access 1' command is executed.
+13:05:09 INFO  : Context for 'APU' is selected.
+13:05:09 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:05:10 INFO  : 'ps7_init' command is executed.
+13:05:10 INFO  : 'ps7_post_config' command is executed.
+13:05:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:05:10 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:05:10 INFO  : 'configparams force-mem-access 0' command is executed.
+13:05:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:05:10 INFO  : Memory regions updated for context APU
+13:05:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:05:10 INFO  : 'con' command is executed.
+13:05:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:05:10 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:07:53 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:07:58 INFO  : Disconnected from the channel tcfchan#9.
+13:07:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:08:00 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:08:00 INFO  : 'jtag frequency' command is executed.
+13:08:00 INFO  : Context for 'APU' is selected.
+13:08:00 INFO  : System reset is completed.
+13:08:03 INFO  : 'after 3000' command is executed.
+13:08:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:08:06 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:08:06 INFO  : Context for 'APU' is selected.
+13:08:06 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:08:06 INFO  : 'configparams force-mem-access 1' command is executed.
+13:08:06 INFO  : Context for 'APU' is selected.
+13:08:06 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:08:07 INFO  : 'ps7_init' command is executed.
+13:08:07 INFO  : 'ps7_post_config' command is executed.
+13:08:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:08:07 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:08:07 INFO  : 'configparams force-mem-access 0' command is executed.
+13:08:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:08:07 INFO  : Memory regions updated for context APU
+13:08:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:08:07 INFO  : 'con' command is executed.
+13:08:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:08:07 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:08:39 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:08:42 INFO  : Disconnected from the channel tcfchan#10.
+13:08:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:08:43 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:08:43 INFO  : 'jtag frequency' command is executed.
+13:08:43 INFO  : Context for 'APU' is selected.
+13:08:44 INFO  : System reset is completed.
+13:08:47 INFO  : 'after 3000' command is executed.
+13:08:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:08:50 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:08:50 INFO  : Context for 'APU' is selected.
+13:08:50 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:08:50 INFO  : 'configparams force-mem-access 1' command is executed.
+13:08:50 INFO  : Context for 'APU' is selected.
+13:08:50 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:08:51 INFO  : 'ps7_init' command is executed.
+13:08:51 INFO  : 'ps7_post_config' command is executed.
+13:08:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:08:51 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:08:51 INFO  : 'configparams force-mem-access 0' command is executed.
+13:08:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:08:51 INFO  : Memory regions updated for context APU
+13:08:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:08:51 INFO  : 'con' command is executed.
+13:08:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:08:51 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:10:06 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:10:11 INFO  : Disconnected from the channel tcfchan#11.
+13:10:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:10:12 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:10:12 INFO  : 'jtag frequency' command is executed.
+13:10:12 INFO  : Context for 'APU' is selected.
+13:10:12 INFO  : System reset is completed.
+13:10:15 INFO  : 'after 3000' command is executed.
+13:10:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:10:19 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:10:19 INFO  : Context for 'APU' is selected.
+13:10:19 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:10:19 INFO  : 'configparams force-mem-access 1' command is executed.
+13:10:19 INFO  : Context for 'APU' is selected.
+13:10:19 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:10:19 INFO  : 'ps7_init' command is executed.
+13:10:19 INFO  : 'ps7_post_config' command is executed.
+13:10:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:10:20 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:10:20 INFO  : 'configparams force-mem-access 0' command is executed.
+13:10:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:10:20 INFO  : Memory regions updated for context APU
+13:10:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:10:20 INFO  : 'con' command is executed.
+13:10:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:10:20 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:10:46 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:10:50 INFO  : Disconnected from the channel tcfchan#12.
+13:10:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:10:51 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:10:51 INFO  : 'jtag frequency' command is executed.
+13:10:51 INFO  : Context for 'APU' is selected.
+13:10:51 INFO  : System reset is completed.
+13:10:54 INFO  : 'after 3000' command is executed.
+13:10:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:10:57 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:10:57 INFO  : Context for 'APU' is selected.
+13:10:57 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:10:57 INFO  : 'configparams force-mem-access 1' command is executed.
+13:10:57 INFO  : Context for 'APU' is selected.
+13:10:57 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:10:58 INFO  : 'ps7_init' command is executed.
+13:10:58 INFO  : 'ps7_post_config' command is executed.
+13:10:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:10:58 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:10:58 INFO  : 'configparams force-mem-access 0' command is executed.
+13:10:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:10:58 INFO  : Memory regions updated for context APU
+13:10:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:10:58 INFO  : 'con' command is executed.
+13:10:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:10:58 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:14:28 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:14:31 INFO  : Disconnected from the channel tcfchan#13.
+13:14:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:14:32 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:14:32 INFO  : 'jtag frequency' command is executed.
+13:14:32 INFO  : Context for 'APU' is selected.
+13:14:32 INFO  : System reset is completed.
+13:14:35 INFO  : 'after 3000' command is executed.
+13:14:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:14:39 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:14:39 INFO  : Context for 'APU' is selected.
+13:14:39 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:14:39 INFO  : 'configparams force-mem-access 1' command is executed.
+13:14:39 INFO  : Context for 'APU' is selected.
+13:14:39 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:14:39 INFO  : 'ps7_init' command is executed.
+13:14:39 INFO  : 'ps7_post_config' command is executed.
+13:14:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:14:40 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:14:40 INFO  : 'configparams force-mem-access 0' command is executed.
+13:14:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:14:40 INFO  : Memory regions updated for context APU
+13:14:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:14:40 INFO  : 'con' command is executed.
+13:14:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:14:40 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:15:17 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:15:22 INFO  : Disconnected from the channel tcfchan#14.
+13:15:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:15:24 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:15:24 INFO  : 'jtag frequency' command is executed.
+13:15:24 INFO  : Context for 'APU' is selected.
+13:15:24 INFO  : System reset is completed.
+13:15:27 INFO  : 'after 3000' command is executed.
+13:15:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:15:30 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:15:30 INFO  : Context for 'APU' is selected.
+13:15:30 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:15:30 INFO  : 'configparams force-mem-access 1' command is executed.
+13:15:30 INFO  : Context for 'APU' is selected.
+13:15:30 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:15:31 INFO  : 'ps7_init' command is executed.
+13:15:31 INFO  : 'ps7_post_config' command is executed.
+13:15:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:15:31 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:15:31 INFO  : 'configparams force-mem-access 0' command is executed.
+13:15:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:15:31 INFO  : Memory regions updated for context APU
+13:15:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:15:31 INFO  : 'con' command is executed.
+13:15:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:15:31 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:16:29 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:16:33 INFO  : Disconnected from the channel tcfchan#15.
+13:16:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:16:34 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:16:34 INFO  : 'jtag frequency' command is executed.
+13:16:34 INFO  : Context for 'APU' is selected.
+13:16:35 INFO  : System reset is completed.
+13:16:38 INFO  : 'after 3000' command is executed.
+13:16:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:16:41 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:16:41 INFO  : Context for 'APU' is selected.
+13:16:41 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:16:41 INFO  : 'configparams force-mem-access 1' command is executed.
+13:16:41 INFO  : Context for 'APU' is selected.
+13:16:41 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:16:41 INFO  : 'ps7_init' command is executed.
+13:16:42 INFO  : 'ps7_post_config' command is executed.
+13:16:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:16:42 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:16:42 INFO  : 'configparams force-mem-access 0' command is executed.
+13:16:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:16:42 INFO  : Memory regions updated for context APU
+13:16:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:16:42 INFO  : 'con' command is executed.
+13:16:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:16:42 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:21:12 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:22:09 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:22:36 INFO  : Disconnected from the channel tcfchan#16.
+13:22:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:22:37 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:22:37 INFO  : 'jtag frequency' command is executed.
+13:22:37 INFO  : Context for 'APU' is selected.
+13:22:37 INFO  : System reset is completed.
+13:22:40 INFO  : 'after 3000' command is executed.
+13:22:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:22:43 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:22:43 INFO  : Context for 'APU' is selected.
+13:22:43 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:22:43 INFO  : 'configparams force-mem-access 1' command is executed.
+13:22:43 INFO  : Context for 'APU' is selected.
+13:22:43 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:22:44 INFO  : 'ps7_init' command is executed.
+13:22:44 INFO  : 'ps7_post_config' command is executed.
+13:22:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:22:44 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:22:44 INFO  : 'configparams force-mem-access 0' command is executed.
+13:22:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:22:44 INFO  : Memory regions updated for context APU
+13:22:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:22:44 INFO  : 'con' command is executed.
+13:22:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:22:44 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:25:43 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:27:14 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:28:11 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:28:15 INFO  : Disconnected from the channel tcfchan#20.
+13:28:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:28:17 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:28:17 INFO  : 'jtag frequency' command is executed.
+13:28:17 INFO  : Context for 'APU' is selected.
+13:28:17 INFO  : System reset is completed.
+13:28:20 INFO  : 'after 3000' command is executed.
+13:28:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:28:23 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:28:23 INFO  : Context for 'APU' is selected.
+13:28:23 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:28:23 INFO  : 'configparams force-mem-access 1' command is executed.
+13:28:23 INFO  : Context for 'APU' is selected.
+13:28:23 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:28:24 INFO  : 'ps7_init' command is executed.
+13:28:24 INFO  : 'ps7_post_config' command is executed.
+13:28:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:28:24 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:28:24 INFO  : 'configparams force-mem-access 0' command is executed.
+13:28:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:28:24 INFO  : Memory regions updated for context APU
+13:28:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:28:24 INFO  : 'con' command is executed.
+13:28:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:28:24 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:31:04 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:31:08 INFO  : Disconnected from the channel tcfchan#21.
+13:31:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:31:09 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:31:09 INFO  : 'jtag frequency' command is executed.
+13:31:09 INFO  : Context for 'APU' is selected.
+13:31:09 INFO  : System reset is completed.
+13:31:12 INFO  : 'after 3000' command is executed.
+13:31:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:31:16 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:31:16 INFO  : Context for 'APU' is selected.
+13:31:16 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:31:16 INFO  : 'configparams force-mem-access 1' command is executed.
+13:31:16 INFO  : Context for 'APU' is selected.
+13:31:16 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:31:16 INFO  : 'ps7_init' command is executed.
+13:31:16 INFO  : 'ps7_post_config' command is executed.
+13:31:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:31:16 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:31:17 INFO  : 'configparams force-mem-access 0' command is executed.
+13:31:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:31:17 INFO  : Memory regions updated for context APU
+13:31:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:31:17 INFO  : 'con' command is executed.
+13:31:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:31:17 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:32:34 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:32:52 INFO  : Disconnected from the channel tcfchan#22.
+13:32:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:32:53 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:32:53 INFO  : 'jtag frequency' command is executed.
+13:32:53 INFO  : Context for 'APU' is selected.
+13:32:53 INFO  : System reset is completed.
+13:32:56 INFO  : 'after 3000' command is executed.
+13:32:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:32:59 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:32:59 INFO  : Context for 'APU' is selected.
+13:32:59 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:32:59 INFO  : 'configparams force-mem-access 1' command is executed.
+13:32:59 INFO  : Context for 'APU' is selected.
+13:32:59 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:33:00 INFO  : 'ps7_init' command is executed.
+13:33:00 INFO  : 'ps7_post_config' command is executed.
+13:33:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:33:00 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:33:00 INFO  : 'configparams force-mem-access 0' command is executed.
+13:33:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:33:00 INFO  : Memory regions updated for context APU
+13:33:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:33:00 INFO  : 'con' command is executed.
+13:33:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:33:00 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:35:41 INFO  : Disconnected from the channel tcfchan#26.
+13:35:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:35:42 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:35:42 INFO  : 'jtag frequency' command is executed.
+13:35:42 INFO  : Context for 'APU' is selected.
+13:35:42 INFO  : System reset is completed.
+13:35:45 INFO  : 'after 3000' command is executed.
+13:35:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:35:48 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:35:48 INFO  : Context for 'APU' is selected.
+13:35:48 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:35:48 INFO  : 'configparams force-mem-access 1' command is executed.
+13:35:48 INFO  : Context for 'APU' is selected.
+13:35:48 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:35:49 INFO  : 'ps7_init' command is executed.
+13:35:49 INFO  : 'ps7_post_config' command is executed.
+13:35:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:35:49 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:35:49 INFO  : 'configparams force-mem-access 0' command is executed.
+13:35:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:35:49 INFO  : Memory regions updated for context APU
+13:35:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:35:49 INFO  : 'con' command is executed.
+13:35:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:35:49 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:36:18 INFO  : Disconnected from the channel tcfchan#27.
+13:36:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:36:19 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:36:19 INFO  : 'jtag frequency' command is executed.
+13:36:19 INFO  : Context for 'APU' is selected.
+13:36:20 INFO  : System reset is completed.
+13:36:23 INFO  : 'after 3000' command is executed.
+13:36:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:36:26 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:36:26 INFO  : Context for 'APU' is selected.
+13:36:26 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:36:26 INFO  : 'configparams force-mem-access 1' command is executed.
+13:36:26 INFO  : Context for 'APU' is selected.
+13:36:26 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:36:27 INFO  : 'ps7_init' command is executed.
+13:36:27 INFO  : 'ps7_post_config' command is executed.
+13:36:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:36:27 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:36:27 INFO  : 'configparams force-mem-access 0' command is executed.
+13:36:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:36:27 INFO  : Memory regions updated for context APU
+13:36:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:36:27 INFO  : 'con' command is executed.
+13:36:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:36:27 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:46:38 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:46:42 INFO  : Disconnected from the channel tcfchan#28.
+13:46:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:46:43 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:46:43 INFO  : 'jtag frequency' command is executed.
+13:46:43 INFO  : Context for 'APU' is selected.
+13:46:43 INFO  : System reset is completed.
+13:46:46 INFO  : 'after 3000' command is executed.
+13:46:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:46:49 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:46:50 INFO  : Context for 'APU' is selected.
+13:46:50 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:46:50 INFO  : 'configparams force-mem-access 1' command is executed.
+13:46:50 INFO  : Context for 'APU' is selected.
+13:46:50 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:46:50 INFO  : 'ps7_init' command is executed.
+13:46:50 INFO  : 'ps7_post_config' command is executed.
+13:46:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:46:50 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:46:50 INFO  : 'configparams force-mem-access 0' command is executed.
+13:46:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:46:50 INFO  : Memory regions updated for context APU
+13:46:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:46:50 INFO  : 'con' command is executed.
+13:46:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:46:50 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+13:52:36 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+13:52:40 INFO  : Disconnected from the channel tcfchan#29.
+13:52:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:52:41 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+13:52:41 INFO  : 'jtag frequency' command is executed.
+13:52:41 INFO  : Context for 'APU' is selected.
+13:52:41 INFO  : System reset is completed.
+13:52:44 INFO  : 'after 3000' command is executed.
+13:52:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+13:52:47 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+13:52:47 INFO  : Context for 'APU' is selected.
+13:52:48 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+13:52:48 INFO  : 'configparams force-mem-access 1' command is executed.
+13:52:48 INFO  : Context for 'APU' is selected.
+13:52:48 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+13:52:48 INFO  : 'ps7_init' command is executed.
+13:52:48 INFO  : 'ps7_post_config' command is executed.
+13:52:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:52:48 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:52:48 INFO  : 'configparams force-mem-access 0' command is executed.
+13:52:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:52:48 INFO  : Memory regions updated for context APU
+13:52:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:52:48 INFO  : 'con' command is executed.
+13:52:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:52:48 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+14:00:32 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+14:09:47 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+14:09:55 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+14:09:59 INFO  : Disconnected from the channel tcfchan#30.
+14:10:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:10:00 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+14:10:00 INFO  : 'jtag frequency' command is executed.
+14:10:00 INFO  : Context for 'APU' is selected.
+14:10:00 INFO  : System reset is completed.
+14:10:03 INFO  : 'after 3000' command is executed.
+14:10:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+14:10:06 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+14:10:06 INFO  : Context for 'APU' is selected.
+14:10:07 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+14:10:07 INFO  : 'configparams force-mem-access 1' command is executed.
+14:10:07 INFO  : Context for 'APU' is selected.
+14:10:07 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+14:10:07 INFO  : 'ps7_init' command is executed.
+14:10:07 INFO  : 'ps7_post_config' command is executed.
+14:10:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:10:07 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:10:07 INFO  : 'configparams force-mem-access 0' command is executed.
+14:10:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:10:07 INFO  : Memory regions updated for context APU
+14:10:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:10:07 INFO  : 'con' command is executed.
+14:10:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:10:07 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+14:11:55 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+14:11:59 INFO  : Disconnected from the channel tcfchan#31.
+14:12:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:12:00 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+14:12:00 INFO  : 'jtag frequency' command is executed.
+14:12:00 INFO  : Context for 'APU' is selected.
+14:12:00 INFO  : System reset is completed.
+14:12:03 INFO  : 'after 3000' command is executed.
+14:12:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+14:12:06 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+14:12:07 INFO  : Context for 'APU' is selected.
+14:12:07 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+14:12:07 INFO  : 'configparams force-mem-access 1' command is executed.
+14:12:07 INFO  : Context for 'APU' is selected.
+14:12:07 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+14:12:07 INFO  : 'ps7_init' command is executed.
+14:12:07 INFO  : 'ps7_post_config' command is executed.
+14:12:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:12:07 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:12:07 INFO  : 'configparams force-mem-access 0' command is executed.
+14:12:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:12:07 INFO  : Memory regions updated for context APU
+14:12:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:12:07 INFO  : 'con' command is executed.
+14:12:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:12:07 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+15:31:58 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+15:32:18 INFO  : Disconnected from the channel tcfchan#32.
+15:32:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:19 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+15:32:19 INFO  : 'jtag frequency' command is executed.
+15:32:19 INFO  : Context for 'APU' is selected.
+15:32:19 INFO  : System reset is completed.
+15:32:22 INFO  : 'after 3000' command is executed.
+15:32:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+15:32:26 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+15:32:26 INFO  : Context for 'APU' is selected.
+15:32:26 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+15:32:26 INFO  : 'configparams force-mem-access 1' command is executed.
+15:32:26 INFO  : Context for 'APU' is selected.
+15:32:26 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+15:32:26 INFO  : 'ps7_init' command is executed.
+15:32:26 INFO  : 'ps7_post_config' command is executed.
+15:32:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:32:27 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:32:27 INFO  : 'configparams force-mem-access 0' command is executed.
+15:32:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:32:27 INFO  : Memory regions updated for context APU
+15:32:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:32:27 INFO  : 'con' command is executed.
+15:32:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:32:27 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+19:14:12 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+19:20:43 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+20:22:31 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+20:30:27 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+20:43:58 INFO  : Disconnected from the channel tcfchan#33.
+20:43:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:43:59 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+20:43:59 INFO  : 'jtag frequency' command is executed.
+20:43:59 INFO  : Context for 'APU' is selected.
+20:43:59 INFO  : System reset is completed.
+20:44:02 INFO  : 'after 3000' command is executed.
+20:44:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+20:44:06 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+20:44:06 INFO  : Context for 'APU' is selected.
+20:44:06 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+20:44:06 INFO  : 'configparams force-mem-access 1' command is executed.
+20:44:06 INFO  : Context for 'APU' is selected.
+20:44:06 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+20:44:07 INFO  : 'ps7_init' command is executed.
+20:44:07 INFO  : 'ps7_post_config' command is executed.
+20:44:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:44:07 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:44:07 INFO  : 'configparams force-mem-access 0' command is executed.
+20:44:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:44:07 INFO  : Memory regions updated for context APU
+20:44:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:44:07 INFO  : 'con' command is executed.
+20:44:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:44:07 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+20:44:38 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+20:46:02 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+20:51:27 INFO  : Disconnected from the channel tcfchan#34.
+20:51:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:51:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+20:51:47 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+20:51:57 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+20:54:15 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+21:10:57 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+21:32:45 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+21:41:40 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+21:53:30 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+21:54:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:54:09 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+21:54:09 INFO  : 'jtag frequency' command is executed.
+21:54:09 INFO  : Context for 'APU' is selected.
+21:54:09 INFO  : System reset is completed.
+21:54:12 INFO  : 'after 3000' command is executed.
+21:54:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+21:54:16 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+21:54:16 INFO  : Context for 'APU' is selected.
+21:54:16 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+21:54:16 INFO  : 'configparams force-mem-access 1' command is executed.
+21:54:16 INFO  : Context for 'APU' is selected.
+21:54:16 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+21:54:16 INFO  : 'ps7_init' command is executed.
+21:54:16 INFO  : 'ps7_post_config' command is executed.
+21:54:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:54:17 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:54:17 INFO  : 'configparams force-mem-access 0' command is executed.
+21:54:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:54:17 INFO  : Memory regions updated for context APU
+21:54:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:54:17 INFO  : 'con' command is executed.
+21:54:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:54:17 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+01:01:29 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+01:06:43 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+01:10:41 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+01:10:53 INFO  : Disconnected from the channel tcfchan#35.
+01:10:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:10:54 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+01:10:54 INFO  : 'jtag frequency' command is executed.
+01:10:54 INFO  : Context for 'APU' is selected.
+01:10:54 INFO  : System reset is completed.
+01:10:57 INFO  : 'after 3000' command is executed.
+01:10:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+01:11:01 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+01:11:01 INFO  : Context for 'APU' is selected.
+01:11:01 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+01:11:01 INFO  : 'configparams force-mem-access 1' command is executed.
+01:11:01 INFO  : Context for 'APU' is selected.
+01:11:01 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+01:11:01 INFO  : 'ps7_init' command is executed.
+01:11:01 INFO  : 'ps7_post_config' command is executed.
+01:11:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:11:02 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:11:02 INFO  : 'configparams force-mem-access 0' command is executed.
+01:11:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:11:02 INFO  : Memory regions updated for context APU
+01:11:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:11:02 INFO  : 'con' command is executed.
+01:11:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:11:02 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+01:14:57 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+01:15:03 INFO  : Disconnected from the channel tcfchan#36.
+01:15:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:15:04 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+01:15:04 INFO  : 'jtag frequency' command is executed.
+01:15:04 INFO  : Context for 'APU' is selected.
+01:15:04 INFO  : System reset is completed.
+01:15:07 INFO  : 'after 3000' command is executed.
+01:15:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+01:15:11 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+01:15:11 INFO  : Context for 'APU' is selected.
+01:15:11 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+01:15:11 INFO  : 'configparams force-mem-access 1' command is executed.
+01:15:11 INFO  : Context for 'APU' is selected.
+01:15:11 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+01:15:12 INFO  : 'ps7_init' command is executed.
+01:15:12 INFO  : 'ps7_post_config' command is executed.
+01:15:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:15:12 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:15:12 INFO  : 'configparams force-mem-access 0' command is executed.
+01:15:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:15:12 INFO  : Memory regions updated for context APU
+01:15:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:15:12 INFO  : 'con' command is executed.
+01:15:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:15:12 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+01:19:41 INFO  : Checking for BSP changes to sync application flags for project 'new'...
+01:19:48 INFO  : Disconnected from the channel tcfchan#37.
+01:19:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:19:49 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+01:19:49 INFO  : 'jtag frequency' command is executed.
+01:19:49 INFO  : Context for 'APU' is selected.
+01:19:49 INFO  : System reset is completed.
+01:19:52 INFO  : 'after 3000' command is executed.
+01:19:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+01:19:56 INFO  : FPGA configured successfully with bitstream "D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit"
+01:19:56 INFO  : Context for 'APU' is selected.
+01:19:56 INFO  : Hardware design information is loaded from 'D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa'.
+01:19:56 INFO  : 'configparams force-mem-access 1' command is executed.
+01:19:56 INFO  : Context for 'APU' is selected.
+01:19:56 INFO  : Sourcing of 'D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl' is done.
+01:19:57 INFO  : 'ps7_init' command is executed.
+01:19:57 INFO  : 'ps7_post_config' command is executed.
+01:19:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:19:57 INFO  : The application 'D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:19:57 INFO  : 'configparams force-mem-access 0' command is executed.
+01:19:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:19:57 INFO  : Memory regions updated for context APU
+01:19:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:19:57 INFO  : 'con' command is executed.
+01:19:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:19:57 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnew\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+10:10:06 INFO  : Checking for BSP changes to sync application flags for project 'new'...
