@@ -1,6 +1,6 @@
 Nothing to build in platform 'cpu_wrapper'
 
-10:24:10 **** Incremental Build of configuration Debug for project new ****
+11:56:48 **** Incremental Build of configuration Debug for project new ****
 make all 
 D:/ruanjian/Vivado/Vitis/2019.2/gnuwin/bin/make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -8,7 +8,7 @@ a9-linaro-pre-build-step
 D:/ruanjian/Vivado/Vitis/2019.2/gnuwin/bin/make --no-print-directory main-build
 Building file: ../src/main.c
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-128f" -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 In file included from ../src/main.c:7:
 D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
  #pragma message ("For the sleep routines, Global timer is being used")
@@ -23,6 +23,6 @@ Finished building target: new.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size new.elf  |tee "new.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  67912	   1544	 123288	 192744	  2f0e8	new.elf
+  67556	   1544	  57656	 126756	  1ef24	new.elf
 Finished building: new.elf.size
  

@@ -1,6 +1,6 @@
 Nothing to build in platform 'cpu_wrapper'
 
-11:32:56 **** Incremental Build of configuration Debug for project shakelite2 ****
+11:16:41 **** Incremental Build of configuration Debug for project shakelite2 ****
 make all 
 D:/ruanjian/Vivado/Vitis/2019.2/gnuwin/bin/make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -19,6 +19,6 @@ Finished building target: shakelite2.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size shakelite2.elf  |tee "shakelite2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  35820	   1544	  23256	  60620	   eccc	shakelite2.elf
+  34300	   1544	  23256	  59100	   e6dc	shakelite2.elf
 Finished building: shakelite2.elf.size
  

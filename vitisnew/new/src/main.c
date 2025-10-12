@@ -6,24 +6,31 @@
 #include "xil_cache.h"
 #include "xtime_l.h"
 
-// Include SPHINCS+ core API and parameters
+// Include all necessary SPHINCS+ headers
 #include "api.h"
 #include "params.h"
+#include "wots.h"
+#include "fors.h"
+#include "utils.h"
 
 // COMPILE-TIME SANITY CHECK:
-// If the SPHINCS+ parameters were not loaded correctly, CRYPTO_BYTES will not be defined.
-// This will cause a compile error, preventing a silent failure.
+// If the SPHINCS+ parameters were not loaded correctly from params.h,
+// CRYPTO_BYTES will not be defined. This will cause a compile error.
 #if !defined(CRYPTO_BYTES)
-    #error "SPHINCS+ parameters not loaded correctly. Check params.h and build settings."
+    #error "SPHINCS+ parameters not loaded correctly. Please check params.h and your build settings."
 #endif
 
 #define MESSAGE_LEN 32
 
 /************************** Function Prototypes ***************************/
 void print_hex(const char *label, const unsigned char *data, size_t len);
-int run_sphincs_test();
+int run_sphincs_test_forensic();
 void init_platform();
 void cleanup_platform();
+
+/* This declares the external hardware driver function so main.c knows about it */
+extern void shake256_hw(uint8_t *out, size_t outlen, const uint8_t *in, const size_t inlen);
+
 
 /*****************************************************************************/
 int main()
@@ -31,16 +38,17 @@ int main()
     int status;
     init_platform();
 
-    xil_printf("\r\n\n--- SPHINCS+ Hardware Accelerated Test ---\r\n");
+    xil_printf("\r\n\n--- SPHINCS+ FORENSIC DEBUGGING TEST ---\r\n");
+    xil_printf("This test will print detailed steps to locate the failure point.\r\n");
     xil_printf("SPHINCS+ Parameter Set: %s\r\n", xstr(PARAMS));
-    xil_printf("Timer clock frequency: %lu Hz\r\n\n", COUNTS_PER_SECOND);
+    xil_printf("Expected Signature Bytes (CRYPTO_BYTES): %d\r\n\n", CRYPTO_BYTES);
 
-    status = run_sphincs_test();
+    status = run_sphincs_test_forensic();
 
     if (status == XST_SUCCESS) {
-        xil_printf("\r\n[TRUE SUCCESS] SPHINCS+ signature and verification flow completed successfully!\r\n");
+        xil_printf("\r\n[TRUE SUCCESS] All steps completed and verified successfully!\r\n");
     } else {
-        xil_printf("\r\n[FAILURE] SPHINCS+ signature and verification flow FAILED.\r\n");
+        xil_printf("\r\n[EXECUTION FAILED] The test failed at one of the steps above.\r\n");
     }
 
     cleanup_platform();
@@ -48,7 +56,7 @@ int main()
 }
 
 /*****************************************************************************/
-int run_sphincs_test()
+int run_sphincs_test_forensic()
 {
     static unsigned char pk[CRYPTO_PUBLICKEYBYTES];
     static unsigned char sk[CRYPTO_SECRETKEYBYTES];
@@ -61,14 +69,10 @@ int run_sphincs_test()
     int ret_val;
     XTime t_start, t_end;
 
-    // --- Step 1: Prepare Message ---
     xil_printf("--- Step 1: Preparing a %d-byte message ---\r\n", MESSAGE_LEN);
-    for (int i = 0; i < MESSAGE_LEN; i++) {
-        m[i] = (unsigned char)i;
-    }
+    for (int i = 0; i < MESSAGE_LEN; i++) { m[i] = (unsigned char)i; }
     print_hex("  Original Message", m, MESSAGE_LEN);
 
-    // --- Step 2: Generate Keypair ---
     xil_printf("\r\n--- Step 2: Generating keypair (PK: %d bytes, SK: %d bytes) ---\r\n", CRYPTO_PUBLICKEYBYTES, CRYPTO_SECRETKEYBYTES);
     XTime_GetTime(&t_start);
     if (crypto_sign_keypair(pk, sk) != 0) {
@@ -79,28 +83,32 @@ int run_sphincs_test()
     xil_printf("  Keypair generated successfully in %llu clock cycles.\r\n", (unsigned long long)(t_end - t_start));
     print_hex("  Public Key (first 32 bytes)", pk, 32);
 
-    // --- Step 3: Sign Message ---
     xil_printf("\r\n--- Step 3: Signing the message ---\r\n");
+    xil_printf("  The signing process involves many hash calls. We will trace the main steps.\r\n");
     XTime_GetTime(&t_start);
     if (crypto_sign(sm, &smlen, m, MESSAGE_LEN, sk) != 0) {
-        xil_printf("  [ERROR] Signing function failed!\r\n");
+        xil_printf("  [ERROR] crypto_sign function returned an error!\r\n");
         return XST_FAILURE;
     }
     XTime_GetTime(&t_end);
-    xil_printf("  Message signed in %llu clock cycles.\r\n", (unsigned long long)(t_end - t_start));
-    xil_printf("  Reported signed message length: %llu bytes.\r\n", smlen);
+    xil_printf("  crypto_sign function completed in %llu clock cycles.\r\n", (unsigned long long)(t_end - t_start));
+    xil_printf("  Reported total signed message length: %llu bytes.\r\n", smlen);
 
-    // --- CRITICAL CHECK ---
-    if (smlen != (CRYPTO_BYTES + MESSAGE_LEN)) {
+    // --- BULLETPROOF SIGNATURE LENGTH CHECK ---
+    const unsigned long long expected_smlen = CRYPTO_BYTES + MESSAGE_LEN;
+    xil_printf("  Performing signature length check...\r\n");
+    if (smlen != expected_smlen) {
         xil_printf("\r\n  [CRITICAL FAILURE] Signature length is INCORRECT!\r\n");
-        xil_printf("    Expected length: %d bytes\r\n", CRYPTO_BYTES + MESSAGE_LEN);
-        xil_printf("    Actual length:   %llu bytes\r\n", smlen);
-        xil_printf("    This proves the hardware accelerator is not producing the correct hash value.\r\n");
+        xil_printf("    Expected total length: %llu bytes\r\n", expected_smlen);
+        xil_printf("    Actual total length:   %llu bytes\r\n", smlen);
+        xil_printf("    This is definitive proof that the hardware accelerator is producing an incorrect hash value.\r\n");
+        xil_printf("    Halting test.\r\n");
         return XST_FAILURE;
     }
     xil_printf("  Signature length is CORRECT.\r\n");
+    print_hex("  Signature part (first 32 bytes)", sm, 32);
 
-    // --- Step 4: Verify Signature ---
+
     xil_printf("\r\n--- Step 4: Verifying the signature ---\r\n");
     XTime_GetTime(&t_start);
     ret_val = crypto_sign_open(mout, &mlen_out, sm, smlen, pk);
@@ -112,16 +120,18 @@ int run_sphincs_test()
     }
     xil_printf("  Signature verified successfully in %llu clock cycles.\r\n", (unsigned long long)(t_end - t_start));
 
-    // --- Step 5: Final Check ---
     xil_printf("\r\n--- Step 5: Final Check ---\r\n");
     if (mlen_out != MESSAGE_LEN || memcmp(m, mout, MESSAGE_LEN) != 0) {
-        xil_printf("  [ERROR] Message content mismatch! Verification is faulty.\r\n");
+        xil_printf("  [ERROR] Message content mismatch! Original and recovered messages are different.\r\n");
         return XST_FAILURE;
     }
     xil_printf("  Original and recovered messages match perfectly.\r\n");
 
     return XST_SUCCESS;
 }
+
+
+/************************** Helper Functions ***************************/
 
 void print_hex(const char *label, const unsigned char *data, size_t len) {
     xil_printf("%s: ", label);
