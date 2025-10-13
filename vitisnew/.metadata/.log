@@ -8792,3 +8792,2803 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-161: Laun
 
 !ENTRY com.xilinx.sdk.utils 1 0 2025-10-12 23:05:37.727
 !MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '37'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:26:34.074
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Thread: Worker-180: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:26:34.114
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-180: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:26:34.115
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-180: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:26:34.127
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-180: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 10:26:34.127
+!MESSAGE Generating MD5 hash for file: D:\fpga\shakelite2_save\vitisnew\cpu_wrapper\export\cpu_wrapper\sw\cpu_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:26:34.128
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-180: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:26:34.132
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-180: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:27:41.767
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Thread: Worker-179: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:27:41.776
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-179: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:27:41.777
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-179: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:27:41.787
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-179: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 10:27:41.787
+!MESSAGE Generating MD5 hash for file: D:\fpga\shakelite2_save\vitisnew\cpu_wrapper\export\cpu_wrapper\sw\cpu_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:27:41.789
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-179: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:27:41.791
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-179: Build Project
+
+!ENTRY org.eclipse.tcf 4 0 2025-10-13 10:29:50.786
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:32:40.713
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:32:40.724
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:32:40.726
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:32:40.740
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 10:32:40.740
+!MESSAGE Generating MD5 hash for file: D:\fpga\shakelite2_save\vitisnew\cpu_wrapper\export\cpu_wrapper\sw\cpu_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:32:40.743
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:32:40.748
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:34:05.042
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Thread: Worker-182: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:34:05.053
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-182: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:34:05.054
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-182: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:34:05.058
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-182: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 10:34:05.059
+!MESSAGE Generating MD5 hash for file: D:\fpga\shakelite2_save\vitisnew\cpu_wrapper\export\cpu_wrapper\sw\cpu_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:34:05.060
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-182: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:34:05.063
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-182: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 10:34:14.184
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:37:31.121
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Thread: Worker-188: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:37:31.127
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-188: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:37:31.128
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-188: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:37:31.132
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-188: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 10:37:31.132
+!MESSAGE Generating MD5 hash for file: D:\fpga\shakelite2_save\vitisnew\cpu_wrapper\export\cpu_wrapper\sw\cpu_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:37:31.133
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-188: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:37:31.135
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-188: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:43:56.696
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Thread: Worker-189: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:43:56.704
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-189: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:43:56.705
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-189: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:43:56.710
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-189: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 10:43:56.711
+!MESSAGE Generating MD5 hash for file: D:\fpga\shakelite2_save\vitisnew\cpu_wrapper\export\cpu_wrapper\sw\cpu_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:43:56.712
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-189: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:43:56.715
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-189: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 10:44:04.669
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:45:58.572
+!MESSAGE XSCT Command: [platform read {D:/fpga/shakelite2_save/vitisnew/new_system/platform.spr}], Thread: Worker-181: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:45:58.576
+!MESSAGE XSCT command with result: [platform read {D:/fpga/shakelite2_save/vitisnew/new_system/platform.spr}], Result: [{Format=The given file "D:/fpga/shakelite2_save/vitisnew/new_system/platform.spr" does not exist., Time=1760323558575, Code=1}, ]. Thread: Worker-181: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:49.301
+!MESSAGE XSCT Command: [disconnect tcfchan#38], Thread: Thread-2517
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:49.368
+!MESSAGE XSCT command with result: [disconnect tcfchan#38], Result: [null, ]. Thread: Thread-2517
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.599
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.612
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#43]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.613
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.630
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.630
+!MESSAGE XSCT Command: [version -server], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.633
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.634
+!MESSAGE XSCT Command: [version], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.635
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.636
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.643
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.644
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.661
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.662
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.671
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.672
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.690
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.690
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.699
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.700
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.720
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.721
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.728
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.728
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.748
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.749
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.756
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.757
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.774
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.775
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-HS1 210512180081" && level == 0}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.792
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-HS1 210512180081" && level == 0}], Result: [null, ]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.793
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.795
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 10000000]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.796
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.834
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.834
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.967
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:54.968
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:57.970
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:57.996
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:58.005
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:58.006
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:58.026
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:58.027
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:58.049
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:46:58.050
+!MESSAGE XSCT Command: [fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:01.629
+!MESSAGE XSCT command with result: [fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:01.694
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:01.715
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:01.716
+!MESSAGE XSCT Command: [loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:01.727
+!MESSAGE XSCT command with result: [loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, cpu_wrapper_0]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:01.728
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:01.745
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:01.746
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:01.756
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:01.757
+!MESSAGE XSCT Command: [source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:01.777
+!MESSAGE XSCT command with result: [source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:01.778
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:02.186
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:02.186
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:02.198
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:02.198
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:02.200
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-181: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 10:47:02.240
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '38'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:31.274
+!MESSAGE XSCT Command: [disconnect tcfchan#43], Thread: Thread-2561
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:47:31.279
+!MESSAGE XSCT command with result: [disconnect tcfchan#43], Result: [null, ]. Thread: Thread-2561
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 10:47:31.429
+!MESSAGE Executing command: cmd /C D:\ruanjian\Vivado\Vitis\2019.2\bin\wbtcv.bat -mode batch -source vitis_webtalk.tcl
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 10:47:31.531
+!MESSAGE Executed Webtalk command
+!SESSION 2025-10-13 10:50:21.039 -----------------------------------------------
+eclipse.buildId=2019.2
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-10-13 10:51:43.057
+!MESSAGE Both 'com.autoesl.autopilot.ui.models' and 'com.autoesl.autopilot.ui.models' register a package for 'com.autoesl.autopilot.solution'
+
+!ENTRY org.eclipse.ui 4 4 2025-10-13 10:52:01.410
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2025-10-13 10:52:01.425
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:52:08.049
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:52:08.049
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:52:08.064
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:52:08.080
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:52:08.096
+!MESSAGE XSCT Command: [setws D:/fpga/shakelite2_save/vitisnew], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:52:08.096
+!MESSAGE XSCT command with result: [setws D:/fpga/shakelite2_save/vitisnew], Result: [null, ]. Thread: Thread-15
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-10-13 10:52:09.386
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\gxy'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:52:10.925
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:52:17.513
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:52:17.513
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:52:17.513
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, D:/ruanjian/Vivado/Vitis/2019.2/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:53:04.704
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:53:06.721
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:53:06.731
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:53:06.739
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:53:06.739
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:53:06.742
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 10:53:06.742
+!MESSAGE Generating MD5 hash for file: D:\fpga\shakelite2_save\vitisnew\cpu_wrapper\export\cpu_wrapper\sw\cpu_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:53:06.755
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:53:06.761
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY org.eclipse.jface 4 0 2025-10-13 10:57:24.510
+!MESSAGE The command ("com.xilinx.ide.application.ui.perspectve") is undefined
+!STACK 0
+java.lang.Exception
+	at org.eclipse.jface.action.ExternalActionManager$CommandCallback.isActive(ExternalActionManager.java:364)
+	at org.eclipse.jface.action.ActionContributionItem.isCommandActive(ActionContributionItem.java:626)
+	at org.eclipse.jface.action.ActionContributionItem.isVisible(ActionContributionItem.java:682)
+	at org.eclipse.jface.action.MenuManager.isChildVisible(MenuManager.java:982)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:752)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:472)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5125)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4794)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2298)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:505)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2298)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:505)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2303)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3532)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:78)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.jface 4 0 2025-10-13 10:57:24.510
+!MESSAGE The command ("com.xilinx.sdk.performance.ui.PerformancePerspective") is undefined
+!STACK 0
+java.lang.Exception
+	at org.eclipse.jface.action.ExternalActionManager$CommandCallback.isActive(ExternalActionManager.java:364)
+	at org.eclipse.jface.action.ActionContributionItem.isCommandActive(ActionContributionItem.java:626)
+	at org.eclipse.jface.action.ActionContributionItem.isVisible(ActionContributionItem.java:682)
+	at org.eclipse.jface.action.MenuManager.isChildVisible(MenuManager.java:982)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:752)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:472)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5125)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4794)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2298)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:505)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2298)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:505)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2303)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3532)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:78)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:58:33.487
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:58:33.488
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:58:33.488
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:58:33.504
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 10:58:33.504
+!MESSAGE Generating MD5 hash for file: D:\fpga\shakelite2_save\vitisnew\cpu_wrapper\export\cpu_wrapper\sw\cpu_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:58:33.510
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 10:58:33.510
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY org.eclipse.ui 4 4 2025-10-13 11:03:14.305
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler@563e87c3} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:03:36.159
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:03:36.177
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:03:36.177
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:03:36.177
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 11:03:36.177
+!MESSAGE Generating MD5 hash for file: D:\fpga\shakelite2_save\vitisnew\cpu_wrapper\export\cpu_wrapper\sw\cpu_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:03:36.186
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:03:36.186
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:05:49.331
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Thread: Worker-8: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:05:49.336
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-8: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:05:49.336
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-8: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:05:49.336
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-8: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 11:05:49.336
+!MESSAGE Generating MD5 hash for file: D:\fpga\shakelite2_save\vitisnew\cpu_wrapper\export\cpu_wrapper\sw\cpu_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:05:49.336
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-8: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:05:49.336
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-8: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:05:54.317
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa], Thread: Worker-8: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:05:54.326
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa], Result: [null, {"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_ps7_0_50M": {"hier_name": "rst_ps7_0_50M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"sha3_1003_tIP1_0": {"hier_name": "sha3_1003_tIP1_0",
+"type": "sha3_1003_tIP1",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_0": {"hier_name": "ps7_uart_0",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-8: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 11:05:57.653
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:06:25.279
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:06:25.294
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:06:25.294
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:06:25.298
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 11:06:25.298
+!MESSAGE Generating MD5 hash for file: D:\fpga\shakelite2_save\vitisnew\cpu_wrapper\export\cpu_wrapper\sw\cpu_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:06:25.300
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:06:25.300
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:09:54.927
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Thread: Worker-17: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:09:54.927
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-17: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:09:54.938
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-17: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:09:54.939
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-17: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 11:09:54.939
+!MESSAGE Generating MD5 hash for file: D:\fpga\shakelite2_save\vitisnew\cpu_wrapper\export\cpu_wrapper\sw\cpu_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:09:54.944
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-17: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:09:54.946
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-17: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 11:10:09.048
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.313
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.326
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Sat Oct 11 11:50:16 2025",
+"vivado_version": "2019.2",
+"part": "xc7z020clg400-2",
+}]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.728
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.733
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "666.666666",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "50",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333333",
+}]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.733
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.750
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0], Result: [null, {"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_globaltimer_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_0": {},
+"ps7_xadc_0": {},
+"sha3_1003_tIP1_0": {},
+}]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.750
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.763
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0], Result: [null, {"sha3_1003_tIP1_0_S0_AXI": {"name": "sha3_1003_tIP1_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S0_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_0": {"name": "ps7_uart_0",
+"base": "0xE0000000",
+"high": "0xE0000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.763
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.763
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.770
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.772
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.772
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.775
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.775
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.775
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.775
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.775
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.775
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.786
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.788
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.790
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.790
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.799
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1], Result: [null, {"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_globaltimer_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_0": {},
+"ps7_xadc_0": {},
+"sha3_1003_tIP1_0": {},
+}]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.799
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.808
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1], Result: [null, {"sha3_1003_tIP1_0_S0_AXI": {"name": "sha3_1003_tIP1_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S0_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_0": {"name": "ps7_uart_0",
+"base": "0xE0000000",
+"high": "0xE0000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.808
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.808
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.808
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.817
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.817
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.817
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.817
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.822
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.822
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.826
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.826
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.826
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.826
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.826
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa ps7_cortexa9_0], Result: [null, ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_globaltimer_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_slcr_0 ps7_uart_0 ps7_xadc_0 sha3_1003_tIP1_0]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.838
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa bit], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.842
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa bit], Result: [null, cpu_wrapper.bit]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:16.842
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY org.eclipse.tcf 4 0 2025-10-13 11:11:19.730
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2025-10-13 11:11:19.730
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2025-10-13 11:11:19.730
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2025-10-13 11:11:19.730
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2025-10-13 11:11:19.730
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2025-10-13 11:11:19.730
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:19.810
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#7]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:19.815
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.229
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210512180081]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.229
+!MESSAGE XSCT Command: [version -server], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.229
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.238
+!MESSAGE XSCT Command: [version], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.238
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.241
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.249
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210512180081]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.249
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.265
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.265
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.274
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210512180081]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.274
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.291
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.293
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.301
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210512180081]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.301
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.319
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.321
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.331
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210512180081]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.331
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.347
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.351
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.353
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210512180081]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.353
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.371
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.371
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.371
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-HS1 210512180081]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.381
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.391
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.391
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-HS1 210512180081" && level == 0}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.411
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-HS1 210512180081" && level == 0}], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.411
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.421
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 10000000]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.421
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.438
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.438
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.551
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:20.551
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:23.568
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:23.601
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:23.613
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:23.613
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:23.629
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:23.629
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:23.658
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:23.660
+!MESSAGE XSCT Command: [fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.130
+!MESSAGE XSCT command with result: [fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.161
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.187
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.187
+!MESSAGE XSCT Command: [loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.219
+!MESSAGE XSCT command with result: [loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, cpu_wrapper]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.219
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.219
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.219
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.239
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.239
+!MESSAGE XSCT Command: [source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.266
+!MESSAGE XSCT command with result: [source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.266
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.599
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.599
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.615
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.615
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.628
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.628
+!MESSAGE XSCT Command: [dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.994
+!MESSAGE XSCT command with result: [dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:27.994
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:28.032
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:28.176
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:28.223
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:28.223
+!MESSAGE XSCT Command: [con], Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:11:28.261
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-22: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 11:11:28.269
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:32.480
+!MESSAGE XSCT Command: [disconnect tcfchan#7], Thread: Thread-162
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:32.487
+!MESSAGE XSCT command with result: [disconnect tcfchan#7], Result: [null, ]. Thread: Thread-162
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.523
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.539
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#8]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.539
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.555
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.555
+!MESSAGE XSCT Command: [version -server], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.555
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.563
+!MESSAGE XSCT Command: [version], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.563
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.563
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.571
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.572
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.586
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.586
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.594
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.596
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.604
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.604
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.618
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.618
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.634
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.634
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.642
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.642
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.660
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.660
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.668
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.668
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.683
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.683
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.688
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.688
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.700
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.700
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-HS1 210512180081" && level == 0}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.713
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-HS1 210512180081" && level == 0}], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.713
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.729
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 10000000]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.729
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.745
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.745
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.856
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:33.866
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:36.874
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:36.897
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:36.899
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:36.899
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:36.915
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:36.915
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:36.947
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:36.947
+!MESSAGE XSCT Command: [fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:40.624
+!MESSAGE XSCT command with result: [fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:40.655
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:40.671
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:40.671
+!MESSAGE XSCT Command: [loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:41.779
+!MESSAGE XSCT command with result: [loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, cpu_wrapper_1]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:41.795
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:41.795
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:41.795
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:41.795
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:41.795
+!MESSAGE XSCT Command: [source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:41.811
+!MESSAGE XSCT command with result: [source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:41.811
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:42.126
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:42.126
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:42.126
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:42.126
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:42.142
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:42.142
+!MESSAGE XSCT Command: [dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:42.461
+!MESSAGE XSCT command with result: [dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:42.461
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:42.509
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:42.556
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:42.604
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:42.604
+!MESSAGE XSCT Command: [con], Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:13:42.635
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-21: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 11:13:42.635
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-10-13 11:14:21.724
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-10-13 11:14:21.724
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-10-13 11:14:21.724
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:14:51.140
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:14:51.142
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:14:51.142
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:14:51.142
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 11:14:51.151
+!MESSAGE Generating MD5 hash for file: D:\fpga\shakelite2_save\vitisnew\cpu_wrapper\export\cpu_wrapper\sw\cpu_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:14:51.151
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:14:51.156
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-21: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:14.621
+!MESSAGE XSCT Command: [disconnect tcfchan#8], Thread: Thread-222
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:14.639
+!MESSAGE XSCT command with result: [disconnect tcfchan#8], Result: [null, ]. Thread: Thread-222
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.630
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.642
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.642
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.658
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.658
+!MESSAGE XSCT Command: [version -server], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.658
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.658
+!MESSAGE XSCT Command: [version], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.658
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.658
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.658
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.658
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.680
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.680
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.694
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.694
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.709
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.709
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.716
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.716
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.723
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.723
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.739
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.739
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.753
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.753
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.762
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.764
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.775
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.775
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.785
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.785
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.800
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.802
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-HS1 210512180081" && level == 0}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.816
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-HS1 210512180081" && level == 0}], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.816
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.816
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 10000000]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.816
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.832
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.832
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.947
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:15.952
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:18.967
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:18.999
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:19.008
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:19.008
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:19.025
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:19.025
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:19.043
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:19.043
+!MESSAGE XSCT Command: [fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:22.536
+!MESSAGE XSCT command with result: [fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:22.583
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:22.599
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:22.599
+!MESSAGE XSCT Command: [loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:22.615
+!MESSAGE XSCT command with result: [loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, cpu_wrapper_1]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:22.616
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:22.623
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:22.624
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:22.632
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:22.634
+!MESSAGE XSCT Command: [source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:22.636
+!MESSAGE XSCT command with result: [source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:22.636
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:22.980
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:22.980
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:23.014
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:23.014
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:23.028
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:23.028
+!MESSAGE XSCT Command: [dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:23.360
+!MESSAGE XSCT command with result: [dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:23.360
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:23.407
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:23.492
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:23.535
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:23.535
+!MESSAGE XSCT Command: [con], Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:15:23.569
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-24: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 11:15:23.570
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:10.694
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:10.709
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:10.709
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:10.713
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 11:22:10.713
+!MESSAGE Generating MD5 hash for file: D:\fpga\shakelite2_save\vitisnew\cpu_wrapper\export\cpu_wrapper\sw\cpu_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:10.713
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:10.713
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:34.693
+!MESSAGE XSCT Command: [disconnect tcfchan#9], Thread: Thread-280
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:34.726
+!MESSAGE XSCT command with result: [disconnect tcfchan#9], Result: [null, ]. Thread: Thread-280
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.727
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.734
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#10]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.734
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.758
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.758
+!MESSAGE XSCT Command: [version -server], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.758
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.758
+!MESSAGE XSCT Command: [version], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.768
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.768
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.776
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.776
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.788
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.788
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.788
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.788
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.803
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.803
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.819
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.819
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.835
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.835
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.844
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.846
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.857
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.857
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.871
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.873
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.883
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.883
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.883
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.883
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.909
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.909
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-HS1 210512180081" && level == 0}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.916
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-HS1 210512180081" && level == 0}], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.916
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.929
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 10000000]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.929
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.948
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:35.948
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:36.059
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:36.065
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:39.069
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:39.093
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:39.101
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-HS1 210512180081]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:39.101
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:39.121
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:39.121
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:39.133
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:39.133
+!MESSAGE XSCT Command: [fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.616
+!MESSAGE XSCT command with result: [fpga -file D:/fpga/shakelite2_save/vitisnew/new/_ide/bitstream/cpu_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.659
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.681
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.681
+!MESSAGE XSCT Command: [loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.696
+!MESSAGE XSCT command with result: [loadhw -hw D:/fpga/shakelite2_save/vitisnew/cpu_wrapper/export/cpu_wrapper/hw/cpu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, cpu_wrapper_1]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.696
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.698
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.699
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.703
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.703
+!MESSAGE XSCT Command: [source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.711
+!MESSAGE XSCT command with result: [source D:/fpga/shakelite2_save/vitisnew/new/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.711
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.933
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.933
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.965
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.965
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.982
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:42.982
+!MESSAGE XSCT Command: [dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:43.345
+!MESSAGE XSCT command with result: [dow D:/fpga/shakelite2_save/vitisnew/new/Debug/new.elf], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:43.345
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:43.392
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:43.471
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:43.521
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:43.521
+!MESSAGE XSCT Command: [con], Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-13 11:22:43.551
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-26: Launching Debugger_new-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-10-13 11:22:43.551
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '4'

@@ -65,7 +65,7 @@
                                     								
                                 </option>
                                 								
-                                <option id="xilinx.gnu.compiler.dircategory.includes.1661943394" superClass="xilinx.gnu.compiler.dircategory.includes" useByScannerDiscovery="false" valueType="includePath">
+                                <option id="xilinx.gnu.compiler.dircategory.includes.1661943394" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
                                     								
