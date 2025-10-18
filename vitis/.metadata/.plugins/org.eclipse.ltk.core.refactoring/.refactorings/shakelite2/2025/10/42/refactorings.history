@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;shakelite2/src/main.c&apos; to &apos;main.c.bak&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main.c" name="main.c.bak" stamp="1760237606129" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;shakelite2/src/main.c&apos; to &apos;main.c.bak1&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main.c" name="main.c.bak1" stamp="1760250752456" updateReferences="true"/>
-</session>

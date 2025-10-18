@@ -1,10 +1,0 @@
-2025-10-11T11:21:33.660048100255-11:21:33 **** Build of configuration Debug for project shakelite2_system ****
-000-make all 
-000-Generating bif file for the system project
-000-generate_system_bif.bat 60625 D:/fpga/shakelite2_save/vitis/cpu_wrapper/export/cpu_wrapper/cpu_wrapper.xpfm standalone_domain D:/fpga/shakelite2_save/vitis/shakelite2_system/Debug/system.bif
-000-sdcard_gen --xpfm D:/fpga/shakelite2_save/vitis/cpu_wrapper/export/cpu_wrapper/cpu_wrapper.xpfm --sys_config cpu_wrapper --bif D:/fpga/shakelite2_save/vitis/shakelite2_system/Debug/system.bif --bitstream D:/fpga/shakelite2_save/vitis/shakelite2/_ide/bitstream/cpu_wrapper.bit --elf D:/fpga/shakelite2_save/vitis/shakelite2/Debug/shakelite2.elf,ps7_cortexa9_0
-000-creating BOOT.BIN using D:/fpga/shakelite2_save/vitis/shakelite2/_ide/bitstream/cpu_wrapper.bit
-000-Running D:/ruanjian/Vivado/Vitis/2019.2/bin/bootgen  -image D:/fpga/shakelite2_save/vitis/shakelite2_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
-00255-
-11:21:47 Build Finished (took 13s.365ms)
-
