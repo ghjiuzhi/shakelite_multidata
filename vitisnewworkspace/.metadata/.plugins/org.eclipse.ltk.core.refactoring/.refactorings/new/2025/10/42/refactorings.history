@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;new/src/main.c&apos; to &apos;main.c.打印两次调用间隔无退出机制版本.bak&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main.c" name="main.c.打印两次调用间隔无退出机制版本.bak" stamp="1760678416179" updateReferences="true"/>
+</session>

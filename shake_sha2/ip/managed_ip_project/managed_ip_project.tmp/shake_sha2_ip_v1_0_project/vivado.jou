@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 15 00:17:07 2025
+# Process ID: 38380
+# Current directory: D:/Project/Vivado_prj/shake_sha2/ip/managed_ip_project/managed_ip_project.tmp/shake_sha2_ip_v1_0_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26020 D:\Project\Vivado_prj\shake_sha2\ip\managed_ip_project\managed_ip_project.tmp\shake_sha2_ip_v1_0_project\shake_sha2_ip_v1_0_project.xpr
+# Log file: D:/Project/Vivado_prj/shake_sha2/ip/managed_ip_project/managed_ip_project.tmp/shake_sha2_ip_v1_0_project/vivado.log
+# Journal file: D:/Project/Vivado_prj/shake_sha2/ip/managed_ip_project/managed_ip_project.tmp/shake_sha2_ip_v1_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Project/Vivado_prj/shake_sha2/ip/managed_ip_project/managed_ip_project.tmp/shake_sha2_ip_v1_0_project/shake_sha2_ip_v1_0_project.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {D:/Project/Vivado_prj/shake_sha2/rtl/shake/keccak_round.v D:/Project/Vivado_prj/shake_sha2/rtl/sha2/sha512.v D:/Project/Vivado_prj/shake_sha2/rtl/sha2/sha256.v D:/Project/Vivado_prj/shake_sha2/rtl/shake/keccak_round_constants_gen.v D:/Project/Vivado_prj/shake_sha2/rtl/sha2/sha2_top.v D:/Project/Vivado_prj/shake_sha2/rtl/shake_sha2_top.v D:/Project/Vivado_prj/shake_sha2/rtl/shake/shake_top.v D:/Project/Vivado_prj/shake_sha2/rtl/shake/keccak_top.v}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 32
+wait_on_run synth_1
+launch_runs impl_1 -jobs 32
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 32
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 32
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 32
+wait_on_run impl_1

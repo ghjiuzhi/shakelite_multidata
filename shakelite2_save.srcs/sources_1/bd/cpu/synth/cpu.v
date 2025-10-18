@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Sat Oct 11 11:49:58 2025
+//Date        : Fri Oct 17 10:22:23 2025
 //Host        : DESKTOP-HPA0FNB running 64-bit major release  (build 9200)
 //Command     : generate_target cpu.bd
 //Design      : cpu
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "cpu,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=cpu,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "cpu.hwdef" *) 
+(* CORE_GENERATION_INFO = "cpu,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=cpu,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_ps7_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "cpu.hwdef" *) 
 module cpu
    (DDR_addr,
     DDR_ba,
@@ -270,7 +270,7 @@ module cpu
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
-  cpu_sha3_1003_tIP1_0_0 sha3_1003_tIP1_0
+  cpu_sha3_1003_tIP1_0_3 sha3_1003_tIP1_0
        (.s0_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s0_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[7:0]),
         .s0_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),

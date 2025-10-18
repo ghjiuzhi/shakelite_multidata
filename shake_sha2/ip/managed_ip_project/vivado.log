@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 15 00:12:49 2025
+# Process ID: 23976
+# Current directory: D:/Project/Vivado_prj/shake_sha2/ip/managed_ip_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent41960 D:\Project\Vivado_prj\shake_sha2\ip\managed_ip_project\managed_ip_project.xpr
+# Log file: D:/Project/Vivado_prj/shake_sha2/ip/managed_ip_project/vivado.log
+# Journal file: D:/Project/Vivado_prj/shake_sha2/ip/managed_ip_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Project/Vivado_prj/shake_sha2/ip/managed_ip_project/managed_ip_project.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/Project/Vivado_prj/shake_sha2/ip/managed_ip_project/managed_ip_project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/Vivado_prj/shake_sha2/ip/ip_repo/shake_sha2_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Downloads/vivado_2020/Vivado/2020.2/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 15 00:17:13 2025...

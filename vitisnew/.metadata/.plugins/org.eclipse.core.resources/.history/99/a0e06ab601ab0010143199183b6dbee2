@@ -1,0 +1,153 @@
+#include <stdio.h>
+#include <string.h>
+#include "xil_printf.h"
+#include "xil_types.h"
+#include "xstatus.h"
+#include "xil_cache.h"
+#include "xtime_l.h"
+
+// Version: (Message recovery match, verification complete).bak
+// Include all necessary SPHINCS+ header files
+#include "api.h"
+#include "params.h"
+
+// Compile-time sanity check
+#if !defined(CRYPTO_BYTES)
+    #error "SPHINCS+ parameters not loaded correctly. Please check params.h and your build settings."
+#endif
+
+#define MESSAGE_LEN 32
+
+/************************** Function Prototypes ***************************/
+void print_hex(const char *label, const unsigned char *data, size_t len);
+int run_sphincs_test_forensic();
+void init_platform();
+void cleanup_platform();
+
+/* Declare external hardware driver function */
+extern void shake256_hw(uint8_t *out, size_t outlen, const uint8_t *in, const size_t inlen);
+
+
+/*****************************************************************************/
+int main()
+{
+    int status;
+    init_platform();
+
+    xil_printf("\r\n\n--- SPHINCS+ Final Forensic Debug Test ---\r\n");
+    xil_printf("This test will print and compare actual 32-bit integer length values to eliminate display errors.\r\n");
+    xil_printf("SPHINCS+ Parameter set: %s\r\n", xstr(PARAMS));
+    xil_printf("Expected Signature Length (CRYPTO_BYTES): %d\r\n\n", CRYPTO_BYTES);
+
+    status = run_sphincs_test_forensic();
+
+    if (status == XST_SUCCESS) {
+        xil_printf("\r\n[TEST PASSED] All steps completed and verified successfully! Hardware acceleration is functioning correctly!\r\n");
+    } else {
+        xil_printf("\r\n[EXECUTION FAILED] Test failed in one of the steps above.\r\n");
+    }
+
+    cleanup_platform();
+    return status;
+}
+
+/*****************************************************************************/
+int run_sphincs_test_forensic()
+{
+    static unsigned char pk[CRYPTO_PUBLICKEYBYTES];
+    static unsigned char sk[CRYPTO_SECRETKEYBYTES];
+    static unsigned char m[MESSAGE_LEN];
+    static unsigned char sm[CRYPTO_BYTES + MESSAGE_LEN];
+    static unsigned char mout[CRYPTO_BYTES + MESSAGE_LEN];
+
+    unsigned long long smlen; // The API requires unsigned long long, we will keep it
+    unsigned long long mlen_out;
+    int ret_val;
+    XTime t_start, t_end;
+
+    xil_printf("--- Step 1: Preparing a %d-byte message ---\r\n", MESSAGE_LEN);
+    for (int i = 0; i < MESSAGE_LEN; i++) { m[i] = (unsigned char)i; }
+    print_hex("  Original message (m)", m, MESSAGE_LEN);
+
+    xil_printf("\r\n--- Step 2: Generating key pair ---\r\n");
+    if (crypto_sign_keypair(pk, sk) != 0) {
+        xil_printf("  [ERROR] Key pair generation failed!\r\n");
+        return XST_FAILURE;
+    }
+    xil_printf("  Key pair generation successful.\r\n");
+    print_hex("  Public key (pk) (first 32 bytes)", pk, 32);
+
+    xil_printf("\r\n--- Step 3: Signing the message ---\r\n");
+    ret_val = crypto_sign(sm, &smlen, m, MESSAGE_LEN, sk);
+
+    if (ret_val != 0) {
+        xil_printf("  [ERROR] crypto_sign function returned an error code: %d!\r\n", ret_val);
+        return XST_FAILURE;
+    }
+    xil_printf("  crypto_sign function execution finished.\r\n");
+
+    // **Key Change**: Using (int) for printing to get the real value
+    xil_printf("  Reported total signed message length (smlen): %d bytes.\r\n", (int)smlen);
+
+    // --- Definitive signature length check (using int cast) ---
+    const int expected_smlen = CRYPTO_BYTES + MESSAGE_LEN;
+    const int actual_smlen = (int)smlen;
+
+    xil_printf("\r\n--- Step 3.1: Signature Length Forensic Check (using 32-bit integer comparison) ---\r\n");
+    xil_printf("  About to compare the following [TRUE] values:\r\n");
+    xil_printf("    - Expected signature length (expected_smlen): %d\r\n", expected_smlen);
+    xil_printf("    - Actual signature length (actual_smlen)   : %d\r\n", actual_smlen);
+
+    if (actual_smlen != expected_smlen) {
+        xil_printf("\r\n  [!!! CRITICAL FAILURE !!!] Signature length is incorrect!\r\n");
+        xil_printf("    -> The result of the statement if (%d != %d) is true.\r\n", actual_smlen, expected_smlen);
+        return XST_FAILURE;
+    } else {
+        xil_printf("\r\n  [Check Passed] Signature length is correct.\r\n");
+        xil_printf("    -> The result of the statement if (%d != %d) is false.\r\n", actual_smlen, expected_smlen);
+    }
+    print_hex("  Signed message (sm) (first 32 bytes)", sm, 32);
+
+    xil_printf("\r\n--- Step 4: Verifying the signature ---\r\n");
+    ret_val = crypto_sign_open(mout, &mlen_out, sm, smlen, pk);
+
+    if (ret_val != 0) {
+        xil_printf("  [ERROR] Verification function returned error code %d! Signature is invalid.\r\n", ret_val);
+        return XST_FAILURE;
+    }
+    xil_printf("  Signature verification function returned successfully (return code: %d).\r\n", ret_val);
+    xil_printf("  Recovered message length (mlen_out): %d bytes.\r\n", (int)mlen_out);
+
+    // **Added explicit evidence**
+    print_hex("  Recovered message (mout)", mout, (int)mlen_out);
+
+    xil_printf("\r\n--- Step 5: Final content check ---\r\n");
+    xil_printf("  Comparing content: Original message (m) vs. Recovered message (mout)\r\n");
+    if ((int)mlen_out != MESSAGE_LEN || memcmp(m, mout, MESSAGE_LEN) != 0) {
+        xil_printf("  [ERROR] Message content does not match!\r\n");
+        return XST_FAILURE;
+    }
+    xil_printf("  Original and recovered messages match perfectly.\r\n");
+
+    return XST_SUCCESS;
+}
+
+/************************** Helper Functions ***************************/
+void print_hex(const char *label, const unsigned char *data, size_t len) {
+    xil_printf("%s: ", label);
+    for (size_t i = 0; i < len; i++) {
+        xil_printf("%02x", data[i]);
+    }
+    xil_printf("\r\n");
+}
+
+void init_platform() {
+    Xil_DCacheDisable();
+    Xil_ICacheEnable();
+    Xil_DCacheEnable();
+}
+
+void cleanup_platform() {
+    Xil_DCacheDisable();
+    Xil_ICacheDisable();
+}

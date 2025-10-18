@@ -1,0 +1,25 @@
+23:34:58 **** Incremental Build of configuration Debug for project shake_sha3 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Project/Vivado_prj/shake_sha2/vitis1/system/export/system/sw/system/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: shake_sha3.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/Project/Vivado_prj/shake_sha2/vitis1/system/export/system/sw/system/standalone_domain/bsplib/lib -o "shake_sha3.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: shake_sha3.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size shake_sha3.elf  |tee "shake_sha3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25000	   1160	  22568	  48728	   be58	shake_sha3.elf
+'Finished building: shake_sha3.elf.size'
+' '
+
+23:35:00 Build Finished (took 1s.284ms)
+

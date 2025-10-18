@@ -13,10 +13,21 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==cpu_ps7_0_axi_p
 # IP: bd/cpu/ip/cpu_rst_ps7_0_50M_0/cpu_rst_ps7_0_50M_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==cpu_rst_ps7_0_50M_0 || ORIG_REF_NAME==cpu_rst_ps7_0_50M_0} -quiet] -quiet
 
-# IP: bd/cpu/ip/cpu_sha3_1003_tIP1_0_0/cpu_sha3_1003_tIP1_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==cpu_sha3_1003_tIP1_0_0 || ORIG_REF_NAME==cpu_sha3_1003_tIP1_0_0} -quiet] -quiet
+# IP: bd/cpu/ip/cpu_sha3_1003_tIP1_0_3/cpu_sha3_1003_tIP1_0_3.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==cpu_sha3_1003_tIP1_0_3 || ORIG_REF_NAME==cpu_sha3_1003_tIP1_0_3} -quiet] -quiet
 
 # IP: bd/cpu/ip/cpu_auto_pc_0/cpu_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==cpu_auto_pc_0 || ORIG_REF_NAME==cpu_auto_pc_0} -quiet] -quiet
+
+# XDC: bd/cpu/ip/cpu_processing_system7_0_0/cpu_processing_system7_0_0.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==cpu_processing_system7_0_0 || ORIG_REF_NAME==cpu_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/cpu/ip/cpu_rst_ps7_0_50M_0/cpu_rst_ps7_0_50M_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==cpu_rst_ps7_0_50M_0 || ORIG_REF_NAME==cpu_rst_ps7_0_50M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/cpu/ip/cpu_rst_ps7_0_50M_0/cpu_rst_ps7_0_50M_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==cpu_rst_ps7_0_50M_0 || ORIG_REF_NAME==cpu_rst_ps7_0_50M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/cpu/ip/cpu_auto_pc_0/cpu_auto_pc_0_ooc.xdc
 
 # XDC: bd/cpu/cpu_ooc.xdc

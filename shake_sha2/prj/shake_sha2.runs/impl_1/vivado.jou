@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 16 22:08:21 2025
+# Process ID: 48216
+# Current directory: D:/Project/Vivado_prj/shake_sha2/prj/shake_sha2.runs/impl_1
+# Command line: vivado.exe -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+# Log file: D:/Project/Vivado_prj/shake_sha2/prj/shake_sha2.runs/impl_1/system_wrapper.vdi
+# Journal file: D:/Project/Vivado_prj/shake_sha2/prj/shake_sha2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
