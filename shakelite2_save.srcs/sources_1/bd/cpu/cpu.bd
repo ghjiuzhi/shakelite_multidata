@@ -16,7 +16,7 @@
         }
       },
       "rst_ps7_0_50M": "",
-      "sha3_1003_tIP1_0": ""
+      "shake_sha2_ip_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -388,16 +388,16 @@
           }
         },
         "interface_nets": {
-          "s00_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M00_AXI",
-              "s00_couplers/M_AXI"
-            ]
-          },
           "ps7_0_axi_periph_to_s00_couplers": {
             "interface_ports": [
               "S00_AXI",
               "s00_couplers/S_AXI"
+            ]
+          },
+          "s00_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M00_AXI",
+              "s00_couplers/M_AXI"
             ]
           }
         },
@@ -432,18 +432,12 @@
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
         "xci_name": "cpu_rst_ps7_0_50M_0"
       },
-      "sha3_1003_tIP1_0": {
-        "vlnv": "xilinx.com:user:sha3_1003_tIP1:1.0",
-        "xci_name": "cpu_sha3_1003_tIP1_0_3"
+      "shake_sha2_ip_0": {
+        "vlnv": "xilinx.com:user:shake_sha2_ip:1.0",
+        "xci_name": "cpu_shake_sha2_ip_0_0"
       }
     },
     "interface_nets": {
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
       "processing_system7_0_DDR": {
         "interface_ports": [
           "DDR",
@@ -459,7 +453,13 @@
       "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M00_AXI",
-          "sha3_1003_tIP1_0/S0_AXI"
+          "shake_sha2_ip_0/S00_AXI"
+        ]
+      },
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
         ]
       }
     },
@@ -472,7 +472,7 @@
           "rst_ps7_0_50M/slowest_sync_clk",
           "ps7_0_axi_periph/M00_ACLK",
           "ps7_0_axi_periph/ACLK",
-          "sha3_1003_tIP1_0/s0_axi_aclk"
+          "shake_sha2_ip_0/s00_axi_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -487,7 +487,7 @@
           "ps7_0_axi_periph/S00_ARESETN",
           "ps7_0_axi_periph/M00_ARESETN",
           "ps7_0_axi_periph/ARESETN",
-          "sha3_1003_tIP1_0/s0_axi_aresetn"
+          "shake_sha2_ip_0/s00_axi_aresetn"
         ]
       }
     },
@@ -498,8 +498,8 @@
             "range": "4G",
             "width": "32",
             "segments": {
-              "SEG_sha3_1003_tIP1_0_S0_AXI_reg": {
-                "address_block": "/sha3_1003_tIP1_0/S0_AXI/S0_AXI_reg",
+              "SEG_shake_sha2_ip_0_S00_AXI_reg": {
+                "address_block": "/shake_sha2_ip_0/S00_AXI/S00_AXI_reg",
                 "offset": "0x43C00000",
                 "range": "64K"
               }

@@ -1,0 +1,182 @@
+/*
+ * main_sha2_test.c (V2 - 帶有詳細過程驗證日誌)
+ * 用於測試 SHA-2 硬件加速
+ */
+#include <stdio.h>
+#include <string.h>
+#include "xil_printf.h"
+#include "xstatus.h"
+#include "xtime_l.h"
+#include "xparameters.h"
+#include "xil_cache.h"
+
+#include "api.h"         // SPHINCS+ API
+#include "params.h"      // 包含 SPX_ALG 宏
+#include "randombytes.h" // 消息隨機數
+
+#define MLEN 32
+
+// 函數原型
+void print_hex(const char *label, const unsigned char *data, size_t len);
+void init_platform();
+void cleanup_platform();
+void print_llu(const char *label, unsigned long long val);
+
+int main()
+{
+    init_platform();
+    xil_printf("\r\n--- SPHINCS+ [SHA-2] Hardware-Only Verification (Detailed Log) ---\r\n");
+
+    // 打印當前測試的參數集
+    //xil_printf("SPHINCS+ Parameter Set: %s\r\n", SPX_ALG);
+    xil_printf("Public Key Bytes: %d\r\n", CRYPTO_PUBLICKEYBYTES);
+    xil_printf("Secret Key Bytes: %d\r\n", CRYPTO_SECRETKEYBYTES);
+    xil_printf("Signature Bytes: %d\r\n", CRYPTO_BYTES);
+
+    int final_status = XST_SUCCESS;
+    XTime t_start, t_end;
+    u64 hw_sign_ticks = 0, hw_verify_ticks = 0;
+
+    // 靜態分配內存
+    static unsigned char m[MLEN];
+    static unsigned char pk_hw[CRYPTO_PUBLICKEYBYTES];
+    static unsigned char sk_hw[CRYPTO_SECRETKEYBYTES];
+    static unsigned char sm_hw[CRYPTO_BYTES + MLEN];
+    static unsigned char mout_hw[CRYPTO_BYTES + MLEN];
+
+    unsigned long long smlen, mlen_out;
+
+    // 1. 生成隨機消息
+    randombytes(m, MLEN);
+    xil_printf("\r\n[Step 1: Generate Message]\r\n");
+    xil_printf("A %d-byte random message has been generated for this test.\r\n", MLEN);
+    print_hex("  Original Message (m)", m, MLEN);
+
+    // ===================================================================
+    //  Flow: Pure Hardware Accelerated Test (HW -> HW)
+    // ===================================================================
+    xil_printf("\r\n--- Flow: Hardware-Accelerated Signing and Verification ---\r\n");
+
+    // 2. 密鑰生成
+    xil_printf("\r\n[Step 2: Key Generation]\r\n");
+    xil_printf("  Calling crypto_sign_keypair() (HW accelerated)...\r\n");
+    XTime_GetTime(&t_start);
+    crypto_sign_keypair(pk_hw, sk_hw);
+    XTime_GetTime(&t_end);
+    hw_sign_ticks = t_end - t_start; // 暫時先用這個時間，下一步會累加
+    xil_printf("  Keypair generation complete.\r\n");
+    // 打印密鑰（或其摘要）以證明已生成
+    print_hex("  Hardware PK (first 32B)", pk_hw, 32);
+    print_hex("  Hardware SK (first 32B)", sk_hw, 32);
+
+
+    // 3. 簽名
+    xil_printf("\r\n[Step 3: Signing]\r\n");
+    xil_printf("  Calling crypto_sign() (HW accelerated)...\r\n");
+    XTime_GetTime(&t_start);
+    crypto_sign(sm_hw, &smlen, m, MLEN, sk_hw);
+    XTime_GetTime(&t_end);
+    hw_sign_ticks += (t_end - t_start); // 累加簽名時間
+    xil_printf("  Signing complete. Total signature length (smlen) = %llu bytes.\r\n", smlen);
+    // 打印簽名（或其摘要）以證明已生成
+    print_hex("  Hardware Signature (first 32B of sm_hw)", sm_hw, 32);
+
+
+    // 4. 驗證
+    xil_printf("\r\n[Step 4: Verification]\r\n");
+    xil_printf("  Calling crypto_sign_open() (HW accelerated)...\r\n");
+    XTime_GetTime(&t_start);
+    int hw_verify_result = crypto_sign_open(mout_hw, &mlen_out, sm_hw, smlen, pk_hw);
+    XTime_GetTime(&t_end);
+    hw_verify_ticks = t_end - t_start;
+    xil_printf("  Verification complete.\r\n");
+
+    if (hw_verify_result != 0) {
+        xil_printf("  [FAIL] HW verification function returned error code: %d\r\n", hw_verify_result);
+        final_status = XST_FAILURE;
+    } else {
+        xil_printf("  [INFO] HW verification function returned 0 (SUCCESS).\r\n");
+        xil_printf("  Recovered message length (mlen_out) = %llu bytes.\r\n", mlen_out);
+        print_hex("    -> Recovered Message (mout_hw)", mout_hw, mlen_out);
+
+        // 5. 最終內存比較 (黃金標準)
+        xil_printf("\r\n[Step 5: Final Check]\r\n");
+        xil_printf("  Comparing original message (m) with recovered message (mout_hw)...\r\n");
+        if (mlen_out != MLEN || memcmp(m, mout_hw, MLEN) != 0) {
+            xil_printf("  [FAIL] HW recovered message does not match original!\r\n");
+            final_status = XST_FAILURE;
+        } else {
+            xil_printf("  [SUCCESS] memcmp confirms messages match. HW is internally consistent.\r\n");
+        }
+    }
+
+    // ===================================================================
+    //  Final Performance Report
+    // ===================================================================
+    xil_printf("\r\n\n--- Final Performance Report [SHA-2 HW] ---\r\n");
+    print_llu(" - HW Sign (Keygen + Sign):", hw_sign_ticks);
+    print_llu(" - HW Verification:        ", hw_verify_ticks);
+
+    #if defined(XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ)
+        const double CPU_FREQ_MHZ = (double)XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 1000000.0;
+        xil_printf("\r\n--- Time in Milliseconds (assuming %.0f MHz CPU clock) ---\r\n", CPU_FREQ_MHZ);
+        printf(" - HW Sign (Keygen + Sign): %.3f ms\r\n", (double)hw_sign_ticks / (CPU_FREQ_MHZ * 1000.0));
+        printf(" - HW Verification:         %.3f ms\r\n", (double)hw_verify_ticks / (CPU_FREQ_MHZ * 1000.0));
+    #endif
+
+    if (final_status == XST_SUCCESS) {
+        xil_printf("\r\n[FINAL CONCLUSION: PASSED] SHA-2 HW Functionality is correct.\r\n");
+    } else {
+        xil_printf("\r\n[FINAL CONCLUSION: FAILED] A SHA-2 HW functional verification step failed.\r\n");
+    }
+
+    cleanup_platform();
+    return final_status;
+}
+
+/******************************************************************************
+* 辅助函数实现 (與你原來的代碼完全相同)
+******************************************************************************/
+void print_llu(const char *label, unsigned long long val) {
+    char buffer[21];
+    int i = sizeof(buffer) - 1;
+    buffer[i] = '\0';
+    if (val == 0) {
+        i--;
+        buffer[i] = '0';
+    } else {
+        while (val > 0 && i > 0) {
+            i--;
+            buffer[i] = (val % 10) + '0';
+            val /= 10;
+        }
+    }
+    xil_printf("%s%s cycles\r\n", label, &buffer[i]);
+}
+
+void print_hex(const char *label, const unsigned char *data, size_t len) {
+    xil_printf("%s: ", label);
+    if (len == 0) {
+        xil_printf("(empty)\r\n");
+        return;
+    }
+    for (size_t i = 0; i < len; i++) {
+        if (i > 0 && i % 16 == 0) {
+            xil_printf("\r\n%*s  ", (int)strlen(label) + 2, ""); // 保持對齊
+        }
+        xil_printf("%02x", data[i]);
+    }
+    xil_printf("\r\n");
+}
+
+void init_platform() {
+    Xil_ICacheEnable();
+    Xil_DCacheEnable();
+    xil_printf("Platform initialized (Caches Enabled)\r\n");
+}
+
+void cleanup_platform() {
+    Xil_DCacheDisable();
+    Xil_ICacheDisable();
+    xil_printf("Platform cleaned up (Caches Disabled)\r\n");
+}

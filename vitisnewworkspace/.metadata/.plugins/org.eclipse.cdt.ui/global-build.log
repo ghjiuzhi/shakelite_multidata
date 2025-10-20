@@ -1,6 +1,21 @@
-Nothing to build in platform 'cpu_wrapper'
+23:40:58 **** Build of project cpu_wrapper ****
+buildplatform.bat 64423 cpu_wrapper  
+XSDB Server Channel: tcfchan#4
+No Platform exists with name:  cpu_wrapper
+    invoked from within
+"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{platform active cpu_wrapper; platform generate }}}"
+    (procedure "::tcf::send_command" line 4)
+    invoked from within
+"tcf send_command $::xsdb::curchan xsdb eval s es [list "platform active $PLATFORM_NAME; platform generate $target"]"
+    invoked from within
+"if { $iswindows == 1 } {    
 
-13:26:59 **** Incremental Build of configuration Debug for project new ****
+    set XSDB_PORT [lindex $argv 0]
+    set PLATFORM_NAME [lindex $argv 1]
+    set arglen [llength $argv]
+    set lastind..."
+    (file "D:/ruanjian/Vivado/Vitis/2019.2\scripts\vitis\util\buildplatform.tcl" line 11)
+23:41:00 **** Incremental Build of configuration Debug for project new ****
 make all 
 D:/ruanjian/Vivado/Vitis/2019.2/gnuwin/bin/make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -8,33 +23,45 @@ a9-linaro-pre-build-step
 D:/ruanjian/Vivado/Vitis/2019.2/gnuwin/bin/make --no-print-directory main-build
 Building file: ../src/fpga_sha_driver.c
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -DPARAMS="sphincs-shake-128f" -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/fpga_sha_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/fpga_sha_driver.d" -MT"src/fpga_sha_driver.o" -o "src/fpga_sha_driver.o" "../src/fpga_sha_driver.c"
-Finished building: ../src/fpga_sha_driver.c
+arm-none-eabi-gcc -DPARAMS="sphincs-sha2-128f" -Wall -O0 -g3 -I"D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc\standalone_v7_1\src\arm\cortexr5\platform\versal" -I"D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\export" -ID:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\zynq_fsbl\zynq_fsbl_bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0" -I"D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -I"D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc\standalone_v7_1\src\common" -c -fmessage-length=0 -MT"src/fpga_sha_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/fpga_sha_driver.d" -MT"src/fpga_sha_driver.o" -o "src/fpga_sha_driver.o" "../src/fpga_sha_driver.c"
+In file included from ../src/fpga_sha_driver.h:7,
+                 from ../src/fpga_sha_driver.c:1:
+D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include/xparameters.h:275: warning: "XPAR_XADCPS_NUM_INSTANCES" redefined
+ #define XPAR_XADCPS_NUM_INSTANCES 1
  
-Building file: ../src/main.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -DPARAMS="sphincs-shake-128f" -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:7:
-D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-../src/main.c: In function 'run_sphincs_test_forensic':
-../src/main.c:66:20: warning: unused variable 't_end' [-Wunused-variable]
-     XTime t_start, t_end;
-                    ^~~~~
-../src/main.c:66:11: warning: unused variable 't_start' [-Wunused-variable]
-     XTime t_start, t_end;
-           ^~~~~~~
-Finished building: ../src/main.c
+In file included from D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include/xparameters.h:19,
+                 from ../src/fpga_sha_driver.h:7,
+                 from ../src/fpga_sha_driver.c:1:
+D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc\standalone_v7_1\src\arm\cortexr5\platform\versal/xparameters_ps.h:275: note: this is the location of the previous definition
+ #define XPAR_XADCPS_NUM_INSTANCES 1U
  
-Building target: new.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bsplib/lib -o "new.elf"  ./src/address.o ./src/fips202.o ./src/fors.o ./src/fpga_sha_driver.o ./src/hash_shake.o ./src/main.o ./src/merkle.o ./src/randombytes.o ./src/sign.o ./src/thash_shake_simple.o ./src/utils.o ./src/utilsx1.o ./src/wots.o ./src/wotsx1.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: new.elf
+In file included from ../src/fpga_sha_driver.h:7,
+                 from ../src/fpga_sha_driver.c:1:
+D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include/xparameters.h:286: warning: "XPAR_XADCPS_0_DEVICE_ID" redefined
+ #define XPAR_XADCPS_0_DEVICE_ID XPAR_PS7_XADC_0_DEVICE_ID
  
-Invoking: ARM v7 Print Size
-arm-none-eabi-size new.elf  |tee "new.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  67524	   1544	  57656	 126724	  1ef04	new.elf
-Finished building: new.elf.size
+In file included from D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include/xparameters.h:19,
+                 from ../src/fpga_sha_driver.h:7,
+                 from ../src/fpga_sha_driver.c:1:
+D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc\standalone_v7_1\src\arm\cortexr5\platform\versal/xparameters_ps.h:276: note: this is the location of the previous definition
+ #define XPAR_XADCPS_0_DEVICE_ID   0U
  
+In file included from ../src/fpga_sha_driver.h:7,
+                 from ../src/fpga_sha_driver.c:1:
+D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include/xparameters.h:287: warning: "XPAR_XADCPS_0_BASEADDR" redefined
+ #define XPAR_XADCPS_0_BASEADDR 0xF8007100
+ 
+In file included from D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include/xparameters.h:19,
+                 from ../src/fpga_sha_driver.h:7,
+                 from ../src/fpga_sha_driver.c:1:
+D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc\standalone_v7_1\src\arm\cortexr5\platform\versal/xparameters_ps.h:277: note: this is the location of the previous definition
+ #define XPAR_XADCPS_0_BASEADDR   (0xF8007000U)
+ 
+In file included from D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc\standalone_v7_1\src\common/xil_io.h:59,
+                 from ../src/fpga_sha_driver.c:2:
+D:\fpga\shakelite2_save\vitisnewworkspace\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc\standalone_v7_1\src\common/xil_printf.h:13:10: fatal error: bspconfig.h: No such file or directory
+ #include "bspconfig.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [src/subdir.mk:71: src/fpga_sha_driver.o] Error 1
+make: *** [makefile:34: all] Error 2

@@ -408,3 +408,6 @@ con
 ----------------End of Script----------------
 
 13:44:22 INFO  : Launch script is exported to file 'D:\fpga\shakelite2_save\vitisnewworkspace\.sdk\launch_scripts\single_application_debug\debugger_new-default.tcl'
+16:42:24 ERROR : Failed to read platform from project 'new_system'.
+Reason: Failed to execute command 'platform read {D:/fpga/shakelite2_save/vitisnewworkspace/new_system/platform.spr}'. Click on details for more information.
+16:42:34 INFO  : Disconnected from the channel tcfchan#2.

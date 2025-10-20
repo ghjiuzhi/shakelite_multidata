@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Sat Oct 11 11:49:58 2025
+//Date        : Sat Oct 18 22:56:42 2025
 //Host        : DESKTOP-HPA0FNB running 64-bit major release  (build 9200)
 //Command     : generate_target cpu.bd
 //Design      : cpu
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "cpu,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=cpu,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "cpu.hwdef" *) 
+(* CORE_GENERATION_INFO = "cpu,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=cpu,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_ps7_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "cpu.hwdef" *) 
 module cpu
    (DDR_addr,
     DDR_ba,
@@ -270,28 +270,28 @@ module cpu
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
-  cpu_sha3_1003_tIP1_0_0 sha3_1003_tIP1_0
-       (.s0_axi_aclk(processing_system7_0_FCLK_CLK0),
-        .s0_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[7:0]),
-        .s0_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .s0_axi_arprot(ps7_0_axi_periph_M00_AXI_ARPROT),
-        .s0_axi_arready(ps7_0_axi_periph_M00_AXI_ARREADY),
-        .s0_axi_arvalid(ps7_0_axi_periph_M00_AXI_ARVALID),
-        .s0_axi_awaddr(ps7_0_axi_periph_M00_AXI_AWADDR[7:0]),
-        .s0_axi_awprot(ps7_0_axi_periph_M00_AXI_AWPROT),
-        .s0_axi_awready(ps7_0_axi_periph_M00_AXI_AWREADY),
-        .s0_axi_awvalid(ps7_0_axi_periph_M00_AXI_AWVALID),
-        .s0_axi_bready(ps7_0_axi_periph_M00_AXI_BREADY),
-        .s0_axi_bresp(ps7_0_axi_periph_M00_AXI_BRESP),
-        .s0_axi_bvalid(ps7_0_axi_periph_M00_AXI_BVALID),
-        .s0_axi_rdata(ps7_0_axi_periph_M00_AXI_RDATA),
-        .s0_axi_rready(ps7_0_axi_periph_M00_AXI_RREADY),
-        .s0_axi_rresp(ps7_0_axi_periph_M00_AXI_RRESP),
-        .s0_axi_rvalid(ps7_0_axi_periph_M00_AXI_RVALID),
-        .s0_axi_wdata(ps7_0_axi_periph_M00_AXI_WDATA),
-        .s0_axi_wready(ps7_0_axi_periph_M00_AXI_WREADY),
-        .s0_axi_wstrb(ps7_0_axi_periph_M00_AXI_WSTRB),
-        .s0_axi_wvalid(ps7_0_axi_periph_M00_AXI_WVALID));
+  cpu_shake_sha2_ip_0_0 shake_sha2_ip_0
+       (.s00_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s00_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[7:0]),
+        .s00_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s00_axi_arprot(ps7_0_axi_periph_M00_AXI_ARPROT),
+        .s00_axi_arready(ps7_0_axi_periph_M00_AXI_ARREADY),
+        .s00_axi_arvalid(ps7_0_axi_periph_M00_AXI_ARVALID),
+        .s00_axi_awaddr(ps7_0_axi_periph_M00_AXI_AWADDR[7:0]),
+        .s00_axi_awprot(ps7_0_axi_periph_M00_AXI_AWPROT),
+        .s00_axi_awready(ps7_0_axi_periph_M00_AXI_AWREADY),
+        .s00_axi_awvalid(ps7_0_axi_periph_M00_AXI_AWVALID),
+        .s00_axi_bready(ps7_0_axi_periph_M00_AXI_BREADY),
+        .s00_axi_bresp(ps7_0_axi_periph_M00_AXI_BRESP),
+        .s00_axi_bvalid(ps7_0_axi_periph_M00_AXI_BVALID),
+        .s00_axi_rdata(ps7_0_axi_periph_M00_AXI_RDATA),
+        .s00_axi_rready(ps7_0_axi_periph_M00_AXI_RREADY),
+        .s00_axi_rresp(ps7_0_axi_periph_M00_AXI_RRESP),
+        .s00_axi_rvalid(ps7_0_axi_periph_M00_AXI_RVALID),
+        .s00_axi_wdata(ps7_0_axi_periph_M00_AXI_WDATA),
+        .s00_axi_wready(ps7_0_axi_periph_M00_AXI_WREADY),
+        .s00_axi_wstrb(ps7_0_axi_periph_M00_AXI_WSTRB),
+        .s00_axi_wvalid(ps7_0_axi_periph_M00_AXI_WVALID));
 endmodule
 
 module cpu_ps7_0_axi_periph_0

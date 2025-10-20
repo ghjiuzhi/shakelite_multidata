@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;new/src/main_sha2_test.c&apos; to &apos;main_sha2_test.c简单版.bak&apos;" description="Rename resource &apos;main_sha2_test.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main_sha2_test.c" name="main_sha2_test.c简单版.bak" stamp="1760845150449" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;new/src/main_sha2_test.c&apos; to &apos;main_sha2_shake_test.c&apos;" description="Rename resource &apos;main_sha2_test.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main_sha2_test.c" name="main_sha2_shake_test.c" stamp="1760853144027" updateReferences="true"/>
+</session>

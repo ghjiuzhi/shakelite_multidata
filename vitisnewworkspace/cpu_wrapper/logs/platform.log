@@ -2209,3 +2209,2018 @@ TRACE::2025-10-17.12:37:17::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_sav
 D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2025-10-17.12:37:17::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:50:52::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:52::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:52::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:54::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:50:55::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:50:55::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-10-18.21:50:56::SCWPlatform::Opened new HwDB with name cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWReader::Active system found as  cpu_wrapper
+TRACE::2025-10-18.21:50:56::SCWReader::Handling sysconfig cpu_wrapper
+TRACE::2025-10-18.21:50:56::SCWDomain::checking for install qemu data   : 
+TRACE::2025-10-18.21:50:56::SCWDomain:: Using the QEMU Data from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2025-10-18.21:50:56::SCWDomain:: Using the QEMU args  from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:50:56::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:50:56::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-10-18.21:50:56::SCWMssOS::No sw design opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS::mss exists loading the mss file  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS::Opened the sw design from mss  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS::Adding the swdes entry D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-10-18.21:50:56::SCWMssOS::updating the scw layer about changes
+TRACE::2025-10-18.21:50:56::SCWMssOS::Opened the sw design.  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:50:56::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:50:56::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS:: library already available in sw design:  xilffs:4.2
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:50:56::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:50:56::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS:: library already available in sw design:  xilrsa:1.5
+TRACE::2025-10-18.21:50:56::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-10-18.21:50:56::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:50:56::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:50:56::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWReader::No isolation master present  
+TRACE::2025-10-18.21:50:56::SCWDomain::checking for install qemu data   : 
+TRACE::2025-10-18.21:50:56::SCWDomain:: Using the QEMU Data from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2025-10-18.21:50:56::SCWDomain:: Using the QEMU args  from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:50:56::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:50:56::SCWMssOS::No sw design opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS::mss exists loading the mss file  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS::Opened the sw design from mss  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS::Adding the swdes entry D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2025-10-18.21:50:56::SCWMssOS::updating the scw layer about changes
+TRACE::2025-10-18.21:50:56::SCWMssOS::Opened the sw design.  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-10-18.21:50:56::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:50:56::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:50:56::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWReader::No isolation master present  
+LOG::2025-10-18.21:50:56::SCWPlatform::Started generating the artifacts platform cpu_wrapper
+TRACE::2025-10-18.21:50:56::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-10-18.21:50:56::SCWPlatform::Started generating the artifacts for system configuration cpu_wrapper
+LOG::2025-10-18.21:50:56::SCWSystem::Checking the domain zynq_fsbl
+LOG::2025-10-18.21:50:56::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2025-10-18.21:50:56::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-10-18.21:50:56::SCWDomain::Building the domain as part of full build :  zynq_fsbl
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.21:50:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:50:56::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:50:56::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:50:56::SCWBDomain::Completed writing the mss file at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2025-10-18.21:50:56::SCWBDomain::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-10-18.21:50:56::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-10-18.21:50:56::SCWBDomain::System Command Ran  D:&  cd  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl & make 
+TRACE::2025-10-18.21:50:57::SCWBDomain::make: Nothing to be done for 'all'.
+
+LOG::2025-10-18.21:50:58::SCWSystem::Checking the domain standalone_domain
+LOG::2025-10-18.21:50:58::SCWSystem::Not a boot domain 
+LOG::2025-10-18.21:50:58::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2025-10-18.21:50:58::SCWDomain::Generating domain artifcats
+TRACE::2025-10-18.21:50:58::SCWMssOS::Generating standalone artifcats
+TRACE::2025-10-18.21:50:58::SCWMssOS::Copying the qemu file from  D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/qemu/
+TRACE::2025-10-18.21:50:58::SCWMssOS::Copying the qemu file from  D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/qemu/
+TRACE::2025-10-18.21:50:58::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-10-18.21:50:58::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:58::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:58::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:58::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:50:58::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:50:58::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:50:58::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-18.21:50:58::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.21:50:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:50:58::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:50:58::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:50:58::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:50:58::SCWMssOS::Completed writing the mss file at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2025-10-18.21:50:58::SCWMssOS::Mss edits present, copying mssfile into export location D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:50:58::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-10-18.21:50:58::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-10-18.21:50:58::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2025-10-18.21:50:58::SCWMssOS::doing bsp build ... 
+TRACE::2025-10-18.21:50:58::SCWMssOS::System Command Ran  D: & cd  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2025-10-18.21:50:58::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2025-10-18.21:50:58::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2025-10-18.21:50:58::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2025-10-18.21:50:58::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:50:59::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2025-10-18.21:50:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2025-10-18.21:50:59::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2025-10-18.21:50:59::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:50:59::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2025-10-18.21:50:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-18.21:50:59::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-18.21:50:59::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:50:59::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2025-10-18.21:50:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-18.21:50:59::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-18.21:50:59::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:50:59::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2025-10-18.21:50:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-18.21:50:59::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-18.21:50:59::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:50:59::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2025-10-18.21:50:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-18.21:50:59::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-18.21:50:59::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:00::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2025-10-18.21:51:00::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2025-10-18.21:51:00::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2025-10-18.21:51:00::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:00::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2025-10-18.21:51:00::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-18.21:51:00::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-18.21:51:00::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:00::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src"
+
+TRACE::2025-10-18.21:51:00::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2025-10-18.21:51:00::SCWMssOS::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2025-10-18.21:51:00::SCWMssOS::rd -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:00::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2025-10-18.21:51:00::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2025-10-18.21:51:00::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2025-10-18.21:51:00::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:02::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2025-10-18.21:51:02::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-18.21:51:02::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-18.21:51:02::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:03::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2025-10-18.21:51:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2025-10-18.21:51:03::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2025-10-18.21:51:03::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:03::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2025-10-18.21:51:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2025-10-18.21:51:03::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2025-10-18.21:51:03::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:03::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2025-10-18.21:51:13::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2025-10-18.21:51:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2025-10-18.21:51:13::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2025-10-18.21:51:13::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:13::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2025-10-18.21:51:13::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2025-10-18.21:51:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2025-10-18.21:51:13::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2025-10-18.21:51:13::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:13::SCWMssOS::"Compiling ddrps"
+
+TRACE::2025-10-18.21:51:13::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2025-10-18.21:51:13::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-18.21:51:13::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-18.21:51:13::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:13::SCWMssOS::"Compiling devcfg"
+
+TRACE::2025-10-18.21:51:15::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2025-10-18.21:51:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2025-10-18.21:51:15::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2025-10-18.21:51:15::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:15::SCWMssOS::"Compiling dmaps"
+
+TRACE::2025-10-18.21:51:16::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2025-10-18.21:51:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-18.21:51:16::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-18.21:51:16::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:17::SCWMssOS::"Compiling scugic"
+
+TRACE::2025-10-18.21:51:18::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2025-10-18.21:51:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2025-10-18.21:51:18::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2025-10-18.21:51:18::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:18::SCWMssOS::"Compiling scutimer"
+
+TRACE::2025-10-18.21:51:19::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2025-10-18.21:51:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-18.21:51:19::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-18.21:51:19::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:19::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2025-10-18.21:51:20::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src"
+
+TRACE::2025-10-18.21:51:20::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sha3_1003_tIP1_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2025-10-18.21:51:20::SCWMssOS::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2025-10-18.21:51:20::SCWMssOS::-nostartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:20::SCWMssOS::"Compiling sha3_1003_tIP1..."
+
+TRACE::2025-10-18.21:51:21::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2025-10-18.21:51:21::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2025-10-18.21:51:21::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2025-10-18.21:51:21::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:21::SCWMssOS::"Compiling standalone"
+
+TRACE::2025-10-18.21:51:27::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2025-10-18.21:51:27::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-18.21:51:27::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-18.21:51:27::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:28::SCWMssOS::"Compiling uartps"
+
+TRACE::2025-10-18.21:51:29::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2025-10-18.21:51:29::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2025-10-18.21:51:29::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2025-10-18.21:51:29::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2025-10-18.21:51:29::SCWMssOS::"Compiling xadcps"
+
+TRACE::2025-10-18.21:51:31::SCWMssOS::'Finished building libraries'
+
+TRACE::2025-10-18.21:51:31::SCWMssOS::Copying to export directory.
+TRACE::2025-10-18.21:51:31::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-10-18.21:51:31::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-10-18.21:51:31::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2025-10-18.21:51:31::SCWSystem::Completed Processing the sysconfig cpu_wrapper
+LOG::2025-10-18.21:51:31::SCWPlatform::Completed generating the artifacts for system configuration cpu_wrapper
+TRACE::2025-10-18.21:51:31::SCWPlatform::Started preparing the platform 
+TRACE::2025-10-18.21:51:31::SCWSystem::Writing the bif file for system config cpu_wrapper
+TRACE::2025-10-18.21:51:31::SCWSystem::dir created 
+TRACE::2025-10-18.21:51:31::SCWSystem::Writing the bif 
+TRACE::2025-10-18.21:51:31::SCWPlatform::Started writing the spfm file 
+TRACE::2025-10-18.21:51:31::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-10-18.21:51:31::SCWPlatform::Completed generating the platform
+TRACE::2025-10-18.21:51:31::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:31::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:31::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-18.21:51:31::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.21:51:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:31::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:31::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:31::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:31::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:31::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:31::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_0
+TRACE::2025-10-18.21:51:31::SCWPlatform::Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.21:51:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:31::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:31::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:31::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:31::SCWWriter::formatted JSON is {
+	"platformName":	"cpu_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"cpu_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/cpu_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"cpu_wrapper",
+	"systems":	[{
+			"systemName":	"cpu_wrapper",
+			"systemDesc":	"cpu_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"cpu_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"0cd0dcbb544b05849087effb0430dc63",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"bcd9bbf085b2dc69b0732fb7a2f2c432",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-10-18.21:51:31::SCWPlatform::updated the xpfm file.
+TRACE::2025-10-18.21:51:31::SCWPlatform::Clearing the existing platform
+TRACE::2025-10-18.21:51:31::SCWSystem::Clearing the existing sysconfig
+TRACE::2025-10-18.21:51:31::SCWBDomain::clearing the fsbl build
+TRACE::2025-10-18.21:51:31::SCWMssOS::Removing the swdes entry for  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:31::SCWMssOS::Removing the swdes entry for  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:31::SCWSystem::Clearing the domains completed.
+TRACE::2025-10-18.21:51:31::SCWPlatform::Clearing the opened hw db.
+TRACE::2025-10-18.21:51:31::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform:: Platform location is D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:31::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:31::SCWPlatform::Removing the HwDB with name D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:31::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:31::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:31::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-10-18.21:51:32::SCWPlatform::Opened new HwDB with name cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWReader::Active system found as  cpu_wrapper
+TRACE::2025-10-18.21:51:32::SCWReader::Handling sysconfig cpu_wrapper
+TRACE::2025-10-18.21:51:32::SCWDomain::checking for install qemu data   : 
+TRACE::2025-10-18.21:51:32::SCWDomain:: Using the QEMU Data from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2025-10-18.21:51:32::SCWDomain:: Using the QEMU args  from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:32::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:32::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-10-18.21:51:32::SCWMssOS::No sw design opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS::mss exists loading the mss file  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS::Opened the sw design from mss  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS::Adding the swdes entry D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-10-18.21:51:32::SCWMssOS::updating the scw layer about changes
+TRACE::2025-10-18.21:51:32::SCWMssOS::Opened the sw design.  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:32::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:32::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS:: library already available in sw design:  xilffs:4.2
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:32::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:32::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS:: library already available in sw design:  xilrsa:1.5
+TRACE::2025-10-18.21:51:32::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-10-18.21:51:32::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:32::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:32::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWReader::No isolation master present  
+TRACE::2025-10-18.21:51:32::SCWDomain::checking for install qemu data   : 
+TRACE::2025-10-18.21:51:32::SCWDomain:: Using the QEMU Data from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2025-10-18.21:51:32::SCWDomain:: Using the QEMU args  from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:32::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:32::SCWMssOS::No sw design opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS::mss exists loading the mss file  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS::Opened the sw design from mss  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS::Adding the swdes entry D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2025-10-18.21:51:32::SCWMssOS::updating the scw layer about changes
+TRACE::2025-10-18.21:51:32::SCWMssOS::Opened the sw design.  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-10-18.21:51:32::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.21:51:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:32::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:32::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWReader::No isolation master present  
+TRACE::2025-10-18.21:51:32::SCWPlatform::Clearing the existing platform
+TRACE::2025-10-18.21:51:32::SCWSystem::Clearing the existing sysconfig
+TRACE::2025-10-18.21:51:32::SCWBDomain::clearing the fsbl build
+TRACE::2025-10-18.21:51:32::SCWMssOS::Removing the swdes entry for  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWMssOS::Removing the swdes entry for  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:32::SCWSystem::Clearing the domains completed.
+TRACE::2025-10-18.21:51:32::SCWPlatform::Clearing the opened hw db.
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Platform location is D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:32::SCWPlatform::Removing the HwDB with name D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:32::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:32::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-10-18.21:51:34::SCWPlatform::Opened new HwDB with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWReader::Active system found as  cpu_wrapper
+TRACE::2025-10-18.21:51:34::SCWReader::Handling sysconfig cpu_wrapper
+TRACE::2025-10-18.21:51:34::SCWDomain::checking for install qemu data   : 
+TRACE::2025-10-18.21:51:34::SCWDomain:: Using the QEMU Data from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2025-10-18.21:51:34::SCWDomain:: Using the QEMU args  from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Opened existing hwdb cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Opened existing hwdb cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:34::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Opened existing hwdb cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:34::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-10-18.21:51:34::SCWMssOS::No sw design opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS::mss exists loading the mss file  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS::Opened the sw design from mss  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS::Adding the swdes entry D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-10-18.21:51:34::SCWMssOS::updating the scw layer about changes
+TRACE::2025-10-18.21:51:34::SCWMssOS::Opened the sw design.  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Opened existing hwdb cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:34::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:34::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS:: library already available in sw design:  xilffs:4.2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Opened existing hwdb cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:34::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:34::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS:: library already available in sw design:  xilrsa:1.5
+TRACE::2025-10-18.21:51:34::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-10-18.21:51:34::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Opened existing hwdb cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:34::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:34::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWReader::No isolation master present  
+TRACE::2025-10-18.21:51:34::SCWDomain::checking for install qemu data   : 
+TRACE::2025-10-18.21:51:34::SCWDomain:: Using the QEMU Data from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2025-10-18.21:51:34::SCWDomain:: Using the QEMU args  from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Opened existing hwdb cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Opened existing hwdb cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:34::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:34::SCWMssOS::No sw design opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS::mss exists loading the mss file  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS::Opened the sw design from mss  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS::Adding the swdes entry D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2025-10-18.21:51:34::SCWMssOS::updating the scw layer about changes
+TRACE::2025-10-18.21:51:34::SCWMssOS::Opened the sw design.  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-10-18.21:51:34::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Opened existing hwdb cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:34::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:34::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWReader::No isolation master present  
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:34::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Opened existing hwdb cpu_wrapper_2
+TRACE::2025-10-18.21:51:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:34::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:34::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:34::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:54::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:54::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:54::SCWPlatform:: Platform location is D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa
+TRACE::2025-10-18.21:51:54::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:55::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2025-10-18.21:51:55::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:55::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:55::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:55::SCWPlatform::Opened existing hwdb cpu_wrapper_2
+TRACE::2025-10-18.21:51:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:55::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:55::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:55::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:55::SCWPlatform::Opened existing hwdb cpu_wrapper_2
+TRACE::2025-10-18.21:51:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:55::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:55::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:55::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:55::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa
+TRACE::2025-10-18.21:51:55::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:55::SCWPlatform::update - Opened existing hwdb cpu_wrapper_3
+TRACE::2025-10-18.21:51:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:55::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2025-10-18.21:51:55::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:55::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:55::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:55::SCWPlatform::Opened existing hwdb cpu_wrapper_2
+TRACE::2025-10-18.21:51:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:56::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:56::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:56::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:56::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:56::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:56::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_2
+TRACE::2025-10-18.21:51:56::SCWPlatform::Opened existing hwdb cpu_wrapper_2
+TRACE::2025-10-18.21:51:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:56::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:56::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:56::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:56::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:56::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:56::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:56::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa
+TRACE::2025-10-18.21:51:56::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:56::SCWPlatform::update - Opened existing hwdb cpu_wrapper_3
+TRACE::2025-10-18.21:51:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:56::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2025-10-18.21:51:56::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2025-10-18.21:51:56::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:56::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:56::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:56::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:56::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:56::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:56::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-10-18.21:51:57::SCWPlatform::Opened new HwDB with name cpu_wrapper_4
+TRACE::2025-10-18.21:51:57::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:57::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:57::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_4
+TRACE::2025-10-18.21:51:57::SCWPlatform::Opened existing hwdb cpu_wrapper_4
+TRACE::2025-10-18.21:51:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:57::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:57::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:57::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:57::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:57::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:57::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_4
+TRACE::2025-10-18.21:51:57::SCWPlatform::Opened existing hwdb cpu_wrapper_4
+TRACE::2025-10-18.21:51:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:57::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:57::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:57::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:57::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:57::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:57::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_4
+TRACE::2025-10-18.21:51:57::SCWPlatform::Opened existing hwdb cpu_wrapper_4
+TRACE::2025-10-18.21:51:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:57::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:57::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:57::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:57::SCWWriter::formatted JSON is {
+	"platformName":	"cpu_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"cpu_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/cpu_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"cpu_wrapper",
+	"systems":	[{
+			"systemName":	"cpu_wrapper",
+			"systemDesc":	"cpu_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"cpu_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"0cd0dcbb544b05849087effb0430dc63",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"bcd9bbf085b2dc69b0732fb7a2f2c432",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-10-18.21:51:57::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform:: Platform location is D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa
+TRACE::2025-10-18.21:51:57::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:57::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:58::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2025-10-18.21:51:58::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:58::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:58::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_4
+TRACE::2025-10-18.21:51:58::SCWPlatform::Opened existing hwdb cpu_wrapper_4
+TRACE::2025-10-18.21:51:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:58::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:58::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:58::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_4
+TRACE::2025-10-18.21:51:58::SCWPlatform::Opened existing hwdb cpu_wrapper_4
+TRACE::2025-10-18.21:51:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:58::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:58::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:58::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:51:58::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa
+TRACE::2025-10-18.21:51:58::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:58::SCWPlatform::update - Opened existing hwdb cpu_wrapper_5
+TRACE::2025-10-18.21:51:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:58::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2025-10-18.21:51:58::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:58::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:58::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_4
+TRACE::2025-10-18.21:51:58::SCWPlatform::Opened existing hwdb cpu_wrapper_4
+TRACE::2025-10-18.21:51:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:58::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:58::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:58::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_4
+TRACE::2025-10-18.21:51:58::SCWPlatform::Opened existing hwdb cpu_wrapper_4
+TRACE::2025-10-18.21:51:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:58::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:58::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:51:58::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:51:58::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa
+TRACE::2025-10-18.21:51:58::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:58::SCWPlatform::update - Opened existing hwdb cpu_wrapper_5
+TRACE::2025-10-18.21:51:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:51:58::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2025-10-18.21:51:58::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2025-10-18.21:51:58::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:51:58::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:51:58::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:51:58::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-10-18.21:52:00::SCWPlatform::Opened new HwDB with name cpu_wrapper_6
+TRACE::2025-10-18.21:52:00::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:52:00::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:52:00::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:52:00::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:52:00::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:52:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:52:00::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_6
+TRACE::2025-10-18.21:52:00::SCWPlatform::Opened existing hwdb cpu_wrapper_6
+TRACE::2025-10-18.21:52:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:52:00::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:52:00::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:52:00::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:52:00::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:52:00::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:52:00::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:52:00::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:52:00::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:52:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:52:00::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_6
+TRACE::2025-10-18.21:52:00::SCWPlatform::Opened existing hwdb cpu_wrapper_6
+TRACE::2025-10-18.21:52:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:52:00::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:52:00::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:52:00::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.21:52:00::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:52:00::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:52:00::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:52:00::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:52:00::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:52:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:52:00::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_6
+TRACE::2025-10-18.21:52:00::SCWPlatform::Opened existing hwdb cpu_wrapper_6
+TRACE::2025-10-18.21:52:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:52:00::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:52:00::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:52:00::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:52:00::SCWWriter::formatted JSON is {
+	"platformName":	"cpu_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"cpu_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/cpu_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"cpu_wrapper",
+	"systems":	[{
+			"systemName":	"cpu_wrapper",
+			"systemDesc":	"cpu_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"cpu_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"0cd0dcbb544b05849087effb0430dc63",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"bcd9bbf085b2dc69b0732fb7a2f2c432",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2025-10-18.21:53:06::SCWPlatform::Started generating the artifacts platform cpu_wrapper
+TRACE::2025-10-18.21:53:06::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-10-18.21:53:06::SCWPlatform::Started generating the artifacts for system configuration cpu_wrapper
+LOG::2025-10-18.21:53:06::SCWSystem::Checking the domain zynq_fsbl
+LOG::2025-10-18.21:53:06::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2025-10-18.21:53:06::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-10-18.21:53:06::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2025-10-18.21:53:06::SCWSystem::Checking the domain standalone_domain
+LOG::2025-10-18.21:53:06::SCWSystem::Not a boot domain 
+LOG::2025-10-18.21:53:06::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2025-10-18.21:53:06::SCWDomain::Generating domain artifcats
+TRACE::2025-10-18.21:53:06::SCWMssOS::Generating standalone artifcats
+TRACE::2025-10-18.21:53:06::SCWMssOS::Copying the qemu file from  D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/qemu/
+TRACE::2025-10-18.21:53:06::SCWMssOS::Copying the qemu file from  D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/qemu/
+TRACE::2025-10-18.21:53:06::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-10-18.21:53:06::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:53:06::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:53:06::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:53:06::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.21:53:06::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.21:53:06::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.21:53:06::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_6
+TRACE::2025-10-18.21:53:06::SCWPlatform::Opened existing hwdb cpu_wrapper_6
+TRACE::2025-10-18.21:53:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.21:53:06::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:53:06::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.21:53:06::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:53:06::SCWMssOS::Completed writing the mss file at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2025-10-18.21:53:06::SCWMssOS::Mss edits present, copying mssfile into export location D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.21:53:06::SCWMssOS::bsp generated is stale removing and regenerating. 
+TRACE::2025-10-18.22:07:06::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:06::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:06::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:08::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:08::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:08::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:08::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-10-18.22:07:09::SCWPlatform::Opened new HwDB with name cpu_wrapper
+TRACE::2025-10-18.22:07:09::SCWReader::Active system found as  cpu_wrapper
+TRACE::2025-10-18.22:07:09::SCWReader::Handling sysconfig cpu_wrapper
+TRACE::2025-10-18.22:07:09::SCWDomain::checking for install qemu data   : 
+TRACE::2025-10-18.22:07:09::SCWDomain:: Using the QEMU Data from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2025-10-18.22:07:09::SCWDomain:: Using the QEMU args  from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2025-10-18.22:07:09::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:09::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:09::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:09::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:09::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:09::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:09::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.22:07:09::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.22:07:09::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:09::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:09::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:09::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:09::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:09::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:09::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:09::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.22:07:09::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.22:07:09::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:09::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2025-10-18.22:07:09::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:09::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:09::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:09::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:10::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:10::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.22:07:10::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.22:07:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:10::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-10-18.22:07:10::SCWMssOS::No sw design opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWMssOS::mss exists loading the mss file  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWMssOS::Opened the sw design from mss  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWMssOS::Adding the swdes entry D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-10-18.22:07:10::SCWMssOS::updating the scw layer about changes
+TRACE::2025-10-18.22:07:10::SCWMssOS::Opened the sw design.  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:10::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:10::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.22:07:10::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.22:07:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:10::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.22:07:10::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWMssOS:: library already available in sw design:  xilffs:4.2
+TRACE::2025-10-18.22:07:10::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:10::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:10::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.22:07:10::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.22:07:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:10::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.22:07:10::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWMssOS:: library already available in sw design:  xilrsa:1.5
+TRACE::2025-10-18.22:07:10::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-10-18.22:07:10::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-10-18.22:07:10::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:10::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:10::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.22:07:10::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.22:07:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:10::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.22:07:10::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWReader::No isolation master present  
+TRACE::2025-10-18.22:07:10::SCWDomain::checking for install qemu data   : 
+TRACE::2025-10-18.22:07:10::SCWDomain:: Using the QEMU Data from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2025-10-18.22:07:10::SCWDomain:: Using the QEMU args  from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2025-10-18.22:07:10::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:10::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:10::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.22:07:10::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.22:07:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:10::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:10::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:10::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.22:07:10::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.22:07:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:10::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.22:07:10::SCWMssOS::No sw design opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWMssOS::mss exists loading the mss file  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWMssOS::Opened the sw design from mss  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWMssOS::Adding the swdes entry D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2025-10-18.22:07:10::SCWMssOS::updating the scw layer about changes
+TRACE::2025-10-18.22:07:10::SCWMssOS::Opened the sw design.  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-10-18.22:07:10::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-10-18.22:07:10::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:10::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:10::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.22:07:10::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.22:07:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:10::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.22:07:10::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.22:07:10::SCWReader::No isolation master present  
+TRACE::2025-10-18.22:07:13::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:13::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:13::SCWPlatform:: Platform location is D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa
+TRACE::2025-10-18.22:07:13::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:13::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:15::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2025-10-18.22:07:15::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:15::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:15::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.22:07:15::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.22:07:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:15::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:15::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:15::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.22:07:15::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.22:07:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:15::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:15::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.22:07:15::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:15::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa
+TRACE::2025-10-18.22:07:15::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:15::SCWPlatform::update - Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.22:07:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:15::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2025-10-18.22:07:15::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:15::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:15::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.22:07:15::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.22:07:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:15::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:15::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:15::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.22:07:15::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.22:07:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:15::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.22:07:15::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.22:07:15::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.22:07:15::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa
+TRACE::2025-10-18.22:07:15::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:15::SCWPlatform::update - Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.22:07:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:15::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2025-10-18.22:07:15::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2025-10-18.22:07:15::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:15::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:15::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-10-18.22:07:16::SCWPlatform::Opened new HwDB with name cpu_wrapper_1
+TRACE::2025-10-18.22:07:16::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:16::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:16::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:16::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:16::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:16::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.22:07:16::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.22:07:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:16::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:16::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.22:07:16::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:16::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:16::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:16::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:16::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:16::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:16::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.22:07:16::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.22:07:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:16::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:16::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.22:07:16::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:16::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:16::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:16::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:16::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:16::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:16::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.22:07:16::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.22:07:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:16::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.22:07:16::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.22:07:16::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.22:07:16::SCWWriter::formatted JSON is {
+	"platformName":	"cpu_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"cpu_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/cpu_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"cpu_wrapper",
+	"systems":	[{
+			"systemName":	"cpu_wrapper",
+			"systemDesc":	"cpu_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"cpu_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"0cd0dcbb544b05849087effb0430dc63",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"bcd9bbf085b2dc69b0732fb7a2f2c432",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2025-10-18.22:07:43::SCWPlatform::Started generating the artifacts platform cpu_wrapper
+TRACE::2025-10-18.22:07:43::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-10-18.22:07:43::SCWPlatform::Started generating the artifacts for system configuration cpu_wrapper
+LOG::2025-10-18.22:07:43::SCWSystem::Checking the domain zynq_fsbl
+LOG::2025-10-18.22:07:43::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2025-10-18.22:07:43::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-10-18.22:07:43::SCWDomain::Building the domain as part of full build :  zynq_fsbl
+TRACE::2025-10-18.22:07:43::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:43::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:43::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:43::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.22:07:43::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.22:07:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.22:07:43::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.22:07:43::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.22:07:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.22:07:43::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:43::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.22:07:43::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.22:07:43::SCWBDomain::Completed writing the mss file at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2025-10-18.22:07:43::SCWBDomain::bsp generated is stale removing and regenerating. 
+TRACE::2025-10-18.23:07:16::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:16::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:16::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:19::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:19::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:19::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-10-18.23:07:20::SCWPlatform::Opened new HwDB with name cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWReader::Active system found as  cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWReader::Handling sysconfig cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWDomain::checking for install qemu data   : 
+TRACE::2025-10-18.23:07:20::SCWDomain:: Using the QEMU Data from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2025-10-18.23:07:20::SCWDomain:: Using the QEMU args  from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:20::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:20::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-10-18.23:07:20::SCWMssOS::No sw design opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWMssOS::mss exists loading the mss file  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWMssOS::Opened the sw design from mss  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWMssOS::Adding the swdes entry D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-10-18.23:07:20::SCWMssOS::updating the scw layer about changes
+TRACE::2025-10-18.23:07:20::SCWMssOS::Opened the sw design.  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:20::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.23:07:20::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWMssOS:: library already available in sw design:  xilffs:4.2
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:20::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.23:07:20::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWMssOS:: library already available in sw design:  xilrsa:1.5
+TRACE::2025-10-18.23:07:20::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-10-18.23:07:20::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:20::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.23:07:20::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWReader::No isolation master present  
+TRACE::2025-10-18.23:07:20::SCWDomain::checking for install qemu data   : 
+TRACE::2025-10-18.23:07:20::SCWDomain:: Using the QEMU Data from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2025-10-18.23:07:20::SCWDomain:: Using the QEMU args  from install at  : D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:20::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.23:07:20::SCWMssOS::No sw design opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWMssOS::mss exists loading the mss file  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWMssOS::Opened the sw design from mss  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWMssOS::Adding the swdes entry D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2025-10-18.23:07:20::SCWMssOS::updating the scw layer about changes
+TRACE::2025-10-18.23:07:20::SCWMssOS::Opened the sw design.  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-10-18.23:07:20::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:20::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.23:07:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:20::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.23:07:20::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.23:07:20::SCWReader::No isolation master present  
+TRACE::2025-10-18.23:07:42::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:42::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:42::SCWPlatform:: Platform location is D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa
+TRACE::2025-10-18.23:07:42::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:43::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2025-10-18.23:07:43::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:43::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:43::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.23:07:43::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.23:07:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:43::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:43::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:43::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.23:07:43::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.23:07:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:43::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:43::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.23:07:43::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:43::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa
+TRACE::2025-10-18.23:07:43::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:43::SCWPlatform::update - Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.23:07:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:43::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2025-10-18.23:07:43::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:43::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:43::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.23:07:43::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.23:07:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:43::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:43::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:43::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper
+TRACE::2025-10-18.23:07:43::SCWPlatform::Opened existing hwdb cpu_wrapper
+TRACE::2025-10-18.23:07:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:43::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.23:07:43::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.23:07:43::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.23:07:43::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa
+TRACE::2025-10-18.23:07:43::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/tempdsa/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:43::SCWPlatform::update - Opened existing hwdb cpu_wrapper_0
+TRACE::2025-10-18.23:07:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:43::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2025-10-18.23:07:43::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2025-10-18.23:07:43::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:43::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:43::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-10-18.23:07:45::SCWPlatform::Opened new HwDB with name cpu_wrapper_1
+TRACE::2025-10-18.23:07:45::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:45::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:45::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:45::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:45::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:45::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.23:07:45::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.23:07:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:45::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:45::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.23:07:45::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:45::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:45::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:45::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:45::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:45::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:45::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.23:07:45::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.23:07:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:45::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:45::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.23:07:45::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:45::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:45::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:45::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:45::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:45::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:45::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.23:07:45::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.23:07:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:45::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.23:07:45::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.23:07:45::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2025-10-18.23:07:45::SCWWriter::formatted JSON is {
+	"platformName":	"cpu_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"cpu_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/cpu_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"cpu_wrapper",
+	"systems":	[{
+			"systemName":	"cpu_wrapper",
+			"systemDesc":	"cpu_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"cpu_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"0cd0dcbb544b05849087effb0430dc63",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"D:/ruanjian/Vivado/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"bcd9bbf085b2dc69b0732fb7a2f2c432",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-10-18.23:07:54::SCWBDomain::System Command Ran  D:&  cd  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl & make clean
+TRACE::2025-10-18.23:07:55::SCWBDomain::rm -rf  sd.o  nand.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  nor.o  qspi.o  rsa.o  ps7_init.o  pcap.o  fsbl_handoff.o zynq
+TRACE::2025-10-18.23:07:55::SCWBDomain::_fsbl_bsp/ps7_cortexa9_0/lib/libxil.a executable.elf *.o
+
+TRACE::2025-10-18.23:07:55::SCWBDomain::System Command Ran  D:&  cd  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp & make clean
+ERROR::2025-10-18.23:07:55::SCWSystem::Error in Processing the domain zynq_fsbl
+LOG::2025-10-18.23:07:58::SCWPlatform::Started generating the artifacts platform cpu_wrapper
+TRACE::2025-10-18.23:07:58::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-10-18.23:07:58::SCWPlatform::Started generating the artifacts for system configuration cpu_wrapper
+LOG::2025-10-18.23:07:58::SCWSystem::Checking the domain zynq_fsbl
+LOG::2025-10-18.23:07:58::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2025-10-18.23:07:58::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-10-18.23:07:58::SCWDomain::Building the domain as part of full build :  zynq_fsbl
+TRACE::2025-10-18.23:07:58::SCWPlatform::Trying to open the hw design at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:58::SCWPlatform::DSA given D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:58::SCWPlatform::DSA absoulate path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:58::SCWPlatform::DSA directory D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw
+TRACE::2025-10-18.23:07:58::SCWPlatform:: Platform Path D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/hw/cpu_wrapper.xsa
+TRACE::2025-10-18.23:07:58::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-10-18.23:07:58::SCWPlatform::Trying to set the existing hwdb with name cpu_wrapper_1
+TRACE::2025-10-18.23:07:58::SCWPlatform::Opened existing hwdb cpu_wrapper_1
+TRACE::2025-10-18.23:07:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-10-18.23:07:58::SCWMssOS::Checking the sw design at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:58::SCWMssOS::DEBUG:  swdes dump  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-10-18.23:07:58::SCWMssOS::Sw design exists and opened at  D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-10-18.23:07:58::SCWBDomain::Completed writing the mss file at D:/fpga/shakelite2_save/vitisnewworkspace/cpu_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2025-10-18.23:07:58::SCWBDomain::bsp generated is stale removing and regenerating. 

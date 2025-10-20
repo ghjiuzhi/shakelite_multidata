@@ -3,10 +3,10 @@ vlib questa_lib/msim
 
 vlib questa_lib/msim/xilinx_vip
 vlib questa_lib/msim/xpm
+vlib questa_lib/msim/xil_defaultlib
 vlib questa_lib/msim/axi_infrastructure_v1_1_0
 vlib questa_lib/msim/axi_vip_v1_1_6
 vlib questa_lib/msim/processing_system7_vip_v1_0_8
-vlib questa_lib/msim/xil_defaultlib
 vlib questa_lib/msim/lib_cdc_v1_0_2
 vlib questa_lib/msim/proc_sys_reset_v5_0_13
 vlib questa_lib/msim/generic_baseblocks_v2_1_0
@@ -17,10 +17,10 @@ vlib questa_lib/msim/axi_protocol_converter_v2_1_20
 
 vmap xilinx_vip questa_lib/msim/xilinx_vip
 vmap xpm questa_lib/msim/xpm
+vmap xil_defaultlib questa_lib/msim/xil_defaultlib
 vmap axi_infrastructure_v1_1_0 questa_lib/msim/axi_infrastructure_v1_1_0
 vmap axi_vip_v1_1_6 questa_lib/msim/axi_vip_v1_1_6
 vmap processing_system7_vip_v1_0_8 questa_lib/msim/processing_system7_vip_v1_0_8
-vmap xil_defaultlib questa_lib/msim/xil_defaultlib
 vmap lib_cdc_v1_0_2 questa_lib/msim/lib_cdc_v1_0_2
 vmap proc_sys_reset_v5_0_13 questa_lib/msim/proc_sys_reset_v5_0_13
 vmap generic_baseblocks_v2_1_0 questa_lib/msim/generic_baseblocks_v2_1_0
@@ -47,6 +47,12 @@ vlog -work xpm -64 -sv -L axi_vip_v1_1_6 -L processing_system7_vip_v1_0_8 -L xil
 vcom -work xpm -64 -93 \
 "D:/ruanjian/Vivado/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
+vlog -work xil_defaultlib -64 "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/ec67/hdl" "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/2d50/hdl" "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_processing_system7_0_0" "+incdir+D:/ruanjian/Vivado/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../bd/cpu/ip/cpu_processing_system7_0_0/cpu_processing_system7_0_0_sim_netlist.v" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../bd/cpu/ip/cpu_processing_system7_0_0/cpu_processing_system7_0_0_sim_netlist.vhdl" \
+
 vlog -work axi_infrastructure_v1_1_0 -64 "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/ec67/hdl" "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/2d50/hdl" "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_processing_system7_0_0" "+incdir+D:/ruanjian/Vivado/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
 
@@ -58,6 +64,10 @@ vlog -work processing_system7_vip_v1_0_8 -64 -sv -L axi_vip_v1_1_6 -L processing
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/ec67/hdl" "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/2d50/hdl" "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_processing_system7_0_0" "+incdir+D:/ruanjian/Vivado/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/cpu/ip/cpu_processing_system7_0_0/sim/cpu_processing_system7_0_0.v" \
+"../../../bd/cpu/ip/cpu_rst_ps7_0_50M_0/cpu_rst_ps7_0_50M_0_sim_netlist.v" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../bd/cpu/ip/cpu_rst_ps7_0_50M_0/cpu_rst_ps7_0_50M_0_sim_netlist.vhdl" \
 
 vcom -work lib_cdc_v1_0_2 -64 -93 \
 "../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
@@ -69,13 +79,17 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/cpu/ip/cpu_rst_ps7_0_50M_0/sim/cpu_rst_ps7_0_50M_0.vhd" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/ec67/hdl" "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/2d50/hdl" "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_processing_system7_0_0" "+incdir+D:/ruanjian/Vivado/Vivado/2019.2/data/xilinx_vip/include" \
-"../../../bd/cpu/ipshared/43a3/src/keccak_round.v" \
-"../../../bd/cpu/ipshared/43a3/src/keccak_round_constants_gen.v" \
-"../../../bd/cpu/ipshared/43a3/src/keccak_top.v" \
-"../../../bd/cpu/ipshared/43a3/hdl/sha3_1003_tIP1_v1_0_S0_AXI.v" \
-"../../../bd/cpu/ipshared/43a3/src/shake_top.v" \
-"../../../bd/cpu/ipshared/43a3/hdl/sha3_1003_tIP1_v1_0.v" \
-"../../../bd/cpu/ip/cpu_sha3_1003_tIP1_0_0/sim/cpu_sha3_1003_tIP1_0_0.v" \
+"../../../bd/cpu/ipshared/a5b1/src/keccak_round.v" \
+"../../../bd/cpu/ipshared/a5b1/src/keccak_round_constants_gen.v" \
+"../../../bd/cpu/ipshared/a5b1/src/keccak_top.v" \
+"../../../bd/cpu/ipshared/a5b1/src/sha256.v" \
+"../../../bd/cpu/ipshared/a5b1/src/sha2_top.v" \
+"../../../bd/cpu/ipshared/a5b1/src/sha512.v" \
+"../../../bd/cpu/ipshared/a5b1/hdl/shake_sha2_ip_v1_0_S00_AXI.v" \
+"../../../bd/cpu/ipshared/a5b1/src/shake_sha2_top.v" \
+"../../../bd/cpu/ipshared/a5b1/src/shake_top.v" \
+"../../../bd/cpu/ipshared/a5b1/hdl/shake_sha2_ip_v1_0.v" \
+"../../../bd/cpu/ip/cpu_shake_sha2_ip_0_0/sim/cpu_shake_sha2_ip_0_0.v" \
 
 vlog -work generic_baseblocks_v2_1_0 -64 "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/ec67/hdl" "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/2d50/hdl" "+incdir+../../../../shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_processing_system7_0_0" "+incdir+D:/ruanjian/Vivado/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \

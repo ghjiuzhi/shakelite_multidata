@@ -16,6 +16,12 @@
 -makelib xcelium_lib/xpm \
   "D:/ruanjian/Vivado/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/cpu/ip/cpu_processing_system7_0_0/cpu_processing_system7_0_0_sim_netlist.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/cpu/ip/cpu_processing_system7_0_0/cpu_processing_system7_0_0_sim_netlist.vhdl" \
+-endlib
 -makelib xcelium_lib/axi_infrastructure_v1_1_0 \
   "../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
 -endlib
@@ -27,6 +33,10 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/cpu/ip/cpu_processing_system7_0_0/sim/cpu_processing_system7_0_0.v" \
+  "../../../bd/cpu/ip/cpu_rst_ps7_0_50M_0/cpu_rst_ps7_0_50M_0_sim_netlist.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/cpu/ip/cpu_rst_ps7_0_50M_0/cpu_rst_ps7_0_50M_0_sim_netlist.vhdl" \
 -endlib
 -makelib xcelium_lib/lib_cdc_v1_0_2 \
   "../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
@@ -38,13 +48,17 @@
   "../../../bd/cpu/ip/cpu_rst_ps7_0_50M_0/sim/cpu_rst_ps7_0_50M_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/cpu/ipshared/43a3/src/keccak_round.v" \
-  "../../../bd/cpu/ipshared/43a3/src/keccak_round_constants_gen.v" \
-  "../../../bd/cpu/ipshared/43a3/src/keccak_top.v" \
-  "../../../bd/cpu/ipshared/43a3/hdl/sha3_1003_tIP1_v1_0_S0_AXI.v" \
-  "../../../bd/cpu/ipshared/43a3/src/shake_top.v" \
-  "../../../bd/cpu/ipshared/43a3/hdl/sha3_1003_tIP1_v1_0.v" \
-  "../../../bd/cpu/ip/cpu_sha3_1003_tIP1_0_0/sim/cpu_sha3_1003_tIP1_0_0.v" \
+  "../../../bd/cpu/ipshared/a5b1/src/keccak_round.v" \
+  "../../../bd/cpu/ipshared/a5b1/src/keccak_round_constants_gen.v" \
+  "../../../bd/cpu/ipshared/a5b1/src/keccak_top.v" \
+  "../../../bd/cpu/ipshared/a5b1/src/sha256.v" \
+  "../../../bd/cpu/ipshared/a5b1/src/sha2_top.v" \
+  "../../../bd/cpu/ipshared/a5b1/src/sha512.v" \
+  "../../../bd/cpu/ipshared/a5b1/hdl/shake_sha2_ip_v1_0_S00_AXI.v" \
+  "../../../bd/cpu/ipshared/a5b1/src/shake_sha2_top.v" \
+  "../../../bd/cpu/ipshared/a5b1/src/shake_top.v" \
+  "../../../bd/cpu/ipshared/a5b1/hdl/shake_sha2_ip_v1_0.v" \
+  "../../../bd/cpu/ip/cpu_shake_sha2_ip_0_0/sim/cpu_shake_sha2_ip_0_0.v" \
 -endlib
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \
   "../../../../shakelite2_save.srcs/sources_1/bd/cpu/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \

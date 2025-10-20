@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="cpu" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1760667744"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1760667744"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1760667744"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1760667744"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1760799403"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1760799403"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1760799403"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1760799403"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\cpu_processing_system7_0_0\cpu_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -16,6 +16,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\cpu_ps7_0_axi_periph_0\cpu_ps7_0_axi_periph_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_0_axi_periph"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -24,6 +25,22 @@
       </File>
       <File Name="ip\cpu_rst_ps7_0_50M_0\cpu_rst_ps7_0_50M_0.xci" Type="IP">
         <Instance HierarchyPath="rst_ps7_0_50M"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\cpu_shake_sha2_ip_0_0\cpu_shake_sha2_ip_0_0.xci" Type="IP">
+        <Instance HierarchyPath="shake_sha2_ip_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\cpu_auto_pc_0\cpu_auto_pc_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_0_axi_periph/s00_couplers/auto_pc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -39,22 +56,6 @@
       <File Name="sim\cpu.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\cpu_sha3_1003_tIP1_0_3\cpu_sha3_1003_tIP1_0_3.xci" Type="IP">
-        <Instance HierarchyPath="sha3_1003_tIP1_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\cpu_auto_pc_0\cpu_auto_pc_0.xci" Type="IP">
-        <Instance HierarchyPath="ps7_0_axi_periph/s00_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="cpu_ooc.xdc" Type="XDC">

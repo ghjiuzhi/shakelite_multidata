@@ -1,0 +1,10 @@
+13:16:16 **** Build of configuration Debug for project new_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 59524 D:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/cpu_wrapper.xpfm standalone_domain D:/fpga/shakelite2_save/vitis_1019/new_system/Debug/system.bif
+sdcard_gen --xpfm D:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/cpu_wrapper.xpfm --sys_config cpu_wrapper --bif D:/fpga/shakelite2_save/vitis_1019/new_system/Debug/system.bif --bitstream D:/fpga/shakelite2_save/vitis_1019/new/_ide/bitstream/cpu_wrapper.bit --elf D:/fpga/shakelite2_save/vitis_1019/new/Debug/new.elf,ps7_cortexa9_0
+creating BOOT.BIN using D:/fpga/shakelite2_save/vitis_1019/new/_ide/bitstream/cpu_wrapper.bit
+Running D:/ruanjian/Vivado/Vitis/2019.2/bin/bootgen  -image D:/fpga/shakelite2_save/vitis_1019/new_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+13:16:28 Build Finished (took 11s.144ms)
+

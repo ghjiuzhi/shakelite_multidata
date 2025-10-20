@@ -31,7 +31,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
   d:/fpga/Embedded_Vitis/customip/ip_repo/sha3_1003_tIP1_1.0
-  d:/fpga/shakelite2_save/sha3_1003_tIP1_1.0
+  d:/fpga/Embedded_Vitis/shake_sha2_ip
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo d:/fpga/shakelite2_save/shakelite2_save.cache/ip [current_project]
@@ -41,6 +41,7 @@ add_files D:/fpga/shakelite2_save/shakelite2_save.srcs/sources_1/bd/cpu/cpu.bd
 set_property used_in_implementation false [get_files -all d:/fpga/shakelite2_save/shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_processing_system7_0_0/cpu_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all d:/fpga/shakelite2_save/shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_rst_ps7_0_50M_0/cpu_rst_ps7_0_50M_0_board.xdc]
 set_property used_in_implementation false [get_files -all d:/fpga/shakelite2_save/shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_rst_ps7_0_50M_0/cpu_rst_ps7_0_50M_0.xdc]
+set_property used_in_implementation false [get_files -all d:/fpga/shakelite2_save/shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_rst_ps7_0_50M_0/cpu_rst_ps7_0_50M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/fpga/shakelite2_save/shakelite2_save.srcs/sources_1/bd/cpu/ip/cpu_auto_pc_0/cpu_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all D:/fpga/shakelite2_save/shakelite2_save.srcs/sources_1/bd/cpu/cpu_ooc.xdc]
 

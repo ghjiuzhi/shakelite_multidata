@@ -1,0 +1,206 @@
+#include "fpga_sha_driver.h"
+#include "xil_io.h"
+#include <string.h>
+
+// 寄存器讀寫宏
+#define SHA_HW_WriteReg(BaseAddress, RegOffset, Data) \
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+
+#define SHA_HW_ReadReg(BaseAddress, RegOffset) \
+    Xil_In32((BaseAddress) + (RegOffset))
+
+/* * 輔助函數 1：SHAKE 輸出處理 (來自你的舊驅動)
+ * 你的舊驅動 `reorder_and_swap_bytes` 邏輯是從寄存器末尾向前讀取並交換字節。
+ * 我們保留這個邏輯給 SHAKE。
+ */
+static void reorder_and_swap_bytes_shake(unsigned char* dest, const u32* src_regs, size_t num_bytes_to_reorder) {
+    size_t num_regs_to_process = (num_bytes_to_reorder + 3) / 4;
+    if (num_regs_to_process > RESULT_REG_COUNT) {
+        num_regs_to_process = RESULT_REG_COUNT;
+    }
+
+    for (size_t i = 0; i < num_regs_to_process; i++) {
+        // 從後向前讀取寄存器 (src_regs[41], src_regs[40], ...)
+        u32 current_reg_val = src_regs[RESULT_REG_COUNT - 1 - i];
+
+        if (i * 4 + 0 < num_bytes_to_reorder)
+            dest[i * 4 + 0] = (current_reg_val >> 24) & 0xFF;
+        if (i * 4 + 1 < num_bytes_to_reorder)
+            dest[i * 4 + 1] = (current_reg_val >> 16) & 0xFF;
+        if (i * 4 + 2 < num_bytes_to_reorder)
+            dest[i * 4 + 2] = (current_reg_val >> 8)  & 0xFF;
+        if (i * 4 + 3 < num_bytes_to_reorder)
+            dest[i * 4 + 3] = (current_reg_val >> 0)  & 0xFF;
+    }
+}
+
+/* * 輔助函數 2：SHA-2 輸出處理 (新)
+ * 根據 shake_sha2_top.v，SHA-2 結果位於 dout 總線的前端 (低地址)。
+ * 我們從寄存器開頭 (REG11) 向後讀取並交換字節。
+ */
+static void reorder_and_swap_bytes_sha2(unsigned char* dest, const u32* src_regs, size_t num_bytes_to_copy) {
+    size_t num_regs_to_process = (num_bytes_to_copy + 3) / 4;
+
+    for (size_t i = 0; i < num_regs_to_process; i++) {
+        // 從前向後讀取寄存器 (src_regs[0], src_regs[1], ...)
+        u32 current_reg_val = src_regs[i];
+
+        if (i * 4 + 0 < num_bytes_to_copy)
+            dest[i * 4 + 0] = (current_reg_val >> 24) & 0xFF;
+        if (i * 4 + 1 < num_bytes_to_copy)
+            dest[i * 4 + 1] = (current_reg_val >> 16) & 0xFF;
+        if (i * 4 + 2 < num_bytes_to_copy)
+            dest[i * 4 + 2] = (current_reg_val >> 8)  & 0xFF;
+        if (i * 4 + 3 < num_bytes_to_copy)
+            dest[i * 4 + 3] = (current_reg_val >> 0)  & 0xFF;
+    }
+}
+
+
+/* --- 內部 SHA-2 驅動邏輯 --- */
+// 嚴格遵循 shake_sha2_test.c 的邏輯
+static void sha2_hw_internal(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen, HwHashMode mode)
+{
+    u32 base_addr = IP_CORE_BASEADDR;
+    u32 status;
+    int timeout;
+
+    // 1. 設置模式 (SHA2-256 或 SHA2-512)
+    SHA_HW_WriteReg(base_addr, REG_CONTROL_OFFSET, (u32)mode);
+
+    // 2. 循環發送數據 (逐字節)，使用 tvalid 脈沖
+    for (size_t i = 0; i < inlen; i++) {
+        // 等待 tready == 1
+        timeout = 1000000;
+        do {
+            status = SHA_HW_ReadReg(base_addr, REG_STATUS_OFFSET);
+            if (timeout-- <= 0) { /* 處理超時 */ return; }
+        } while ((status & STATUS_SHA2_TREADY_BIT) == 0);
+
+        // 寫入 tdata
+        SHA_HW_WriteReg(base_addr, REG_SHA2_TDATA_OFFSET, (u32)in[i]);
+        SHA_HW_WriteReg(base_addr, REG_SHA2_TID_OFFSET, 0);
+
+        // 設置 tvalid=1, tlast=1 (如果是最後)
+        u32 sha2_control = SHA2_CONTROL_TVALID_BIT;
+        if (i == (inlen - 1)) {
+            sha2_control |= SHA2_CONTROL_TLAST_BIT;
+        }
+        SHA_HW_WriteReg(base_addr, REG_SHA2_CONTROL_OFFSET, sha2_control);
+
+        // 立即清零 tvalid (遵循 shake_sha2_test.c 的脈沖邏輯)
+        sha2_control &= ~SHA2_CONTROL_TVALID_BIT;
+        SHA_HW_WriteReg(base_addr, REG_SHA2_CONTROL_OFFSET, sha2_control);
+    }
+
+    // 3. 等待結果 (遵循 shake_sha2_test.c 的邏輯)
+    timeout = 1000000;
+    while (((SHA_HW_ReadReg(base_addr, REG_STATUS_OFFSET) & STATUS_RESULT_READY_BIT) == 0) && (timeout > 0)) {
+        timeout--;
+    }
+    if (timeout <= 0) { /* 處理超時 */ return; }
+
+    // 4. 讀取結果
+    u32 result_regs[SHA512_REG_COUNT]; // 分配足夠 SHA512 的空間
+    size_t regs_to_read = (mode == HW_MODE_SHA2_256) ? SHA256_REG_COUNT : SHA512_REG_COUNT;
+
+    for (size_t i = 0; i < regs_to_read; i++) {
+        result_regs[i] = SHA_HW_ReadReg(base_addr, REG_RESULT_START_OFFSET + i * 4);
+    }
+
+    // 5. 複製並交換字節序到輸出 (SHA-2 結果在寄存器前端)
+    reorder_and_swap_bytes_sha2(out, result_regs, outlen);
+}
+
+
+/* --- 內部 SHAKE256 驅動邏輯 --- */
+// 這是你的驅動邏輯，但更新了所有宏定義以匹配新 IP
+static void shake256_hw_internal(uint8_t *out, size_t outlen, const uint8_t *in, const size_t inlen)
+{
+    u32 base_addr = IP_CORE_BASEADDR;
+    size_t remaining_len = inlen;
+    const uint8_t *data_ptr = in;
+    int timeout;
+
+    /* --- 步驟 1 & 2: 設置模式並發送啟動脈沖 (使用更新後的定義) --- */
+    u32 control_val = (HW_MODE_SHAKE_256 & 0xF); // 模式 9
+    SHA_HW_WriteReg(base_addr, REG_CONTROL_OFFSET, control_val);
+    SHA_HW_WriteReg(base_addr, REG_CONTROL_OFFSET, control_val | CONTROL_SHAKE_START_BIT); // bit 4
+    SHA_HW_WriteReg(base_addr, REG_CONTROL_OFFSET, control_val);
+
+    /* --- 步驟 3: 循環發送數據塊 --- */
+    while (remaining_len > 0) {
+        u64 chunk = 0;
+        size_t bytes_to_process = (remaining_len >= 8) ? 8 : remaining_len;
+
+        for (size_t i = 0; i < bytes_to_process; i++) {
+            chunk |= (u64)data_ptr[i] << (56 - (i * 8));
+        }
+
+        SHA_HW_WriteReg(base_addr, REG_DIN_HIGH_OFFSET, (u32)(chunk >> 32));
+        SHA_HW_WriteReg(base_addr, REG_DIN_LOW_OFFSET,  (u32)(chunk & 0xFFFFFFFF));
+
+        u32 control2_val = ((u32)bytes_to_process << 1);
+
+        if (remaining_len <= 8) {
+            control2_val |= CONTROL2_LAST_DIN_BIT;
+            SHA_HW_WriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val | CONTROL2_DIN_VALID_BIT);
+            // 你的驅動在最後一塊後立即清除了 valid 並設置了 dout_ready
+            SHA_HW_WriteReg(base_addr, REG_CONTROL2_OFFSET, CONTROL2_DOUT_READY_BIT);
+        } else {
+            SHA_HW_WriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val | CONTROL2_DIN_VALID_BIT);
+            SHA_HW_WriteReg(base_addr, REG_CONTROL2_OFFSET, control2_val); // 清除 valid
+        }
+
+        data_ptr += bytes_to_process;
+        remaining_len -= bytes_to_process;
+    }
+
+    if (inlen == 0) {
+        SHA_HW_WriteReg(base_addr, REG_DIN_HIGH_OFFSET, 0);
+        SHA_HW_WriteReg(base_addr, REG_DIN_LOW_OFFSET,  0);
+        u32 control2_final = CONTROL2_LAST_DIN_BIT | (0 << 1);
+        SHA_HW_WriteReg(base_addr, REG_CONTROL2_OFFSET, control2_final | CONTROL2_DIN_VALID_BIT);
+        SHA_HW_WriteReg(base_addr, REG_CONTROL2_OFFSET, CONTROL2_DOUT_READY_BIT);
+    }
+
+    /* --- 步驟 4: 等待硬件計算完成 --- */
+    timeout = 1000000;
+    while (((SHA_HW_ReadReg(base_addr, REG_STATUS_OFFSET) & STATUS_RESULT_READY_BIT) == 0) && (timeout > 0)) {
+        timeout--;
+    }
+    if (timeout <= 0) {
+        xil_printf("[ERROR] Timeout waiting for SHAKE hardware result!\r\n");
+        memset(out, 0xEE, outlen);
+        return;
+    }
+
+    /* --- 步驟 5: 讀取並重排結果 --- */
+    u32 result_regs[RESULT_REG_COUNT];
+    for (int i = 0; i < RESULT_REG_COUNT; i++) {
+        result_regs[i] = SHA_HW_ReadReg(base_addr, REG_RESULT_START_OFFSET + i * 4);
+    }
+
+    // 你的 SHAKE 驅動使用此函數
+    reorder_and_swap_bytes_shake(out, result_regs, outlen);
+}
+
+
+/* --- 公共 API 函數 --- */
+
+void shake256_hw(uint8_t *out, size_t outlen, const uint8_t *in, const size_t inlen)
+{
+    shake256_hw_internal(out, outlen, in, inlen);
+}
+
+void sha256_hw(uint8_t *out, const uint8_t *in, size_t inlen)
+{
+    // SHA256 輸出固定為 32 字節
+    sha2_hw_internal(out, 32, in, inlen, HW_MODE_SHA2_256);
+}
+
+void sha512_hw(uint8_t *out, const uint8_t *in, size_t inlen)
+{
+    // SHA512 輸出固定為 64 字節
+    sha2_hw_internal(out, 64, in, inlen, HW_MODE_SHA2_512);
+}

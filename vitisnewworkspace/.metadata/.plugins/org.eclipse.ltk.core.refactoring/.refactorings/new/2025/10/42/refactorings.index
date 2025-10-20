@@ -1,1 +1,7 @@
 1760678416179	Rename resource 'main.c'
+1760774078864	Rename resource 'fpga_sha_driver.c'
+1760774086795	Rename resource 'fpga_sha_driver.h'
+1760776779075	Rename resource 'hashsha2.c'
+1760776825431	Rename resource 'sha'
+1760795185198	Rename resource 'main_sha2_test'
+1760795228608	Rename resource 'main.c'

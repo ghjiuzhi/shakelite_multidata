@@ -1,0 +1,105 @@
+Nothing to build in platform 'cpu_wrapper'
+
+14:54:17 **** Clean-only build of configuration Debug for project new ****
+make clean 
+rm -rf  ./src/address.o ./src/fips202.o ./src/fors.o ./src/fpga_sha_driver.o ./src/hash_shake.o ./src/main_sha2_shake_test.o ./src/merkle.o ./src/randombytes.o ./src/sign.o ./src/thash_shake_simple.o ./src/utils.o ./src/utilsx1.o ./src/wots.o ./src/wotsx1.o  ./src/address.d ./src/fips202.d ./src/fors.d ./src/fpga_sha_driver.d ./src/hash_shake.d ./src/main_sha2_shake_test.d ./src/merkle.d ./src/randombytes.d ./src/sign.d ./src/thash_shake_simple.d ./src/utils.d ./src/utilsx1.d ./src/wots.d ./src/wotsx1.d  new.elf.size  new.elf
+ 
+14:54:17 **** Incremental Build of configuration Debug for project new ****
+make all 
+D:/ruanjian/Vivado/Vitis/2019.2/gnuwin/bin/make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+D:/ruanjian/Vivado/Vitis/2019.2/gnuwin/bin/make --no-print-directory main-build
+Building file: ../src/address.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-256s" -Wall -O0 -g3 -ID:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -c -fmessage-length=0 -MT"src/address.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/address.d" -MT"src/address.o" -o "src/address.o" "../src/address.c"
+Finished building: ../src/address.c
+ 
+Building file: ../src/fips202.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-256s" -Wall -O0 -g3 -ID:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -c -fmessage-length=0 -MT"src/fips202.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/fips202.d" -MT"src/fips202.o" -o "src/fips202.o" "../src/fips202.c"
+Finished building: ../src/fips202.c
+ 
+Building file: ../src/fors.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-256s" -Wall -O0 -g3 -ID:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -c -fmessage-length=0 -MT"src/fors.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/fors.d" -MT"src/fors.o" -o "src/fors.o" "../src/fors.c"
+Finished building: ../src/fors.c
+ 
+Building file: ../src/fpga_sha_driver.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-256s" -Wall -O0 -g3 -ID:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -c -fmessage-length=0 -MT"src/fpga_sha_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/fpga_sha_driver.d" -MT"src/fpga_sha_driver.o" -o "src/fpga_sha_driver.o" "../src/fpga_sha_driver.c"
+Finished building: ../src/fpga_sha_driver.c
+ 
+Building file: ../src/hash_shake.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-256s" -Wall -O0 -g3 -ID:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -c -fmessage-length=0 -MT"src/hash_shake.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/hash_shake.d" -MT"src/hash_shake.o" -o "src/hash_shake.o" "../src/hash_shake.c"
+Finished building: ../src/hash_shake.c
+ 
+Building file: ../src/main_sha2_shake_test.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-256s" -Wall -O0 -g3 -ID:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -c -fmessage-length=0 -MT"src/main_sha2_shake_test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main_sha2_shake_test.d" -MT"src/main_sha2_shake_test.o" -o "src/main_sha2_shake_test.o" "../src/main_sha2_shake_test.c"
+In file included from ../src/main_sha2_shake_test.c:9:
+D:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/main_sha2_shake_test.c
+ 
+Building file: ../src/merkle.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-256s" -Wall -O0 -g3 -ID:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -c -fmessage-length=0 -MT"src/merkle.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/merkle.d" -MT"src/merkle.o" -o "src/merkle.o" "../src/merkle.c"
+../src/merkle.c: In function 'SPX_merkle_sign':
+../src/merkle.c:29:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from incompatible pointer type 'unsigned int *' [-Wincompatible-pointer-types]
+     info.wots_steps = steps;
+                     ^
+Finished building: ../src/merkle.c
+ 
+Building file: ../src/randombytes.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-256s" -Wall -O0 -g3 -ID:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -c -fmessage-length=0 -MT"src/randombytes.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/randombytes.d" -MT"src/randombytes.o" -o "src/randombytes.o" "../src/randombytes.c"
+In file included from ../src/randombytes.c:2:
+D:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/randombytes.c
+ 
+Building file: ../src/sign.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-256s" -Wall -O0 -g3 -ID:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -c -fmessage-length=0 -MT"src/sign.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/sign.d" -MT"src/sign.o" -o "src/sign.o" "../src/sign.c"
+Finished building: ../src/sign.c
+ 
+Building file: ../src/thash_shake_simple.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-256s" -Wall -O0 -g3 -ID:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -c -fmessage-length=0 -MT"src/thash_shake_simple.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/thash_shake_simple.d" -MT"src/thash_shake_simple.o" -o "src/thash_shake_simple.o" "../src/thash_shake_simple.c"
+Finished building: ../src/thash_shake_simple.c
+ 
+Building file: ../src/utils.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-256s" -Wall -O0 -g3 -ID:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -c -fmessage-length=0 -MT"src/utils.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/utils.d" -MT"src/utils.o" -o "src/utils.o" "../src/utils.c"
+Finished building: ../src/utils.c
+ 
+Building file: ../src/utilsx1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-256s" -Wall -O0 -g3 -ID:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -c -fmessage-length=0 -MT"src/utilsx1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/utilsx1.d" -MT"src/utilsx1.o" -o "src/utilsx1.o" "../src/utilsx1.c"
+Finished building: ../src/utilsx1.c
+ 
+Building file: ../src/wots.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-256s" -Wall -O0 -g3 -ID:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -c -fmessage-length=0 -MT"src/wots.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/wots.d" -MT"src/wots.o" -o "src/wots.o" "../src/wots.c"
+Finished building: ../src/wots.c
+ 
+Building file: ../src/wotsx1.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DPARAMS="sphincs-shake-256s" -Wall -O0 -g3 -ID:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bspinclude/include -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\include" -I"D:\fpga\shakelite2_save\vitis_1019\cpu_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\libsrc" -c -fmessage-length=0 -MT"src/wotsx1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/wotsx1.d" -MT"src/wotsx1.o" -o "src/wotsx1.o" "../src/wotsx1.c"
+Finished building: ../src/wotsx1.c
+ 
+Building target: new.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/fpga/shakelite2_save/vitis_1019/cpu_wrapper/export/cpu_wrapper/sw/cpu_wrapper/standalone_domain/bsplib/lib -o "new.elf"  ./src/address.o ./src/fips202.o ./src/fors.o ./src/fpga_sha_driver.o ./src/hash_shake.o ./src/main_sha2_shake_test.o ./src/merkle.o ./src/randombytes.o ./src/sign.o ./src/thash_shake_simple.o ./src/utils.o ./src/utilsx1.o ./src/wots.o ./src/wotsx1.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: new.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size new.elf  |tee "new.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97136	   2584	  83216	 182936	  2ca98	new.elf
+Finished building: new.elf.size
+ 

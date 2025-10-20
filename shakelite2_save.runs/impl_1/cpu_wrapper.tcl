@@ -73,8 +73,8 @@ set rc [catch {
   set_property webtalk.parent_dir D:/fpga/shakelite2_save/shakelite2_save.cache/wt [current_project]
   set_property parent.project_path D:/fpga/shakelite2_save/shakelite2_save.xpr [current_project]
   set_property ip_repo_paths {
-  d:/fpga/Embedded_Vitis/customip/ip_repo/sha3_1003_tIP1_1.0
-  D:/fpga/shakelite2_save/sha3_1003_tIP1_1.0
+  D:/fpga/Embedded_Vitis/customip/ip_repo/sha3_1003_tIP1_1.0
+  D:/fpga/Embedded_Vitis/shake_sha2_ip
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo D:/fpga/shakelite2_save/shakelite2_save.cache/ip [current_project]
