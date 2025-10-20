@@ -1,20 +1,0 @@
-2025-10-18T23:40:58.970826900255-23:40:58 **** Build of project cpu_wrapper ****
-000-buildplatform.bat 64423 cpu_wrapper  
-000-XSDB Server Channel: tcfchan#4
-000-No Platform exists with name:  cpu_wrapper
-000-    invoked from within
-000-"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{platform active cpu_wrapper; platform generate }}}"
-000-    (procedure "::tcf::send_command" line 4)
-000-    invoked from within
-000-"tcf send_command $::xsdb::curchan xsdb eval s es [list "platform active $PLATFORM_NAME; platform generate $target"]"
-000-    invoked from within
-000-"if { $iswindows == 1 } {    
-000-
-000-    set XSDB_PORT [lindex $argv 0]
-000-    set PLATFORM_NAME [lindex $argv 1]
-000-    set arglen [llength $argv]
-000-    set lastind..."
-000-    (file "D:/ruanjian/Vivado/Vitis/2019.2\scripts\vitis\util\buildplatform.tcl" line 11)
-00255-
-23:41:00 Build Finished (took 1s.793ms)
-
